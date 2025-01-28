@@ -19,6 +19,9 @@ The following is the list of items, which are required to be completed.
 It is recommended to complete this assignment in a group of 2-4 students.
 1. Callum Riley
 2. Jackson Doyle
+2. Student name 2
+3. Name 3
+4. Name 4
 3. Reece Kelly
 4. Josh
 
