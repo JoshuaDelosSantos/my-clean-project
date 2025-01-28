@@ -21,6 +21,8 @@ It is recommended to complete this assignment in a group of 2-4 students.
 2. Student name 2
 3. Name 3
 4. Name 4
+3. Reece Kelly
+4. Josh
 
 
 # Project planning BEFORE iteration-1, (see chapters 1-3)
