@@ -18,14 +18,9 @@ The following is the list of items, which are required to be completed.
 
 It is recommended to complete this assignment in a group of 2-4 students.
 1. Callum Riley
-2. Student name 2
-<<<<<<< HEAD
-3. Name 3
-4. Name 4
-=======
+2. Jackson Doyle
 3. Reece Kelly
 4. Josh
->>>>>>> b335137d3fce1ca37eb613f36122af3d9975d1f6
 
 
 # Project planning BEFORE iteration-1, (see chapters 1-3)
