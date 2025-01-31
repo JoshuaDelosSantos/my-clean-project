@@ -1,11 +1,6 @@
+# CP3407 - Project (Team Shrek)
 
-How to edit this: test-2025
-* Option-1 (tested and worked ok): PyCharm supports editing of these .md files. Then you need to push to the main branch or make a pull request.
-* Option-2 (tested ok): Edit and commit it directly on github. Then any local repo copies will need to be "updated".
-
-# cp3407-project-v2024 template [Delete or change to your team/project name before submitting]
-
-This a project assignment template for CP3407. 
+This a project assignment for CP3407. 
 The following is the list of items, which are required to be completed.
 
 ## How to submit [You may delete this before submitting]
@@ -15,13 +10,10 @@ The following is the list of items, which are required to be completed.
 2. Download your github repository as a zip file and submit via LearnJCU.
 
 ## Team
-
-It is recommended to complete this assignment in a group of 2-4 students.
 1. Callum Riley
 2. Jackson Doyle
 3. Reece Kelly
-4. Josh Delos Santos
-
+4. Joshua Delos Santos
 
 # Project planning BEFORE iteration-1, (see chapters 1-3)
 Checklist/TODOs: 
