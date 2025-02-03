@@ -1,6 +1,7 @@
 # CP3407 - Project (Team Shrek)
 
 This a project assignment for CP3407. 
+
 The following is the list of items, which are required to be completed.
 
 ## How to submit [You may delete this before submitting]
