@@ -2,7 +2,6 @@
 
 ## Priority: e.g 10
 
-
 ## Estimation: e.g 2 days
 
 
