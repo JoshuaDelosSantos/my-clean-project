@@ -1,7 +1,8 @@
 # User story title: Service provider register
+As a service provider I need to be able to register my service/s.
 
 ## Priority: 10
-If the service provider cannot register/login. Then we are not able to differentiate between client vs SP or differentiate between different SP.
+If the service provider cannot register/login, then we are not able to differentiate between client vs SP or differentiate between different SP.
 
 ## Estimation: 2 days
 - Using Django built in authentication.
