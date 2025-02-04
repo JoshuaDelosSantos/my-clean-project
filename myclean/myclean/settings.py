@@ -31,18 +31,7 @@ DEBUG = config('DEBUG')
 
 # TODO: Check before production.
 ALLOWED_HOSTS = ['*']
-=======
-SECRET_KEY = 'django-insecure-(3$g*yvy94_&w45m59e1n8m)5-!a(!n-t@as4np$5%h)o1zwuc'
-=======
 SECRET_KEY = config('DJANGO_SECRET_KEY')
->>>>>>> deac055 (Update Django project to build with docker-compose)
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
-
-ALLOWED_HOSTS = []
->>>>>>> 6c0be93 (Setup initial Django project with Dockerfile)
-
 
 # Application definition
 
