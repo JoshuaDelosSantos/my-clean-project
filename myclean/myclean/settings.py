@@ -11,8 +11,11 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+<<<<<<< HEAD
 import os
 from decouple import config
+=======
+>>>>>>> 6c0be93 (Setup initial Django project with Dockerfile)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,6 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = config('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,6 +33,14 @@ DEBUG = config('DEBUG')
 
 # TODO: Check before production.
 ALLOWED_HOSTS = ['*']
+=======
+SECRET_KEY = 'django-insecure-(3$g*yvy94_&w45m59e1n8m)5-!a(!n-t@as4np$5%h)o1zwuc'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
+>>>>>>> 6c0be93 (Setup initial Django project with Dockerfile)
 
 
 # Application definition
