@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # Add the home app to the list of installed apps.
-    'home'
+    'home',
+    'cleaning_services'
 ]
 
 MIDDLEWARE = [
