@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),  # This will include the home app's URLs
+    path('cleaning_services/', include('cleaning_services.urls')),
 ]
