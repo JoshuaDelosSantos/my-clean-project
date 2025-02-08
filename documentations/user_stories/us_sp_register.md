@@ -1,32 +1,27 @@
 # User story title: Service provider register
-<<<<<<< HEAD
-<<<<<<< HEAD
 As a service provider I need to be able to register my service/s.
 
 ## Priority: 10
-If the service provider cannot register/login, then we are not able to differentiate between client vs SP or differentiate between different SP.
-=======
-=======
-As a service provider I need to be able to register my service/s.
->>>>>>> 66275be (Update user story)
-
-## Priority: 10
-If the service provider cannot register/login, then we are not able to differentiate between client vs SP or differentiate between different SP.
 
 ## Estimation: 2 days
-- Using Django built in authentication.
-    - Then need to create a registration template.
+- The service provider will register using an email andpassword.
+- A verification email will be sent to confirm the registration.
+- Basic profile details (e.g., business name, phone number, and location) will be required.
+- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
+- Django’s built-in authentication system will be used 
 
-## Assumptions:
-
-## Description: e.g. The web page will show current deals to Orion's orbits users
-- The web page will show a registration page.
-- Service provider can then register.
+## Description:
+The service provider should be able to register for an account by providing essential information. The system will validate inputs, create the account, and send a verification email. Upon successful verification, the service provider can log in and access their dashboard.
 
 ## Tasks
-1. Create service provider model.
-2. Create a Django register form.
-3. Create function for POST request. 
+1. Create the User model with required fields.
+2. Set up Django authentication.
+3. Develop the registration form in Django view.
+4. Implement input validation.
+5. Create the registration API endpoint.
+6. Implement email verification using Django's email backend. 
+7. Design a basic frontend page for registration.
+8. Write test cases for user registration.
 
 # UI Design:
 
