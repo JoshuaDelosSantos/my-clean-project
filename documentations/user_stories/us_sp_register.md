@@ -57,14 +57,14 @@ As a service provider I need to be able to register my service/s.
 If the service provider cannot register/login, then we are not able to differentiate between client vs SP or differentiate between different SP.
 
 ## Estimation: 2 days
-- Using Django built in authentication.
-    - Then need to create a registration template.
+- The service provider will register using an email andpassword.
+- A verification email will be sent to confirm the registration.
+- Basic profile details (e.g., business name, phone number, and location) will be required.
+- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
+- Django’s built-in authentication system will be used 
 
-## Assumptions:
-
-## Description: e.g. The web page will show current deals to Orion's orbits users
-- The web page will show a registration page.
-- Service provider can then register.
+## Description:
+The service provider should be able to register for an account by providing essential information. The system will validate inputs, create the account, and send a verification email. Upon successful verification, the service provider can log in and access their dashboard.
 
 ## Tasks
 1. Create service provider model.
