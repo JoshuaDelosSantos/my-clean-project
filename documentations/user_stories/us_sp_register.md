@@ -4,6 +4,8 @@ As a service provider I need to be able to register my service/s.
 ## Priority: 10
 
 ## Estimation: 3 days
+
+## Assumptions:
 - The service provider will register using an email andpassword.
 - A verification email will be sent to confirm the registration.
 - Basic profile details (e.g., business name, phone number, and location) will be required.
