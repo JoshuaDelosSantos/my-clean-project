@@ -45,5 +45,5 @@ The service provider should be able to register for an account by providing esse
 # Completed:
 
 # Project Links:
-[Iteration 1](../iteration_1.md)
-[Main Project](../../README.md)
+- [Iteration 1](../iteration_1.md)
+- [Main Project](../../README.md)
