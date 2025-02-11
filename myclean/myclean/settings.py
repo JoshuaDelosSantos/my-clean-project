@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     # Add the home app to the list of installed apps.
     'home',
     'cleaning_services',
-    'clients',
+    'clients'
 ]
 
 MIDDLEWARE = [
