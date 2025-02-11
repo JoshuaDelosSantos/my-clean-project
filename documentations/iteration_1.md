@@ -4,13 +4,14 @@
 ## Number of developers:
 ## Total estimated amount of work: 
 
+### Todo:
 1. (Service Provider) I need to be able to register my service/s.
     - [Details](user_stories/us_sp_register.md)
     - Priority: 10
     - Estimation: 3 days (15 hours)
 
 
-In progress:
+### In progress:
 - User story 1 - Create client app (Model, View, Template)
     - Reece
     - Started at 11/02/2025
@@ -24,7 +25,7 @@ In progress:
     - Josh
     - Started at 11/02/2025
 
-Completed:
+### Completed:
 * Task-3 (developer name or initials), date completed
 * ...
 
