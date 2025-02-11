@@ -82,9 +82,3 @@ The service provider should be able to register for an account by providing esse
 # Project Links:
 - [Iteration 1](../iteration_1.md)
 - [Main Project](../../README.md)
-=======
-* (New, not in the textbook) 
-* Insert screenshots of completed. 
-* If you have multiple versions (changes between iteractions), show them all.
-
->>>>>>> ca656a2 (Rename file)
