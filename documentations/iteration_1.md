@@ -6,9 +6,9 @@
 
 ### Todo (User stories):
 1. [(Service Provider) I need to be able to register my service/s.](user_stories/us_sp_register.md)
+    - Title: **Service provider register**
     - Priority: 10
     - Estimation: 3 days (15 hours)
-
 
 ### In progress:
 **Service provider register**
