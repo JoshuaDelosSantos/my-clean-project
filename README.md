@@ -19,7 +19,7 @@ The main task was to create a software for individual cleaners and cleaning comp
 - Talk about resources (LinkedIn Learning).
 - Set up VS Code and make sure it is connected to github.
 
-[See detailed planning](my-clean-project/documentations/project_plan.md)
+[See detailed planning](documentations/project_plan.md)
 
 Total: 3 days
 
