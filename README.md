@@ -1,14 +1,8 @@
 # CP3407 - Project (Team Shrek)
 
+## Overview:
 This a project assignment for CP3407. 
-
-The following is the list of items, which are required to be completed.
-
-## How to submit [You may delete this before submitting]
-
-2. Add your instructor (JCU-Australia: jc138691@gmail.com Dmitry Konovalov) as a team member to view your project on github
-1. Submit link to your repository
-2. Download your github repository as a zip file and submit via LearnJCU.
+The main task was to create a software for individual cleaners and cleaning companies to manage their booking.
 
 ## Team
 1. Callum Riley
@@ -16,16 +10,18 @@ The following is the list of items, which are required to be completed.
 3. Reece Kelly
 4. Joshua Delos Santos
 
-# Project planning BEFORE iteration-1, (see chapters 1-3)
-Checklist/TODOs: 
-* Update the following during each week prac session
-* github entry timestamp is BEFORE the iteration-1
-* User stories are correct: see p39
-* Must have more user stories than fits into iterations 1 and 2. To practice the priority.
-* [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-* ...
+# Project planning:
+- Have a shared understanding of the project.
+- Define the 'budget' for this project.
+- Decide on the software lifecycle development framework to follow.
+- User stories.
+- Discuss about the tech stack.
+- Talk about resources (LinkedIn Learning).
+- Set up VS Code and make sure it is connected to github.
 
-Total: YY days
+[See detailed planning](my-clean-project/documentations/project_plan.md)
+
+Total: 3 days
 
 
 ## Iteration 1 [duration 3-4 weeks], add your start and end dates 
