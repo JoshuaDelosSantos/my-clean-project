@@ -23,6 +23,12 @@ The main task was to create a software for individual cleaners and cleaning comp
 
 Total: 3 days
 
+## Design (Project Architecture):
+Here we discuss the project architectural design:
+- Developement
+- Database
+- Deployment
+
 
 ## Iteration 1 [duration 3-4 weeks], add your start and end dates 
 
@@ -36,21 +42,21 @@ Total: 3 days
 Total: YY days
 
 
-### Iteration 2 [duration 3-4 weeks], add your start and end dates
+## Iteration 2 [duration 3-4 weeks], add your start and end dates
 Goal is to have 2 iterations during a trimester of teaching.
 1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
 2. ...
 
 Total: YY days
 
-### Not enough time/developers: 
+## Tests:
+
+## Not enough time/developers: 
 1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
 2. ...
 
 Total: YY days
 
-## Actual iterations
-1. [Iteration-1](./iteration_1.md)
-2. [Iteration-2](./iteration_2.md)
+
 
 
