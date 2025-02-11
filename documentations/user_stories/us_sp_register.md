@@ -1,4 +1,4 @@
-# User story title: Service provider register
+# Service provider register
 As a service provider I need to be able to register my service/s.
 
 ## Priority: 10
