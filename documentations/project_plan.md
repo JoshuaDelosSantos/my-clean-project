@@ -37,9 +37,18 @@ Kanban was chosen because it aligns with our project’s flexible schedule, cont
 - This helps everyone stay on track, even if they’re working at different times.
 
 ## User stories.
-[Found in this directory](user_stories/)
+[Are found in this directory](user_stories/)
 
+## Tech stack.
+- Django
+- Postgres
+- Docker
+- AWS
 
 ## Talk about resources (LinkedIn Learning).
+[Learning Django](https://www.linkedin.com/learning-login/share?account=2223545&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fdjango-essential-training-25094632%3Ftrk%3Dshare_ent_url%26shareId%3DJw3ngbJXTpyWrMhmUX0VQQ%253D%253D)
 
 ## Set up VS Code and make sure it is connected to github.
+- Created this repo.
+- Made sure to add all team members as contributors.
+- Revised basic Git commands.
