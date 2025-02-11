@@ -15,27 +15,30 @@ As a service provider I need to be able to register my service/s.
 ## Description:
 The service provider should be able to register for an account by providing essential information.
 
-## Tasks
-1. Create the User model with required fields.
-2. Set up Django authentication.
-3. Develop the registration form in Django view.
-4. Implement input validation.
-5. Create the registration API endpoint. 
-6. Design a basic frontend page for registration.
-7. Write test cases for user registration.
+## Tasks:
+1. Create client app (Model, View, Template).
+2. Service provider app (Model, View, Template).
+3. Register app (View, Template).
+4. Login app (View, Template).
+5. Develop the registration page.
+6. Develop the login page.
+7. Set up Django authentication.
+8. Create the registration API endpoint. 
+9. Write unit tests.
 
-### Django steps:
-1. Create 'users' app
-Handles user registration and profile management.
-- Models: Define User model and extend AbstractUser if needed.
-- Views: Create registration logic and email verification.
-- Forms: Use Django forms for validation.
-- URLs: Set up routes for registration and verification.
-
-2. Create 'authentication' app
-Modular approach in seprating authentication logic from user management.
-- Handle login, logout, password resets.
-- Integrate Django's authentication system.
+## In progress:
+- Create client app (Model, View, Template)
+    - Reece
+    - Started at 11/02/2025
+- Service provider app (Model, View, Template)
+    - Jackson
+    - Started at 11/02/2025
+- Login app (View, Template)
+    - Callum
+    - Started at 11/02/2025
+- Register app (View, Template)
+    - Josh
+    - Started at 11/02/2025
 
 # UI Design:
 

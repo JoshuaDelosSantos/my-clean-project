@@ -11,19 +11,9 @@
     - Estimation: 3 days (15 hours)
 
 ### In progress:
-**Service provider register**
-- Create client app (Model, View, Template)
-    - Reece
-    - Started at 11/02/2025
-- Service provider app (Model, View, Template)
-    - Jackson
-    - Started at 11/02/2025
-- Login app (View, Template)
-    - Callum
-    - Started at 11/02/2025
-- Register app (View, Template)
-    - Josh
-    - Started at 11/02/2025
+1. **Service provider register**
+    - [See detailed progress](user_stories/us_sp_register.md)
+
 
 ### Completed:
 * Task-3 (developer name or initials), date completed
