@@ -6,7 +6,7 @@ As a service provider I need to be able to register my service/s.
 ## Estimation: 3 days
 
 ## Assumptions:
-- The service provider will register using an email andpassword.
+- The service provider will register using an email and password.
 - A verification email will be sent to confirm the registration.
 - Basic profile details (e.g., business name, phone number, and location) will be required.
 - Password must meet security standards (e.g., minimum 8characters, including a number and special character).
