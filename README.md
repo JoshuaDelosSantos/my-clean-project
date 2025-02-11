@@ -10,7 +10,7 @@ The main task was to create a software for individual cleaners and cleaning comp
 3. Reece Kelly
 4. Joshua Delos Santos
 
-# Project planning:
+## Project planning:
 - Have a shared understanding of the project.
 - Define the 'budget' for this project.
 - Decide on the software lifecycle development framework to follow.
@@ -49,7 +49,7 @@ Total: YY days
 
 Total: YY days
 
-# Actual iterations
+## Actual iterations
 1. [Iteration-1](./iteration_1.md)
 2. [Iteration-2](./iteration_2.md)
 
