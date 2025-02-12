@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def bussiness_user(request):
-    return render(request, 'bussiness_user/bussiness_user.html', {})
+def business_user(request):
+    return render(request, 'business_user/business_user.html', {})
