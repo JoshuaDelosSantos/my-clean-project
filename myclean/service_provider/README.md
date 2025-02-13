@@ -37,8 +37,13 @@ print(provider.name)  # Output: John's Cleaning
 ```
 
 ## Forms:
-**ServiceProviderForm**
+### ServiceProviderForm:
 - A form for creating and 'ServiceProvider' instance.
+
+**Fields:**
+- 'name' 
+- 'email' 
+- 'contact_number'
 
 
 ## Endpoints:
