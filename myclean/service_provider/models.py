@@ -1,6 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class ServiceProvider(models.Model):
+    """
+    Model representing a service provider.
+    """
+    user = models.OneToOneField('User', on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     email = models.EmailField()
     contact_number = models.CharField(max_length=15)
@@ -9,7 +14,8 @@ class ServiceProvider(models.Model):
     state = models.CharField(max_length=20)
     post_code = models.CharField(max_length=4)
     description = models.TextField()
-    is_approved = models.BooleanField(default=False)
+    
+    is_verified = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
