@@ -5,7 +5,7 @@ class ServiceProvider(models.Model):
     """
     Model representing a service provider.
     """
-    user = models.OneToOneField('User', on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=False, blank=False)
     name = models.CharField(max_length=50)
     email = models.EmailField()
     contact_number = models.CharField(max_length=15)
