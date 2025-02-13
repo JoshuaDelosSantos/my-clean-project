@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Add the home app to the list of installed apps.
     'home',
     'service_provider',
+    'accounts',
     'register',
     'cleaning_services'
 ]
