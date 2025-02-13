@@ -1,8 +1,11 @@
 # Actual iteration-1 board - started on week 3: 
 
 ## Assumed Velocity:
+
 ## Number of developers:
-## Total estimated amount of work: 
+**4**
+## Total estimated amount of work:
+ 
 
 ### Todo (User stories):
 1. [(Service Provider) I need to be able to register my service/s.](user_stories/us_01_sp_register.md)
