@@ -13,6 +13,7 @@
 ### In progress:
 1. **Service provider register**
     - [See detailed progress](user_stories/us_sp_register.md)
+    - Started at 12/02/2025
 
 
 ### Completed:
