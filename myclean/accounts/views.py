@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from service_provider.forms import ServiceProviderForm
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 
 def register_sp(request):
@@ -28,3 +28,10 @@ def register_sp(request):
         'service_provider_form': service_provider_form
     }
     return render(request, 'accounts/register_sp.html', context)
+
+def logout_view(request):
+    """
+    View function for logging out a user.
+    """
+    logout(request)
+    return redirect('home')
