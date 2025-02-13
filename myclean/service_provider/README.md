@@ -47,6 +47,6 @@ print(provider.name)  # Output: John's Cleaning
 
 
 ## Endpoints:
-**'service_provider/sp_dashboard/'**
+### 'service_provider/sp_dashboard/'
 - Displays logged in service_provider user's profile.
 
