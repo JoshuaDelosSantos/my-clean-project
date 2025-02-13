@@ -5,9 +5,9 @@ Defines the ServiceProvider model, which extends Django's built-in User model us
 Service Providers must be linked to a User account.
 
 ## Usage:
-    To create a new service provider, you need to:
-    1. Create a Django User object.
-    2. Create a ServiceProvider object and link it to the User.
+To create a new service provider, you need to:
+1. Create a Django User object.
+2. Create a ServiceProvider object and link it to the User.
 
 ## Example:
 ```
