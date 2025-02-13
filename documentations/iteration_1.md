@@ -5,16 +5,26 @@
 ## Total estimated amount of work: 
 
 ### Todo (User stories):
-1. [(Service Provider) I need to be able to register my service/s.](user_stories/us_sp_register.md)
+1. [(Service Provider) I need to be able to register my service/s.](user_stories/us_01_sp_register.md)
     - Title: **Service provider register**
     - Priority: 10
     - Estimation: 3 days (15 hours)
+
+2. [(Client) I need to be able to see a list of service/s.](user_stories/us_02_client_list_of_services.md)
+    - Title: **List of services**
+    - Priority: 10
+    - Estimation: 3 days (15 hours)
+
+3. [(Service Provider) I need to be able to create my profile.](user_stories/us_03_sp_create_profile.md)
+    - Title: **Service provider create profile**
+    - Priority: 10
+    - Estimation: 2 days (10 hours)
+
 
 ### In progress:
 1. **Service provider register**
     - [See detailed progress](user_stories/us_sp_register.md)
     - Started at 12/02/2025
-
 
 ### Completed:
 * Task-3 (developer name or initials), date completed
