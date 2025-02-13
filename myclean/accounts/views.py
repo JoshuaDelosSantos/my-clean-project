@@ -27,4 +27,4 @@ def register_sp(request):
         'user_form': user_form,
         'service_provider_form': service_provider_form
     }
-    return render(request, 'register/register_sp.html', context)
+    return render(request, 'accounts/register_sp.html', context)
