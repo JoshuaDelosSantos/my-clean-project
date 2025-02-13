@@ -1,15 +1,18 @@
-# models.py
-Models for the Service Provider application.
+# Service provider app
 
+## Overview:
+The **Service Provider** app is responsible for managing service providers on the MyClean platform. It includes models, forms, views, and templates for creating and managing service provider profiles.
+
+## Model
 Defines the ServiceProvider model, which extends Django's built-in User model using a OneToOneField relationship. 
 Service Providers must be linked to a User account.
 
-## Usage:
+### Usage:
 To create a new service provider, you need to:
 1. Create a Django User object.
 2. Create a ServiceProvider object and link it to the User.
 
-## Example:
+### Example:
 ```
 from django.contrib.auth.models import User
 from service_provider.models import ServiceProvider
@@ -32,3 +35,13 @@ provider = ServiceProvider.objects.create(
 
 print(provider.name)  # Output: John's Cleaning
 ```
+
+## Forms:
+**ServiceProviderForm**
+- A form for creating and 'ServiceProvider' instance.
+
+
+## Endpoints:
+**'service_provider/sp_dashboard/'**
+- Displays logged in service_provider user's profile.
+
