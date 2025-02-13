@@ -30,6 +30,7 @@ DEBUG = config('DEBUG')
 # TODO: Check before production.
 ALLOWED_HOSTS = ['*']
 
+
 # Application definition
 
 INSTALLED_APPS = [
