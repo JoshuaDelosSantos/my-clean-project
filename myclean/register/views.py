@@ -18,7 +18,7 @@ def register_service_provider(request):
             service_provider.user = user
             service_provider.save()
             login(request, user)
-            return redirect('home')
+            return redirect('sp_dashboard')
     else:
         user_form = UserCreationForm()
         service_provider_form = ServiceProviderForm()
