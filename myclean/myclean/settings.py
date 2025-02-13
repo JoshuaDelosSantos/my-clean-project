@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'home',
     'service_provider',
     'accounts',
-    'register',
     'cleaning_services'
 ]
 
