@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),  # This will include the home app's URLs
     path('cleaning_services/', include('cleaning_services.urls')),
-    path('accounts/', include('acccounts.urls')),
+    path('accounts/', include('accounts.urls')),
     path('service_provider/', include('service_provider.urls')),
 ]
