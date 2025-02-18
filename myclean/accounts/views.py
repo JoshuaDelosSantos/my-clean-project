@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from service_provider.forms import ServiceProviderForm
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
 
 
@@ -28,6 +28,23 @@ def register_sp(request):
         'service_provider_form': service_provider_form
     }
     return render(request, 'accounts/register_sp.html', context)
+
+
+def login_view(request):
+    """
+    View function for logging in a user.
+    """
+    if request.method == "POST":
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            login(request, form.get_user())
+            return redirect('sp_dashboard') 
+    else:
+        form = AuthenticationForm()
+
+    return render(request, 'accounts/login.html', {"form": form})
+
+
 
 def logout_view(request):
     """
