@@ -9,5 +9,10 @@ Responsible for registration, login & logout.
 - Handles form submission and creates a new user and initial service provider profile.
 - Redirects user to 'service_provider/sp_dashboard'.
 
+
+### 'accounts/logout/'
+- Logs in.
+
+
 ### 'accounts/logout/'
 - Logs out user and redirects to hompage.
