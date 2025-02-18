@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login - Service Provider</title>
+    </head>
+    <body>
+        <h1>Login as Service Provider</h1>
+
+        <form class="login-form-with-validation" action="/accounts/login_sp/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button>Login</button>
+        </form>
+    </body>
+</html>
