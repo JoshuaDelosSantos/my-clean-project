@@ -1,7 +1,6 @@
 # User story title: e.g Service provider register
 
 ## Priority: e.g 10
-If the service provider cannot register/login. Then we are not able to differentiate between client vs SP or differentiate between different SP.
 
 ## Estimation: e.g 2 days
 
