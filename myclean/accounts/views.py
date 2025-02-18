@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from service_provider.forms import ServiceProviderForm
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
 
 
@@ -35,3 +35,15 @@ def logout_view(request):
     """
     logout(request)
     return redirect('home')
+
+def login_view(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)  # Use Django's built-in form
+        if form.is_valid():
+            user = form.get_user()  # Get the authenticated user
+            login(request, user)  # Log the user in
+            return redirect('sp_dashboard')  # Redirect to a home page or dashboard
+    else:
+        form = AuthenticationForm()  # Display an empty form for GET requests
+
+    return render(request, 'accounts/login.html', {'form': form})
