@@ -14,10 +14,19 @@
   </head>
 
   <body>
+
+    <nav>
+        <div class="nav-links-container">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'login_sp' %}">Login</a>
+            <a href="{% url 'register_sp' %}">Register</a>
+        </div>
+    </nav>
+
     <!-- We can inject any html code into the 'block content!' -->
     {% block content%} 
 
     {% endblock %}
   </body>
-  
+
 </html>
