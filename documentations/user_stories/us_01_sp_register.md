@@ -3,7 +3,7 @@ As a service provider I need to be able to register my service/s.
 
 ## Priority: 10
 
-## Estimation: 3 days
+## Estimation: 1 day
 
 ## Assumptions:
 - The service provider will register using an email andpassword.
@@ -17,15 +17,11 @@ The service provider should be able to register for an account by providing esse
 ## Tasks:
 - Define a ServiceProvider model.
 - Add a register functionality using ServiceProvider model.
-- Add simple logout functionality.
-- Add simple login functionality.
 - Add documentations.
 - Unit testing.
 - Implement html designs.
 
 ## In progress:
-- Unit testing.
-    - Josh
 
 
 # UI Design:
@@ -35,12 +31,10 @@ The service provider should be able to register for an account by providing esse
     - Josh
 - Add a register functionality using ServiceProvider model.
     - Josh
-- Add simple logout functionality.
-    - Josh
 - Add initial documentations.
     - Josh
-- Add simple login functionality.
-    - Callum
+- Unit testing.
+    - Josh
 
 ## Screenshot(s):
 

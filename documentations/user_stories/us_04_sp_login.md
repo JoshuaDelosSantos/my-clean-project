@@ -3,7 +3,7 @@ As a service provider I need to be able to login to my account.
 
 ## Priority: 10
 
-## Estimation: 1 days
+## Estimation: 1 day
 
 ## Assumptions:
 - Basic profile details will be required ('username' and 'password).

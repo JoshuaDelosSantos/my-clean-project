@@ -3,7 +3,7 @@ As a service provider I need to be able to logout of my account.
 
 ## Priority: 10
 
-## Estimation: 1 days
+## Estimation: 1 day
 
 ## Assumptions:
 - Simple link routing will be used
