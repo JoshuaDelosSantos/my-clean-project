@@ -1,8 +1,7 @@
-<html lang="en">
-<header>
-    <title>MyClean</title>
-<body>
+{% extends "base.html" %}
+
+<!-- 'block content' allows us to inject this html into our base.html  -->
+{% block content %}
     <h1>Welcome to MyClean</h1>
-    <p>This is the home page for the MyClean project!</p>
-</body>
-</html>
+    <p>This is the home page for the MyClean project! It is extending from base.html!</p>
+{% endblock %}
