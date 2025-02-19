@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Service provider register
 As a service provider I need to be able to register my service/s.
 
@@ -8,8 +7,7 @@ As a service provider I need to be able to register my service/s.
 
 ## Assumptions:
 - The service provider will register using an email andpassword.
-- A verification email will be sent to confirm the registration.
-- Basic profile details (e.g., business name, phone number, and location) will be required.
+- Basic profile details (e.g., business name and contact number) will be required.
 - Password must meet security standards (e.g., minimum 8characters, including a number and special character).
 - Django’s built-in authentication system will be used 
 
@@ -26,7 +24,8 @@ The service provider should be able to register for an account by providing esse
 - Implement html designs.
 
 ## In progress:
-
+- Unit testing.
+    - Josh
 
 
 # UI Design:
