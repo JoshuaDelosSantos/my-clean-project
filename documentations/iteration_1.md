@@ -11,7 +11,7 @@
 1. [(Service Provider) I need to be able to register my service/s.](user_stories/us_01_sp_register.md)
     - Title: **Service provider register**
     - Priority: 10
-    - Estimation: 3 days (15 hours)
+    - Estimation: 1 day (5 hours)
 
 2. [(Client) I need to be able to see a list of service/s.](user_stories/us_02_client_list_of_services.md)
     - Title: **List of services**
@@ -23,11 +23,25 @@
     - Priority: 10
     - Estimation: 2 days (10 hours)
 
+4. [(Service Provider) I need to be able to login to my account.](user_stories/us_04_sp_login.md)
+    - Title: **Service provider login**
+    - Priority: 10
+    - Estimation: 1 day (5 hours)
+
+5. [(Service provider) I need to be able to logout of my account.](user_stories/us_05_sp_logout.md)
+    - Title: **Service provider logout**
+    - Priority: 10
+    Estimation: 1 day (5 hours)
+
 
 ### In progress:
 1. **Service provider register**
     - [See detailed progress](user_stories/us_sp_register.md)
     - Started at 12/02/2025
+4. **Service provider login**
+    - Started at 17/02/2025
+5. **Service provider logout**
+    - Started at 18/02/2025
 
 ### Completed:
 * Task-3 (developer name or initials), date completed
