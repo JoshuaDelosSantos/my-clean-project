@@ -44,17 +44,6 @@ def register_sp(request):
     return render(request, 'accounts/register_sp.html', context)
 
 
-# def login_sp(request):
-#     """
-#     View function for logging in as a service provider.
-#     """
-#     login(request, user)
-#     if:
-#         pass
-#     else:
-#         pass
-
-
 def logout_view(request):
     """
     View function for logging out a user.
