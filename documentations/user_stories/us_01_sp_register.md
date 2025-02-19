@@ -26,8 +26,7 @@ The service provider should be able to register for an account by providing esse
 - Implement html designs.
 
 ## In progress:
-- Add documentations.
-    - Josh
+
 
 
 # UI Design:
@@ -39,6 +38,10 @@ The service provider should be able to register for an account by providing esse
     - Josh
 - Add simple logout functionality.
     - Josh
+- Add initial documentations.
+    - Josh
+- Add simple login functionality.
+    - Callum
 
 ## Screenshot(s):
 
