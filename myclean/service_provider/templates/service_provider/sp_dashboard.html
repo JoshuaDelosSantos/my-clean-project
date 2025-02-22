@@ -1,11 +1,17 @@
-<html>
-    
-<head>
-    <title>Service Provider Dashboard</title>
-</head>
+<!-- This Django syntax allows us to extend this home.html 
+ from the static/templates/base.html for a robust front-end. -->
+{% extends "base.html" %}
+
+<!-- 'block title' allows us to dynamically define our website title. -->
+{% block title %}
+    Service Provider Dashboard
+{% endblock %}
+
+<!-- 'block content' allows us to inject this html into our base.html -->
+{% block content %}
 
 Hello, {{ user.username }}!
 
 <a href="{% url 'logout' %}">Logout Here</a>
 
-</html>
+{% endblock %}

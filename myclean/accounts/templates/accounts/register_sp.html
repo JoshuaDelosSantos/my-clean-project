@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!-- This Django syntax allows us to extend this home.html 
+ from the static/templates/base.html for a robust front-end. -->
+{% extends "base.html" %}
 
-<head>
-    <title>Register Service Provider</title>
-</head>
+<!-- 'block title' allows us to dynamically define our website title. -->
+{% block title %} Service Provider - Register {% endblock %}
 
-<body>
-    <h2>Register Service Provider</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ user_form.as_p }}
-        {{ service_provider_form.as_p }}
-        <button type="submit">Register</button>
-    </form>
-</body>
+<!-- 'block content' allows us to inject this html into our base.html -->
+{% block content %}
 
-</html>
+<h2>Register Service Provider</h2>
+<form method="post">
+  {% csrf_token %} {{ user_form.as_p }} {{ service_provider_form.as_p }}
+  <button type="submit">Register</button>
+</form>
+
+{% endblock %}
