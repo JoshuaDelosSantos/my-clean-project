@@ -22,8 +22,7 @@ The service provider should be able to add additional details about their servic
 - Implement html designs.
 
 ## In progress:
-- Add documentations.
-    - Josh
+
 
 # UI Design:
 
@@ -34,6 +33,8 @@ The service provider should be able to add additional details about their servic
 - Create template routing to additional information endpoint.
     - Josh
 - Update sp_dashboard to display updated information.
+    - Josh
+- Add documentations.
     - Josh
 
 ## Screenshot(s):
