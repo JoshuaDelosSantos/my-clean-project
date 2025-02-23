@@ -18,4 +18,8 @@ class ServiceProviderProfileForm(forms.ModelForm):
                   'post_code',
                   'description'
                 ]
+        widgets = {
+            'address': forms.Textarea(attrs={'rows': 1, 'placeholder': 'Street address'}),
+            'description': forms.Textarea(attrs={'placeholder': 'Enter a description of your services'}),
+        }
         
