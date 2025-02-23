@@ -1,28 +1,36 @@
-# List of Services
-
+# Create service provider profile
+As a service provider I should be able to create my profile with all my details about my service/s.
 
 ## Priority: 10
 
-## Estimation: 3 days
+## Estimation: 2 days
+~ 10 hours with our budget.
 
 ## Assumptions:
-
+- Service provider model will be used.
+- Profile details such as city, state, postcode and description are the basic information needed.
 
 ## Description:
-
+The service provider should be able to add additional details about their service after registration of their account.
 
 ## Tasks:
-
+- Create form for service information.
+- Create template routing to additional information endpoint.
+- Add documentations.
+- Unit testing.
+- Implement html designs.
 
 ## In progress:
 
 
 # UI Design:
 
+
 # Completed:
 
 
 ## Screenshot(s):
+
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)
