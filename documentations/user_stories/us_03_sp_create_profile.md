@@ -36,6 +36,8 @@ The service provider should be able to add additional details about their servic
     - Josh
 - Add documentations.
     - Josh
+- Unit testing.
+    - Josh
 
 ## Screenshot(s):
 
