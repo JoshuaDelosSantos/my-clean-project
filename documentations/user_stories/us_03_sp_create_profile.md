@@ -22,16 +22,17 @@ The service provider should be able to add additional details about their servic
 - Implement html designs.
 
 ## In progress:
-- Create template routing to additional information endpoint.
-    - Josh
-- Update sp_dashboard to display updated information.
-    - Josh
+
 
 # UI Design:
 
 
 # Completed:
 - Create form for service information.
+    - Josh
+- Create template routing to additional information endpoint.
+    - Josh
+- Update sp_dashboard to display updated information.
     - Josh
 
 ## Screenshot(s):
