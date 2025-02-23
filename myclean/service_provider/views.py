@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import ServiceProvider
 from .forms import ServiceProviderProfileForm
@@ -30,6 +30,7 @@ def sp_update_profile(request):
         form = ServiceProviderProfileForm(request.POST, instance=service_provider)
         if form.is_valid():
             form.save()
+            return redirect('sp_dashboard')
     else:
         form = ServiceProviderProfileForm(instance=service_provider)
     
