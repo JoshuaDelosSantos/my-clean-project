@@ -30,6 +30,7 @@ def register_sp(request):
             user = user_form.save()
             service_provider = service_provider_form.save(commit=False)
             service_provider.user = user
+            service_provider.email = user.email
             service_provider.save()
             login(request, user)
             return redirect('sp_dashboard')
