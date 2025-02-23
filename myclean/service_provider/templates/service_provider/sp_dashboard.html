@@ -15,16 +15,16 @@
 
     <div class="profile-container">
         <h3>Profile</h3>
-        <p>Username: {{ user.username }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>Contact: {{ user.contact }}</p>
-        <p>Address: {{ user.address }}</p>
-        <p>City: {{ user.city }}</p>
-        <p>State: {{ user.state }}</p>
-        <p>Post code: {{ user.post_code }}</p>
+        <p>Name: {{ service_provider.name }}</p>
+        <p>Email: {{ service_provider.email }}</p>
+        <p>Contact: {{ service_provider.contact }}</p>
+        <p>Address: {{ service_provider.address }}</p>
+        <p>City: {{ service_provider.city }}</p>
+        <p>State: {{ service_provider.state }}</p>
+        <p>Post code: {{ service_provider.post_code }}</p>
         <p>Service description: 
-            {% if user.description %}
-                {{ user.description }}
+            {% if service_provider.description %}
+                {{ service_provider.description }}
             {% else %}
                 No description provided
             {% endif %}
