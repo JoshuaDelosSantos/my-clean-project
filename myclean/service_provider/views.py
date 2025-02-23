@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import ServiceProvider
-from forms import ServiceProviderProfileForm
+from .forms import ServiceProviderProfileForm
 
 @login_required
 def sp_dashboard(request):
