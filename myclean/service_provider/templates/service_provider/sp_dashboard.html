@@ -10,8 +10,30 @@
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
 
-Hello, {{ user.username }}!
+<div class="sp-dashboard-container">
+    <h2>Hello, {{ user.username }}!</h2>
+
+    <div class="profile-container">
+        <h3>Profile</h3>
+        <p>Name: {{ service_provider.name }}</p>
+        <p>Email: {{ service_provider.email }}</p>
+        <p>Contact: {{ service_provider.contact_number }}</p>
+        <p>Address: {{ service_provider.address }}</p>
+        <p>City: {{ service_provider.city }}</p>
+        <p>State: {{ service_provider.state }}</p>
+        <p>Post code: {{ service_provider.post_code }}</p>
+        <p>Service description: 
+            {% if service_provider.description %}
+                {{ service_provider.description }}
+            {% else %}
+                No description provided
+            {% endif %}
+    </div>
+
+</div>
+
 
 <a href="{% url 'logout' %}">Logout Here</a>
+<a href="{% url 'sp_update_profile' %}">Update Profile</a>
 
 {% endblock %}

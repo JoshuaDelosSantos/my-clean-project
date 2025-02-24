@@ -42,6 +42,8 @@
     - Started at 17/02/2025
 5. **Service provider logout**
     - Started at 18/02/2025
+3. **Service provider create profile**
+    - Started at 23/02/2025
 
 ### Completed:
 * Task-3 (developer name or initials), date completed
