@@ -6,4 +6,9 @@
 {% block content %}
     <h1>Welcome to MyClean</h1>
     <p>This is the home page for the MyClean project! It is extending from base.html!</p>
+    
+    <div class="button-container">
+        <a href="{% url 'cleaning_services' %}" class="navigate-button">Go to Cleaning Services</a>
+    </div>
+
 {% endblock %}

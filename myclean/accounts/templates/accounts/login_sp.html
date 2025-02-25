@@ -5,19 +5,27 @@
 <!-- 'block title' allows us to dynamically define our website title. -->
 {% block title %} Service Provider - Login {% endblock %}
 
+{% block body_class %}login-sp{% endblock %}
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
 
-<h1>Login as Service Provider</h1>
+<div id="login-heading">
+  <h1>Login as Service Provider</h1>
+</div>
 
-<form
-  class="login-form-with-validation"
-  action="/accounts/login_sp/"
-  method="post"
->
-  {% csrf_token %} {{ form.as_p }}
 
-  <button>Login</button>
-</form>
+<div id="login-form">
+  <form
+    class="login-form-with-validation"
+    action="/accounts/login_sp/"
+    method="post"
+  >
+    {% csrf_token %} {{ form.as_p }}
+
+
+
+  <button id="login-button">Login</button>
+  </form>
+</div>
 
 {% endblock %}
