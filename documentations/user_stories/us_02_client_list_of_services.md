@@ -4,6 +4,7 @@ As a client I should be able to see a list of services.
 ## Priority: 10
 
 ## Estimation: 3 days
+~ 15 hours with our budget.
 
 ## Assumptions:
 -  The client will not have to log in to view services.
