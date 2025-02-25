@@ -41,3 +41,27 @@ nav {
     width: 80%; /* Makes the card take most of the width */
     max-width: 400px; /* Prevents it from being too wide */
 }
+
+/* Center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the button */
+.navigate-button {
+    background-color: #4CAF50;  /* Green background */
+    color: white;  /* White text */
+    padding: 15px 32px;  /* Add padding */
+    font-size: 1.2em;  /* Larger text */
+    border-radius: 5px;  /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+    text-align: center;  /* Center the text */
+    transition: background-color 0.3s;  /* Smooth transition on hover */
+}
+
+.navigate-button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
