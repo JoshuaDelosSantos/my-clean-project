@@ -9,7 +9,9 @@ from the static/templates/base.html for a robust front-end. -->
 
 <!-- 'block content' allows us to inject this html into our base.html  -->
 {% block content %}
-<p>
-    This will show the list of the cleaning services!!
-</p>
+    {% for obj in objects %}
+                <li class="obj-name">Name: {{ obj.name }} | Email: {{ obj.email }} | Phone: {{ obj.contact_number }}</li>
+            {% empty %}
+                <li>No objects found.</li>
+            {% endfor %}
 {% endblock %}
