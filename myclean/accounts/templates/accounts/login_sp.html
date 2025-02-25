@@ -7,17 +7,24 @@
 
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
+{ % block body_class %}login-sp{% endblock %}
+<div id="login-heading">
+  <h1>Login as Service Provider</h1>
+</div>
 
-<h1>Login as Service Provider</h1>
 
-<form
-  class="login-form-with-validation"
-  action="/accounts/login_sp/"
-  method="post"
->
-  {% csrf_token %} {{ form.as_p }}
+<div id="login-form">
+  <form
+    class="login-form-with-validation"
+    action="/accounts/login_sp/"
+    method="post"
+  >
+    {% csrf_token %} {{ form.as_p }}
+
+
 
   <button>Login</button>
-</form>
+  </form>
+</div>
 
 {% endblock %}
