@@ -5,9 +5,10 @@
 <!-- 'block title' allows us to dynamically define our website title. -->
 {% block title %} Service Provider - Register {% endblock %}
 
+{% block body_class %}register-sp{% endblock %}
+
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
-
 <h2>Register Service Provider</h2>
 <form method="post">
   {% csrf_token %} {{ user_form.as_p }} {{ service_provider_form.as_p }}
