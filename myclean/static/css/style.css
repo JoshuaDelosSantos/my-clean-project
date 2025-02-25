@@ -21,3 +21,18 @@ nav {
     padding: 10px;
     color: black;
 }
+
+/* CSS for Login page */
+
+.login_form_with_validation {
+    text-align: center;
+    font-family: 'Inter', 'Aptos', 'Arial';
+}
+
+#login-heading {
+    color: '#545F71';
+}
+
+#login-form {
+    color: '#545F71';
+}
