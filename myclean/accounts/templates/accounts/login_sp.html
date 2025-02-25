@@ -5,9 +5,10 @@
 <!-- 'block title' allows us to dynamically define our website title. -->
 {% block title %} Service Provider - Login {% endblock %}
 
+{% block body_class %}login-sp{% endblock %}
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
-<!-- { % block body_class %}login-sp{% endblock %} -->
+
 <div id="login-heading">
   <h1>Login as Service Provider</h1>
 </div>
