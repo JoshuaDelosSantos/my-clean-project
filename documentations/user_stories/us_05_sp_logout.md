@@ -4,6 +4,7 @@ As a service provider I need to be able to logout of my account.
 ## Priority: 10
 
 ## Estimation: 1 day
+~ 5 hours with our budget.
 
 ## Assumptions:
 - Simple link routing will be used
