@@ -4,6 +4,7 @@ As a service provider I need to be able to register my service/s.
 ## Priority: 10
 
 ## Estimation: 1 day
+~ 5 hours with our budget.
 
 ## Assumptions:
 - The service provider will register using an email andpassword.
