@@ -29,6 +29,8 @@ The service provider should be able to login to their account.
     - Josh
 - Unit testing.
     - Josh
+- Implement html designs.
+    - Josh
 
 ## Screenshot(s):
 

@@ -21,7 +21,8 @@ The service provider should be able to login to their account.
 - Implement html designs.
 
 ## In progress:
-
+- Implement html designs.
+    - Callum
 
 # UI Design:
 

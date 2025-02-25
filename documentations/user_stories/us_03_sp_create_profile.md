@@ -22,7 +22,8 @@ The service provider should be able to add additional details about their servic
 - Implement html designs.
 
 ## In progress:
-
+- Implement html designs.
+    - Josh
 
 # UI Design:
 
