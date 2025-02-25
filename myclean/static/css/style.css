@@ -6,24 +6,15 @@
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    background-color: whitesmoke;
-    padding: 15px 0;
-}
-
-.nav-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10%;
+    position: sticky !important;
+    background-color: whitesmoke !important;
 }
 
 .nav-links-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 10%;
     gap: 15px;
 }
 
@@ -32,20 +23,6 @@ nav {
     font-size: 1.5em;
     padding: 10px;
     color: black;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav-links-container a:hover {
-    color: #007bff;
-}
-
-.register-sp {
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .register-sp form {
@@ -98,12 +75,6 @@ nav {
     .register-sp form {
         width: 90%;
     }
-
-    .nav-links-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 10%;
-    }
 }
 
 .flex-container {
@@ -152,12 +123,6 @@ nav {
 
 
 /* CSS for Login page */
-
- .login-sp {
-    text-align: center;
-    font-family: 'Inter', 'Aptos', 'Arial';
-    /* color: '#545F71'; */
- }
 
  #login-heading {
     padding-top: 20px;
