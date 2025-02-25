@@ -10,6 +10,12 @@ nav {
     background-color: whitesmoke !important;
 }
 
+footer {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
 .nav-links-container {
     display: flex;
     justify-content: flex-end;
@@ -25,6 +31,7 @@ nav {
     color: black;
 }
 
+/* CSS for Register page. */
 .register-sp form {
     max-width: 450px;
     width: 100%;
@@ -77,6 +84,8 @@ nav {
     }
 }
 
+
+/* CSS for list of services page. */
 .flex-container {
     display: flex;
     flex-direction: column; /* Makes items stack in a single column */
@@ -97,7 +106,6 @@ nav {
     max-width: 400px; /* Prevents it from being too wide */
 }
 
-/* Center the button */
 .button-container {
     display: flex;
     justify-content: center;
@@ -105,7 +113,6 @@ nav {
     margin-top: 20px;
 }
 
-/* Style the button */
 .navigate-button {
     background-color: #4CAF50;  /* Green background */
     color: white;  /* White text */
@@ -123,7 +130,6 @@ nav {
 
 
 /* CSS for Login page */
-
  #login-heading {
     padding-top: 20px;
     color: dimgray;
@@ -146,3 +152,5 @@ nav {
     color: white;
     block-size: 50%;
  }
+
+ 
