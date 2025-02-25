@@ -21,6 +21,14 @@ The client should be able to view a list of services.
 - Implement html designs.
 
 ## In progress:
+- Unit testing.
+    - Josh
+- Implement html designs.
+    - Jackson
+
+# UI Design:
+
+# Completed:
 - Create a Django app specifically for a list of services.
     - Josh
 - Grab all ServiceProvider objects from database.
@@ -31,14 +39,6 @@ The client should be able to view a list of services.
     - Jackson
 - Add list of objects into context.
     - Jackson
-- Unit testing.
-    - Josh
-- Implement html designs.
-    - Jackson
-
-# UI Design:
-
-# Completed:
 
 ## Screenshot(s):
 
