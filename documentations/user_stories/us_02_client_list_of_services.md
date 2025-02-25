@@ -21,7 +21,20 @@ The client should be able to view a list of services.
 - Implement html designs.
 
 ## In progress:
-
+- Create a Django app specifically for a list of services.
+    - Josh
+- Grab all ServiceProvider objects from database.
+    - Jackson
+- Create view function.
+    - Jackson
+- Create template.
+    - Jackson
+- Add list of objects into context.
+    - Jackson
+- Unit testing.
+    - Josh
+- Implement html designs.
+    - Jackson
 
 # UI Design:
 
