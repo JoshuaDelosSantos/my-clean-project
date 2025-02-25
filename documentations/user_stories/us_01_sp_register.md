@@ -1,5 +1,5 @@
 # Service provider register
-As a service provider I need to be able to register my service/s.
+As a service provider I need to be able to register my service/s so a potential client can find us.
 
 ## Priority: 10
 

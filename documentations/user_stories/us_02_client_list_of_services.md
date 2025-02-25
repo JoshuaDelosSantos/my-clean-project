@@ -1,5 +1,5 @@
 # List of Services
-As a client I should be able to see a list of services.
+As a client  I need to be able to see a list of service/s so I can decide on which one to contact.
 
 ## Priority: 10
 

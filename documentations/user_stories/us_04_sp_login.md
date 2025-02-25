@@ -1,5 +1,5 @@
 # Service provider register
-As a service provider I need to be able to login to my account.
+As a service provider I need to be able to login to my account after registering.
 
 ## Priority: 10
 

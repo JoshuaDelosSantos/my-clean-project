@@ -1,5 +1,5 @@
 # Service provider register
-As a service provider I need to be able to logout of my account.
+As a service provider I need to be able to logout of my account after registering/loging in.
 
 ## Priority: 10
 

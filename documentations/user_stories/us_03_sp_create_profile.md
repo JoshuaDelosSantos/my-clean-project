@@ -1,5 +1,5 @@
 # Create service provider profile
-As a service provider I should be able to create my profile with all my details about my service/s.
+As a service provider I need to be able to add to my profile such as my general location and service description.
 
 ## Priority: 10
 
