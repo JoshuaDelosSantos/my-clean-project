@@ -35,19 +35,30 @@
 
 
 ### In progress:
+
+
+### Completed:
 1. **Service provider register**
     - [See detailed progress](user_stories/us_sp_register.md)
     - Started at 12/02/2025
+    - Completed at 25/02/2025
+    - JDS, RK
 4. **Service provider login**
     - Started at 17/02/2025
+    - Completed at 25/02/2025
+    - JDS, CR
 5. **Service provider logout**
     - Started at 18/02/2025
+    - Completed at 25/02/2025
+    - JDS
 3. **Service provider create profile**
     - Started at 23/02/2025
-
-### Completed:
-* Task-3 (developer name or initials), date completed
-* ...
+    - Completed at 25/02/2025
+    - JDS
+2. **List of services**
+    - Started at 18/02/2025
+    - Completed at 25/02/2025
+    - JDS, JD
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
