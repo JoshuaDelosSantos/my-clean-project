@@ -65,3 +65,35 @@ nav {
 .navigate-button:hover {
     background-color: #45a049;  /* Darker green on hover */
 }
+
+
+/* CSS for Login page */
+
+ .login-sp {
+    text-align: center;
+    font-family: 'Inter', 'Aptos', 'Arial';
+    /* color: '#545F71'; */
+ }
+
+ #login-heading {
+    padding-top: 20px;
+    color: dimgray;
+ }
+
+ #login-form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: dimgray;
+ }
+
+ #login-button {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    border-color: whitesmoke;
+    background-color: dimgray;
+    color: white;
+    block-size: 50%;
+ }
