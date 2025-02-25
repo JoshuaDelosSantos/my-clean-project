@@ -8,10 +8,26 @@ from the static/templates/base.html for a robust front-end. -->
 {% endblock %}
 
 <!-- 'block content' allows us to inject this html into our base.html  -->
-{% block content %}
+{% comment %} {% block content %}
     {% for obj in objects %}
                 <li class="obj-name">Name: {{ obj.name }} | Email: {{ obj.email }} | Phone: {{ obj.contact_number }}</li>
             {% empty %}
                 <li>No objects found.</li>
-            {% endfor %}
+            {% endfor %} {% endcomment %}
+{% comment %} {% endblock %} {% endcomment %}
+
+{% block content %}
+    <div class="flex-container">
+        {% for obj in objects %}
+            <div class="business-card">
+                <h3>{{ obj.name }}</h3>
+                <p>Email: {{ obj.email }}</p>
+                <p>Phone: {{ obj.contact_number }}</p>
+                <p>{{ obj.city }}</p>
+                <p>Description: {{ obj.description }}</p>
+            </div>
+        {% empty %}
+            <p>No businesses found.</p>
+        {% endfor %}
+    </div>
 {% endblock %}
