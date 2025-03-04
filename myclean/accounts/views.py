@@ -49,4 +49,4 @@ def logout_view(request):
     View function for logging out a user.
     """
     logout(request)
-    return redirect('home')
+    return redirect('cleaning_services')  # Currently redirecting to cleaning_services.
