@@ -4,11 +4,12 @@
 
 <!-- 'block content' allows us to inject this html into our base.html  -->
 {% block content %}
-    <h1>Welcome to MyClean</h1>
-    <p>This is the home page for the MyClean project! It is extending from base.html!</p>
+    <div class='welcome-container'>
+
+    </div>
     
     <div class="button-container">
-        <a href="{% url 'cleaning_services' %}" class="navigate-button">Go to Cleaning Services</a>
+        <a href="{% url 'cleaning_services' %}" class="navigate-button">Browse Cleaning Services</a>
     </div>
 
 {% endblock %}
