@@ -127,27 +127,67 @@ footer {
 
 
 /* CSS for Login page */
+
+.login-content-container {
+    height: 80vh;
+}
+
+.login-box {
+    height: 550px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10vh;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
  #login-heading {
-    padding-top: 20px;
-    color: dimgray;
- }
+    text-align: center;
+}
 
  #login-form {
-    padding: 20px;
     display: flex;
     justify-content: center;
-    color: dimgray;
- }
+    gap: 20px;
+}
+
+#login-form form {
+    width: 100%;
+}
+
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-group label {
+    text-align: start;
+    width: 80%;
+}
+
+.login-form-group input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid slategrey;
+    border-radius: 7px;
+}
+
+.login-button-container {
+    text-align: center; /* Center the button */
+    margin-top: 10px; /* Add spacing */
+}
 
  #login-button {
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    align-items: center;
-    border-color: whitesmoke;
-    background-color: dimgray;
-    color: white;
-    block-size: 50%;
- }
-
- 
+    width: 40%;
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid black;
+ } 
