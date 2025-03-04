@@ -86,14 +86,28 @@ footer {
 
 
 /* CSS for list of services page. */
-.flex-container {
+.cleaning-services-container {
     display: flex;
     flex-direction: column; /* Makes items stack in a single column */
-    gap: 15px;
+    gap: 50px;
     padding: 20px;
-    max-height: 80vh; /* Adjust based on your layout */
-    overflow-y: auto; /* Enables scrolling */
     align-items: center; /* Centers the items horizontally */
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cleaning-services-header {
+    font-size: 2em;
+    margin-top: 10vh;
+}
+
+.cleaning-services {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .business-card {
@@ -101,31 +115,14 @@ footer {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: start;
     width: 80%; /* Makes the card take most of the width */
     max-width: 400px; /* Prevents it from being too wide */
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.navigate-button {
-    background-color: #4CAF50;  /* Green background */
-    color: white;  /* White text */
-    padding: 15px 32px;  /* Add padding */
-    font-size: 1.2em;  /* Larger text */
-    border-radius: 5px;  /* Rounded corners */
-    text-decoration: none;  /* Remove underline */
-    text-align: center;  /* Center the text */
-    transition: background-color 0.3s;  /* Smooth transition on hover */
-}
-
-.navigate-button:hover {
-    background-color: #45a049;  /* Darker green on hover */
+.business-card h2 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 
