@@ -251,9 +251,50 @@ footer {
 
 /* CSS for sp update profile */
 .sp-update-profile-container {
-    height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10vh;
 }
+
+.sp-update-profile-box h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.update-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-form-group label {
+    text-align: start;
+    width: 80%;
+}
+
+.update-form-group input, textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid slategrey;
+    border-radius: 7px;
+}
+
+.update-button-container {
+    text-align: center; /* Center the button */
+    margin-top: 10px; /* Add spacing */
+}
+
+.update-button-container button {
+    width: 40%;
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-bottom: 10vh;
+ }
 
 
 /* CSS for sp dashboard */
