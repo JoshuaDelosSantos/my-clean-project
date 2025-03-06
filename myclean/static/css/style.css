@@ -150,7 +150,7 @@ footer {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    height: auto;
 }
 
 .cleaning-services-header {
@@ -246,4 +246,35 @@ footer {
     padding: 12px;
     border-radius: 7px;
     border: 1px solid black;
- } 
+ }
+
+
+/* CSS for sp update profile */
+.sp-update-profile-container {
+    height: 100vh;
+    
+}
+
+
+/* CSS for sp dashboard */
+.sp-dashboard-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.sp-dashboard-links a {
+    text-decoration: none;
+    font-size: 1.1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: slategrey;
+    border-radius: 7px;
+    border: 1px solid black;
+}
