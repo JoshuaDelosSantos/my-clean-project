@@ -8,12 +8,19 @@
 <!-- 'block content' allows us to inject this html into our base.html -->
 {% block content %}
 
-<div>
-    <h2>Update Profile</h2>
-    <form method="POST">
-        {% csrf_token %} {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Update</button>
-    </form>
+<div class="sp-update-profile-container">
+
+    <div class="sp-update-profile-box">
+        <h2>Update Profile</h2>
+
+        <div class="sp-update-profile-form">
+            <form method="POST">
+                {% csrf_token %} {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+    
 </div>
 
   {% endblock %}
