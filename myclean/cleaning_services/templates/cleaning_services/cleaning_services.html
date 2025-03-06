@@ -3,36 +3,32 @@ from the static/templates/base.html for a robust front-end. -->
 {% extends "base.html" %}
 
 <!-- 'block title' allows us to dynamically define our website title. -->
-{% block title %}
-    Cleaning Services
-{% endblock %}
+{% block title %} Cleaning Services {% endblock %}
 
 <!-- 'block content' allows us to inject this html into our base.html  -->
 
 {% block content %}
-    
-    <div class="cleaning-services-container">
-        
-        <div class="cleaning-services-header">
-            <h1>Cleaning Services.</h1>
-        </div>
-        
-        <div class="cleaning-services">
-            {% for obj in objects %}
-            <div class="business-card">
-                <h2>{{ obj.name }}</h2>
-                <p>Email: {{ obj.email }}</p>
-                <p>Phone: {{ obj.contact_number }}</p>
-                <p>Area: {{ obj.city }}</p>
-                <p>Description: {{ obj.description }}</p>
-            </div>
-        {% empty %}
-            <div class="empty-service-container">
-                <h1>No services found.</h1>
-            </div>
-        {% endfor %}
-        </div>
-        
+
+<div class="cleaning-services-container">
+  <div class="cleaning-services-header">
+    <h1>Cleaning Services.</h1>
+  </div>
+
+  <div class="cleaning-services">
+    {% for obj in objects %}
+    <div class="business-card">
+      <h2>{{ obj.name }}</h2>
+      <p>Email: {{ obj.email }}</p>
+      <p>Phone: {{ obj.contact_number }}</p>
+      <p>Area: {{ obj.city }}</p>
+      <p>Description: {{ obj.description }}</p>
     </div>
+    {% empty %}
+    <div class="empty-service-container">
+      <h1>No services found.</h1>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
 {% endblock %}
