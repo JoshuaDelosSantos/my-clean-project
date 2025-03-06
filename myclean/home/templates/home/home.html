@@ -1,8 +1,15 @@
-<html lang="en">
-<header>
-    <title>MyClean</title>
-<body>
-    <h1>Welcome to MyClean</h1>
-    <p>This is the home page for the MyClean project!</p>
-</body>
-</html>
+<!-- This Django syntax allows us to extend this home.html 
+ from the static/templates/base.html for a robust front-end. -->
+{% extends "base.html" %}
+
+<!-- 'block content' allows us to inject this html into our base.html  -->
+{% block content %}
+    <div class='welcome-container'>
+
+    </div>
+    
+    <div class="button-container">
+        <a href="{% url 'cleaning_services' %}" class="navigate-button">Browse Cleaning Services</a>
+    </div>
+
+{% endblock %}

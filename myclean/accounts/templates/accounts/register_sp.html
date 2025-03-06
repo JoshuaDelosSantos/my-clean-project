@@ -1,18 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!-- This Django syntax allows us to extend this home.html 
+ from the static/templates/base.html for a robust front-end. -->
+{% extends "base.html" %}
 
-<head>
-    <title>Register Service Provider</title>
-</head>
+<!-- 'block title' allows us to dynamically define our website title. -->
+{% block title %} Service Provider - Register {% endblock %} 
+{% block body_class %}register-sp{% endblock %}
 
-<body>
-    <h2>Register Service Provider</h2>
-    <form method="post">
+<!-- 'block content' allows us to inject this html into our base.html -->
+{% block content %}
+
+<div class="register-content-container">
+  
+  <div class="register-box">
+
+    <h1>Register as a service provider</h1>
+
+    <div class="register-form">
+      <form method="post">
         {% csrf_token %}
-        {{ user_form.as_p }}
-        {{ service_provider_form.as_p }}
-        <button type="submit">Register</button>
-    </form>
-</body>
+  
+        <div class="register-form-group">
+          <label for="{{ user_form.username.id_for_label }}">Username:</label>
+          {{ user_form.username }}
+        </div>
+  
+        <div class="register-form-group">
+          <label for="{{ user_form.password1.id_for_label }}">Password:</label>
+          {{ user_form.password1 }}
+        </div>
+  
+        <div class="register-form-group">
+          <label for="{{ user_form.password2.id_for_label }}">Confirm password:</label>
+          {{ user_form.password2 }}
+        </div>
+  
+        <div class="register-form-group">
+          <label for="{{ service_provider_form.name.id_for_label }}">Display name:</label>
+          {{ service_provider_form.name }}
+        </div>
+  
+        <div class="register-form-group">
+          <label for="{{ service_provider_form.email.id_for_label }}">Email:</label>
+          {{ service_provider_form.email }}
+        </div>
+  
+        <div class="register-form-group">
+          <label for="{{ service_provider_form.contact_number.id_for_label }}">Contact:</label>
+          {{ service_provider_form.contact_number }}
+        </div>
+  
+        <div class="register-button-container">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+  
+    </div>
+  
+  </div>
 
-</html>
+</div>
+
+{% endblock %}

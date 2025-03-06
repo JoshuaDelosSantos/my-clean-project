@@ -2,7 +2,7 @@ FROM python:3.11
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir django gunicorn psycopg2-binary python-decouple
+RUN pip install --no-cache-dir django gunicorn psycopg2-binary python-decouple faker
 
 COPY . /app/
 

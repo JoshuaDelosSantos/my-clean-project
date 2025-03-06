@@ -1,0 +1,46 @@
+<!-- This Django syntax allows us to extend this home.html 
+ from the static/templates/base.html for a robust front-end. -->
+{% extends "base.html" %}
+
+<!-- 'block title' allows us to dynamically define our website title. -->
+{% block title %} Service Provider - Login {% endblock %}
+
+{% block body_class %}login-sp{% endblock %}
+<!-- 'block content' allows us to inject this html into our base.html -->
+{% block content %}
+<div class="login-content-container">
+
+  <div class="login-box">
+
+    <div id="login-heading">
+      <h1>Login as service provider</h1>
+    </div>
+    
+    <div id="login-form">
+      <form
+        action="/accounts/login_sp/"
+        method="post">
+        {% csrf_token %} 
+    
+        <div class="login-form-group">
+            <label for="{{ form.username.id_for_label }}">Username:</label>
+            {{ form.username }}
+        </div>
+    
+        <div class="login-form-group">
+            <label for="{{ form.password.id_for_label }}">Password:</label>
+            {{ form.password }}
+        </div>
+    
+      <div class="login-button-container">
+        <button id="login-button">Login</button>
+      </div>
+      
+      </form>
+    </div>
+
+  </div>
+  
+</div>
+
+{% endblock %}

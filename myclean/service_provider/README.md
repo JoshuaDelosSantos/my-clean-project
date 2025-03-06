@@ -45,8 +45,25 @@ print(provider.name)  # Output: John's Cleaning
 - 'email' 
 - 'contact_number'
 
+### ServiceProviderProfileForm:
+- A form for updating the ServiceProver's profile.
+
+**Fields:**
+- 'name'
+- 'email'
+- 'contact_number'
+- 'address'
+- 'city'
+- 'sate'
+- 'postcode'
+- 'description'
+
 
 ## Endpoints:
 ### 'service_provider/sp_dashboard/'
 - Displays logged in service_provider user's profile.
+
+### 'service_provicer/sp_update_profile/'
+- Uses ServiceProviderProfileForm and allows user to update their profile.
+- User is then redirected to homepage after completion
 

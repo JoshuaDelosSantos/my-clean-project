@@ -1,15 +1,14 @@
-<<<<<<< HEAD
 # Service provider register
-As a service provider I need to be able to register my service/s.
+As a service provider I need to be able to register my service/s so a potential client can find us.
 
 ## Priority: 10
 
-## Estimation: 3 days
+## Estimation: 1 day
+~ 5 hours with our budget.
 
 ## Assumptions:
 - The service provider will register using an email andpassword.
-- A verification email will be sent to confirm the registration.
-- Basic profile details (e.g., business name, phone number, and location) will be required.
+- Basic profile details (e.g., business name and contact number) will be required.
 - Password must meet security standards (e.g., minimum 8characters, including a number and special character).
 - Django’s built-in authentication system will be used 
 
@@ -19,15 +18,11 @@ The service provider should be able to register for an account by providing esse
 ## Tasks:
 - Define a ServiceProvider model.
 - Add a register functionality using ServiceProvider model.
-- Add simple logout functionality.
-- Add simple login functionality.
 - Add documentations.
 - Unit testing.
 - Implement html designs.
 
 ## In progress:
-- Add documentations.
-    - Josh
 
 
 # UI Design:
@@ -37,7 +32,9 @@ The service provider should be able to register for an account by providing esse
     - Josh
 - Add a register functionality using ServiceProvider model.
     - Josh
-- Add simple logout functionality.
+- Add initial documentations.
+    - Josh
+- Unit testing.
     - Josh
 
 ## Screenshot(s):
