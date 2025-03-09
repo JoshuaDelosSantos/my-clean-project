@@ -21,8 +21,7 @@ The service provider should be able to login to their account.
 - Implement html designs.
 
 ## In progress:
-- Implement html designs.
-    - Callum
+
 
 # UI Design:
 
@@ -33,6 +32,8 @@ The service provider should be able to login to their account.
     - Callum
 - Unit testing.
     - Josh
+- Implement html designs.
+    - Callum
 
 ## Screenshot(s):
 

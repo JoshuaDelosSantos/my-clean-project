@@ -7,7 +7,7 @@ As a client  I need to be able to see a list of service/s so I can decide on whi
 ~ 15 hours with our budget.
 
 ## Assumptions:
--  The client will not have to log in to view services.
+-  The client does not have to log in to view services.
 
 ## Description:
 The client should be able to view a list of services.
@@ -22,10 +22,7 @@ The client should be able to view a list of services.
 - Implement html designs.
 
 ## In progress:
-- Unit testing.
-    - Josh
-- Implement html designs.
-    - Jackson
+
 
 # UI Design:
 
@@ -39,6 +36,10 @@ The client should be able to view a list of services.
 - Create template.
     - Jackson
 - Add list of objects into context.
+    - Jackson
+- Unit testing.
+    - Josh
+- Implement html designs.
     - Jackson
 
 ## Screenshot(s):
