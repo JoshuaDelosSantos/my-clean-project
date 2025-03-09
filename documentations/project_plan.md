@@ -17,7 +17,7 @@ Here are the steps we took when planning for this project.
 
 We defined our budget as the amount of hours we are able to spend per week for this project.
 
-- Josh:     +10 hours
+- Josh:      10 hours
 - Jack:      ~5 hours
 - Callum:    ~5 hours
 - Reece:      4 hours 
