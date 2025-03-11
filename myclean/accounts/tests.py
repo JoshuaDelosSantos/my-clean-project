@@ -37,4 +37,4 @@ class AccountsViewTests(TestCase):
         user = User.objects.create_user(username='testuser', password='StrongPass123')
         self.client.login(username='testuser', password='StrongPass123')
         response = self.client.get(reverse('logout'))  # update URL name if needed
-        self.assertRedirects(response, reverse('home'))
+        self.assertRedirects(response, reverse('cleaning_services'))  # update URL name if needed
