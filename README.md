@@ -2,7 +2,7 @@
 
 ## Overview:
 This a project assignment for CP3407. 
-The main task was to create a software for individual cleaners and cleaning companies to manage their booking.
+The main task was to create a software for individual cleaners and cleaning companies to manage their booking/s.
 
 ## Team
 1. Callum Riley
@@ -17,7 +17,7 @@ The main task was to create a software for individual cleaners and cleaning comp
 - User stories.
 - Discuss about the tech stack.
 - Talk about resources (LinkedIn Learning).
-- Set up VS Code and make sure it is connected to github.
+- Set up VS Code and make sure it is connected to GitHub.
 
 [**See detailed planning**](documentations/project_plan.md)
 
