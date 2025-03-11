@@ -1,7 +1,7 @@
-# Cleanign services App
+# Cleaning Services App
 
 ## Overview
-The **Cleaning services** app is responsible for managing the services offered on the MyClean platform. It stores details about various services that clients can view and service providers can offer.
+The **Cleaning Services** app is responsible for managing the services offered on the MyClean platform. It stores details about various services that clients can view and service providers can offer.
 
 ## Features
 - Store and manage cleaning service categories
