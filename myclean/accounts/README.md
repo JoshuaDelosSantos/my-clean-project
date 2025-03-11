@@ -11,7 +11,7 @@ Responsible for registration, login & logout.
 
 ### 'accounts/login_sp/'
 - Displays login form for service providers.
-- Redirects user to service provider daashboard if login credentials are valid.
+- Redirects user to service provider dashboard if login credentials are valid.
 
 ### 'accounts/logout/'
-- Logs out user and redirects to hompage.
+- Logs out user and redirects to homepage.
