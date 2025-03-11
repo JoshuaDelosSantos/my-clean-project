@@ -4,7 +4,7 @@
 The **Static** directory contains all the static files for the MyClean project. These files include CSS, JavaScript, images, and other assets that are used across the application.
 
 ## Structure
-The static directory is organized as follows:
+The static directory is organised as follows:
 
 ### css/
 This directory contains all the CSS files used for styling the application. The main stylesheet is `style.css`.
