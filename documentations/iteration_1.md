@@ -5,6 +5,22 @@
 ## Number of developers:
 **4**
 ## Total estimated amount of work:
+
+## Wireframe Screenshots
+
+Below are the wireframe designs for **Iteration 1**, illustrating the layout of key features.
+
+### Login
+![Wireframe - Service Provider Registration](screenshots/iteration1_wireframe_login.png)
+
+### Service Provider Registration
+![Wireframe - Service Provider Registration](screenshots/iteration1_wireframe_register.png)
+
+### Services
+![Wireframe - Cleaing services](screenshots/iteration1_wireframe_services.png)
+
+### Profile
+![Wireframe - Service provider profile](screenshots/iteration1_wireframe_profile.png)
  
 
 ### Todo (User stories):
