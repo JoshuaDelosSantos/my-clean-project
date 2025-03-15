@@ -12,6 +12,9 @@
 
 Below are the wireframe designs for **Iteration 1**, illustrating the layout of key features.
 
+### Wireframe
+![Wireframe - Iteration 1 wireframe](screenshots/iteration1_wireframe_all.png)
+
 ### Login
 ![Wireframe - Service Provider Registration](screenshots/iteration1_wireframe_login.png)
 
