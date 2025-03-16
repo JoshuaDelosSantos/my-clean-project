@@ -24,6 +24,7 @@ The service provider should be able to login to their account.
 
 
 # UI Design:
+## Wireframe for login page
 ![Wireframe - Service Provider Login](../screenshots/iteration1_wireframe_login.png)
 
 # Completed:
@@ -37,7 +38,7 @@ The service provider should be able to login to their account.
     - Callum
 
 # Screenshot(s):
-- Iteration 1 login page.
+## Iteration 1 login page.
 ![Service Provider Login](../screenshots/iteration1_login.png)
 
 # Project Links:
