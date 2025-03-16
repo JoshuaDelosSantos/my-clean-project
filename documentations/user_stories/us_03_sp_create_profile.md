@@ -25,6 +25,7 @@ The service provider should be able to add additional details about their servic
 
 
 # UI Design:
+## Wireframe for Service provider profile page.
 ![Wireframe - Service provider profile](../screenshots/iteration1_wireframe_profile.png)
 
 # Completed:
@@ -42,7 +43,7 @@ The service provider should be able to add additional details about their servic
     - Josh    
 
 # Screenshot(s):
-- Iteration 1 Service provider profile page.
+## Iteration 1 Service provider profile page.
 ![Service provider profile](../screenshots/iteration1_profile.png)
 
 # Project Links:

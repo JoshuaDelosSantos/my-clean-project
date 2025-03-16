@@ -21,7 +21,7 @@ The service provider should be able to login to their account.
 ## In progress:
 
 # UI Design:
-- UI Design is a simple button in the nav.
+## UI Design is a simple button in the nav.
 ![Wireframe - Service provider profile](../screenshots/iteration1_wireframe_profile.png)
 
 # Completed:
@@ -35,7 +35,7 @@ The service provider should be able to login to their account.
     - Josh
 
 # Screenshot(s):
-- A logout link that shows when a user is logged in.
+## A logout link that shows when a user is logged in.
 ![Service provider prodile](../screenshots/iteration1_profile.png)
 
 # Project Links:

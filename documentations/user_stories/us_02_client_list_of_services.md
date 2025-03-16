@@ -25,6 +25,7 @@ The client should be able to view a list of services.
 
 
 # UI Design:
+## Wireframe for cleaning services page
 ![Wireframe - Cleaing services](../screenshots/iteration1_wireframe_services.png)
 
 # Completed:
@@ -44,7 +45,7 @@ The client should be able to view a list of services.
     - Jackson
 
 # Screenshot(s):
-- Iteration 1 cleaning services page.
+## Iteration 1 cleaning services page.
 ![Cleaning services](../screenshots/iteration1_services.png)
 
 # Project Links:
