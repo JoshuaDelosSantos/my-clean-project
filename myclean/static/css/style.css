@@ -3,11 +3,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
+
+/* CSS for the navigation bar */
 
 nav {
     position: sticky !important;
     background-color: whitesmoke !important;
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20%;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.nav-links-container a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    color: black;
 }
 
 body {
@@ -20,28 +43,13 @@ footer {
     text-align: center;
 }
 
-.nav-links-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10%;
-    gap: 15px;
-}
-
-.nav-links-container a {
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 10px;
-    color: black;
-}
-
 /* CSS for Register page. */
 .register-content-container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .register-box {
-    height: 700px;
+    height: auto;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +115,7 @@ footer {
 .register-button-container {
     text-align: center; /* Center the button */
     margin-top: 10px; /* Add spacing */
+    padding-bottom: 20px;
 }
 
 .register-button-container button {
@@ -261,6 +270,11 @@ footer {
     gap: 20px;
     align-items: center;
     margin-top: 10vh;
+    width: 100%;
+}
+
+.sp-update-profile-form form {
+    width: 100%;
 }
 
 .sp-update-profile-box h1 {
@@ -276,11 +290,11 @@ footer {
 
 .update-form-group label {
     text-align: start;
-    width: 80%;
+    width: 100%;
 }
 
 .update-form-group input, textarea {
-    width: 80%;
+    width: 100%;
     padding: 12px;
     margin: 10px 0;
     border: 2px solid slategrey;

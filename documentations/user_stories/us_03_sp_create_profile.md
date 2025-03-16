@@ -22,8 +22,7 @@ The service provider should be able to add additional details about their servic
 - Implement html designs.
 
 ## In progress:
-- Implement html designs.
-    - Josh
+
 
 # UI Design:
 ![Wireframe - Service provider profile](../screenshots/iteration1_wireframe_profile.png)
@@ -39,6 +38,8 @@ The service provider should be able to add additional details about their servic
     - Josh
 - Unit testing.
     - Josh
+- Implement html designs.
+    - Josh    
 
 ## Screenshot(s):
 

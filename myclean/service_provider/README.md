@@ -38,7 +38,7 @@ print(provider.name)  # Output: John's Cleaning
 
 ## Forms:
 ### ServiceProviderForm:
-- A form for creating and 'ServiceProvider' instance.
+- A form for creating a 'ServiceProvider' instance.
 
 **Fields:**
 - 'name' 
@@ -46,7 +46,7 @@ print(provider.name)  # Output: John's Cleaning
 - 'contact_number'
 
 ### ServiceProviderProfileForm:
-- A form for updating the ServiceProver's profile.
+- A form for updating the ServiceProvider's profile.
 
 **Fields:**
 - 'name'
