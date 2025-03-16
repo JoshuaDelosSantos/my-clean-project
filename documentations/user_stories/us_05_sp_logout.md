@@ -21,6 +21,8 @@ The service provider should be able to login to their account.
 ## In progress:
 
 # UI Design:
+- UI Design is a simple button in the nav.
+![Wireframe - Service provider profile](../screenshots/iteration1_wireframe_profile.png)
 
 # Completed:
 - Add simple logout functionality.

@@ -24,6 +24,7 @@ The service provider should be able to login to their account.
 
 
 # UI Design:
+![Wireframe - Service Provider Registration](../screenshots/iteration1_wireframe_login.png)
 
 # Completed:
 - Add simple login functionality.
