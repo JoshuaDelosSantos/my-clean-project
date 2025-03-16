@@ -41,8 +41,9 @@ The service provider should be able to add additional details about their servic
 - Implement html designs.
     - Josh    
 
-## Screenshot(s):
-
+# Screenshot(s):
+- Iteration 1 Service provider profile page.
+![Service provider profile](../screenshots/iteration1_profile.png)
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)
