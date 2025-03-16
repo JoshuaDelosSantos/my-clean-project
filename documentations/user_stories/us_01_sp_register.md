@@ -26,6 +26,7 @@ The service provider should be able to register for an account by providing esse
 
 
 # UI Design:
+- Wireframe for the register page.
 ![Wireframe - Service Provider Registration](../screenshots/iteration1_wireframe_register.png)
 
 # Completed:
@@ -38,7 +39,9 @@ The service provider should be able to register for an account by providing esse
 - Unit testing.
     - Josh
 
-## Screenshot(s):
+# Screenshot(s):
+- Iteration 1 of register page.
+![Service Provider Registration](../screenshots/iteration1_register.png)
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)

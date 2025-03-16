@@ -43,7 +43,9 @@ The client should be able to view a list of services.
 - Implement html designs.
     - Jackson
 
-## Screenshot(s):
+# Screenshot(s):
+- Iteration 1 cleaning services page.
+![Cleaning services](../screenshots/iteration1_services.png)
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)

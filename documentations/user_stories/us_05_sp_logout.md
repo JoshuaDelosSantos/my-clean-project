@@ -34,7 +34,9 @@ The service provider should be able to login to their account.
 - Implement html designs.
     - Josh
 
-## Screenshot(s):
+# Screenshot(s):
+- A logout link that shows when a user is logged in.
+![Service provider prodile](../screenshots/iteration1_profile.png)
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)

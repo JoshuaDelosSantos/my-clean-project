@@ -24,7 +24,7 @@ The service provider should be able to login to their account.
 
 
 # UI Design:
-![Wireframe - Service Provider Registration](../screenshots/iteration1_wireframe_login.png)
+![Wireframe - Service Provider Login](../screenshots/iteration1_wireframe_login.png)
 
 # Completed:
 - Add simple login functionality.
@@ -36,7 +36,9 @@ The service provider should be able to login to their account.
 - Implement html designs.
     - Callum
 
-## Screenshot(s):
+# Screenshot(s):
+- Iteration 1 login page.
+![Service Provider Login](../screenshots/iteration1_login.png)
 
 # Project Links:
 - [Iteration 1](../iteration_1.md)
