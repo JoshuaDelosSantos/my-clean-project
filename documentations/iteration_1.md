@@ -5,26 +5,7 @@
 ## Number of developers:
 **4**
 ## Total estimated amount of work:
-
-## Wireframe Screenshots
-
-Below are the wireframe designs for **Iteration 1**, illustrating the layout of key features.
-
-### Wireframe
-![Wireframe - Iteration 1 wireframe](screenshots/iteration1_wireframe_all.png)
-
-### Login
-![Wireframe - Service Provider Registration](screenshots/iteration1_wireframe_login.png)
-
-### Service Provider Registration
-![Wireframe - Service Provider Registration](screenshots/iteration1_wireframe_register.png)
-
-### Services
-![Wireframe - Cleaing services](screenshots/iteration1_wireframe_services.png)
-
-### Profile
-![Wireframe - Service provider profile](screenshots/iteration1_wireframe_profile.png)
- 
+- Total of 35 days (175 hours from our budget)
 
 ### Todo (User stories):
 1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](user_stories/us_01_sp_register.md)

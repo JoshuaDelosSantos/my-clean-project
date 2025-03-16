@@ -26,7 +26,7 @@ The service provider should be able to add additional details about their servic
     - Josh
 
 # UI Design:
-
+![Wireframe - Service provider profile](../screenshots/iteration1_wireframe_profile.png)
 
 # Completed:
 - Create form for service information.
