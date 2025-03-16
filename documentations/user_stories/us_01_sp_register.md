@@ -26,6 +26,7 @@ The service provider should be able to register for an account by providing esse
 
 
 # UI Design:
+![Wireframe - Service Provider Registration](../screenshots/iteration1_wireframe_register.png)
 
 # Completed:
 - Define a ServiceProvider model.

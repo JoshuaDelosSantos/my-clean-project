@@ -7,7 +7,8 @@
 ## Number of developers:
 **4**
 ## Total estimated amount of work:
-4(devs) X 15(working days) X 0.5(velocity) = 30 days
+- 4(devs) X 15(working days) X 0.5(velocity) = 30 days
+
 
 ### Todo (User stories):
 1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](user_stories/us_01_sp_register.md)

@@ -25,6 +25,7 @@ The client should be able to view a list of services.
 
 
 # UI Design:
+![Wireframe - Cleaing services](../screenshots/iteration1_wireframe_services.png)
 
 # Completed:
 - Create a Django app specifically for a list of services.
