@@ -15,11 +15,12 @@ As a client I should be able to create a profile where I can store my details.
 The client should be able to create a profile on the site by providing a valid email address and a valid password.
 
 ## Tasks:
-- Define a ServiceProvider model.
-- Add a register functionality using ServiceProvider model.
-- Add documentations.
-- Unit testing.
-- Implement html designs.
+- Define a client model with fields username, email, and password
+- Add validation constraints (e.g. unique email, valid password)
+- Implement built in Django built-in authentication. 
+- Create client create profile html page.
+- Create registration API endpoint (POST /api/auth/register/)
+- Unit testing
 
 ## In progress:
 
