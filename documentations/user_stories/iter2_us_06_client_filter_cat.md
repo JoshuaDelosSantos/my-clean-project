@@ -1,5 +1,5 @@
 # Client filter by category
-As a client, I need to be able to filter by categories when looking at services available.
+As a client, I need to be able to filter services by category so I can find relevant options faster.
 
 ## Priority: 10
 
@@ -7,7 +7,10 @@ As a client, I need to be able to filter by categories when looking at services 
 ~ 15 hours with our budget.
 
 ## Assumptions:
-- 
+- Cleaning services posted on the website will include metadata, which will be used for identifying which services do/do not apply to the filter.
+- The required fields of a service (in order to filter them) will be filled out correctly.
+- Clients will alter the filter settings multiple times.
+- The services will be able to be grouped into a relatively small number of categories.
 
 ## Description:
 The client should be able to filter by categories so they can find their desired cleaning service.
