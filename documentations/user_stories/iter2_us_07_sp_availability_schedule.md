@@ -3,7 +3,7 @@ As a service provider, I need to be able to view and list my availability on a s
 
 ## Priority: 20
 
-## Estimation: 5 day
+## Estimation: 5 days
 ~ 25 hours with our budget.
 
 ## Assumptions:
