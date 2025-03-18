@@ -1,0 +1,32 @@
+# Client Create Profile
+As a client I should be able to create a profile where I can store my details.
+
+## Priority: 45
+
+## Estimation: 2 days
+
+## Assumptions:
+- The client will create a profile using an email, username and password.
+- Basic profile details (e.g., client name, email) will be required.
+- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
+- Django’s built-in authentication system will be used 
+
+## Description:
+The client should be able to create a profile on the site by providing a valid email address and a valid password.
+
+## Tasks:
+- Define a ServiceProvider model.
+- Add a register functionality using ServiceProvider model.
+- Add documentations.
+- Unit testing.
+- Implement html designs.
+
+## In progress:
+
+# UI Design:
+
+# Completed:
+
+## Screenshot(s):
+
+# Project Links:
