@@ -7,21 +7,19 @@ As a service provider, I should be able to delete bookings so that I can manage 
 ~ 10 hours with our budget
 
 ## Assumptions:
--A service provider can delete only their own bookings.
+- A service provider can delete only their own bookings.
 
--Deleted bookings will be permanently removed from the system (or optionally marked as "canceled" instead of full deletion).
+- Deleted bookings will be permanently removed from the system (or optionally marked as "canceled" instead of full deletion).
 
--Clients will receive an email notification when a booking is deleted.
+- Clients will receive an email notification when a booking is deleted.
 
--The system will enforce authentication and authorization to prevent unauthorized deletions.
+- The system will enforce authentication and authorization to prevent unauthorized deletions.
 
--Deleting a booking should not affect payment records if applicable.
+- Deleting a booking should not affect payment records if applicable.
 ## Description: 
 Service providers need a way to remove unwanted or incorrect bookings from their schedule. The system should provide a secure method for deleting bookings while ensuring that affected clients are informed.
 
 ## Tasks
-1. 
-2. 
 1. Implement delete functionality for the Booking model.
 2. Create an API endpoint for deleting bookings.
 3. Add confirmation prompts before deletion.

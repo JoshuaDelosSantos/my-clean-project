@@ -25,12 +25,12 @@ The system should provide a secure and efficient way for service providers to de
 ## Tasks
 1. Implement delete functionality for the ServiceProvider model.
 2. Create an API endpoint for profile deletion.
-Add a confirmation prompt before deletion.
-3. Ensure that associated services and bookings are handled appropriately.
-4. Send notifications to clients with existing bookings.
-5. Document the delete profile feature.
-6. Conduct unit and integration testing.
-7. Implement front-end UI for the delete profile option.
+3. Add a confirmation prompt before deletion.
+4. Ensure that associated services and bookings are handled appropriately.
+5. Send notifications to clients with existing bookings.
+6. Document the delete profile feature.
+7. Conduct unit and integration testing.
+8. Implement front-end UI for the delete profile option.
 
 # UI Design:
 

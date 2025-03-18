@@ -8,15 +8,15 @@ As a service provider, I need to be able to update bookings so that I can manage
 ~10 hours with our budget
 
 ## Assumptions:
--A service provider can modify only their own bookings.
+- A service provider can modify only their own bookings.
 
--Updates include changing the date, time, or status of a booking (e.g., confirmed, canceled, rescheduled).
+- Updates include changing the date, time, or status of a booking (e.g., confirmed, canceled, rescheduled).
 
--Clients will be notified via email when their booking is updated.
+- Clients will be notified via email when their booking is updated.
 
--The system will follow existing authentication and authorization mechanisms to ensure only authorized users can make changes.
+- The system will follow existing authentication and authorization mechanisms to ensure only authorized users can make changes.
 
--Django’s built-in forms and validation will be used for updating booking details.
+- Django’s built-in forms and validation will be used for updating booking details.
 
 ## Description:
 The system should allow service providers to update their bookings, ensuring that any changes are reflected in real-time.
