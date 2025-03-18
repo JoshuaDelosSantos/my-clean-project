@@ -11,27 +11,27 @@
 
 
 ### Todo (User stories):
-1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](user_stories/us_01_sp_register.md)
+1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](user_stories/iter1_us_01_sp_register.md)
     - Title: **Service provider register**
     - Priority: 10
     - Estimation: 1 day (5 hours)
 
-2. [(Client) I need to be able to see a list of service/s so I can decide on which one to contact.](user_stories/us_02_client_list_of_services.md)
+2. [(Client) I need to be able to see a list of service/s so I can decide on which one to contact.](user_stories/iter1_us_02_client_list_of_services.md)
     - Title: **List of services**
     - Priority: 10
     - Estimation: 3 days (15 hours)
 
-3. [(Service Provider) I need to be able to add to my profile such as my general location and service description.](user_stories/us_03_sp_create_profile.md)
+3. [(Service Provider) I need to be able to add to my profile such as my general location and service description.](user_stories/iter1_us_03_sp_create_profile.md)
     - Title: **Service provider create profile**
     - Priority: 10
     - Estimation: 2 days (10 hours)
 
-4. [(Service Provider) I need to be able to login to my account after registering.](user_stories/us_04_sp_login.md)
+4. [(Service Provider) I need to be able to login to my account after registering.](user_stories/iter1_us_04_sp_login.md)
     - Title: **Service provider login**
     - Priority: 10
     - Estimation: 1 day (5 hours)
 
-5. [(Service provider) I need to be able to logout of my account after registering/loging in.](user_stories/us_05_sp_logout.md)
+5. [(Service provider) I need to be able to logout of my account after registering/loging in.](user_stories/iter1_us_05_sp_logout.md)
     - Title: **Service provider logout**
     - Priority: 10
     - Estimation: 1 day (5 hours)
