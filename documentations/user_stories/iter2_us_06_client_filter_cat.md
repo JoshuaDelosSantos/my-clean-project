@@ -3,7 +3,7 @@ As a client, I need to be able to filter services by category so I can find rele
 
 ## Priority: 10
 
-## Estimation: 3 day
+## Estimation: 3 days
 ~ 15 hours with our budget.
 
 ## Assumptions:
