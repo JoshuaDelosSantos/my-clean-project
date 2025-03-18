@@ -19,10 +19,7 @@ As a user, I want to be able to search for services, bookings, or providers so t
 ## Description:
 The system should allow users to perform searches efficiently. The search function should return relevant results based on user queries, with filtering and sorting options.
 
-
 ## Tasks
-1. 
-2. 
 1. Implement a search functionality in the backend using Django ORM.
 2. Create an API endpoint for handling search requests.
 3. Develop the front-end UI for the search bar and results page.
