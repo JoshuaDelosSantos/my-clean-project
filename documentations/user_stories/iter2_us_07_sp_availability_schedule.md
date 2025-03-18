@@ -1,5 +1,5 @@
 # Service provider schedule
-I need to be able to view and list my availability on a schedule so clients know when I am free.
+As a service provider, I need to be able to view and list my availability on a schedule so clients know when I am free.
 
 ## Priority: 20
 
