@@ -4,17 +4,33 @@ As a service provider I need to be  able to delete my profile.
 ## Priority: 40
 
 ## Estimation: 1 days
-
+~5 hours with our budget.
 
 ## Assumptions:
-if any
+- Only authenticated service providers can delete their profiles.
 
-## Description: e.g. The web page will show current deals to Orion's orbits users
+- Deleting a profile will also remove associated data, such as services and bookings (or mark them as inactive).
 
+- A confirmation prompt will be required before deletion.
+
+- Clients with existing bookings will be notified if a provider deletes their profile.
+
+- The system will follow GDPR-compliant data deletion practices.
+
+- Deleted accounts cannot be recovered.
+
+## Description:
+The system should provide a secure and efficient way for service providers to delete their profiles, ensuring that all relevant data is handled correctly.
 
 ## Tasks
-1. 
-2. 
+1. Implement delete functionality for the ServiceProvider model.
+2. Create an API endpoint for profile deletion.
+Add a confirmation prompt before deletion.
+3. Ensure that associated services and bookings are handled appropriately.
+4. Send notifications to clients with existing bookings.
+5. Document the delete profile feature.
+6. Conduct unit and integration testing.
+7. Implement front-end UI for the delete profile option.
 
 # UI Design:
 
