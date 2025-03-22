@@ -16,7 +16,9 @@ As a client, I need to be able to filter services by category so I can find rele
 The client should be able to filter by categories so they can find their desired cleaning service.
 
 ## Tasks:
-- 
+- Decide categories for filter.
+- Implement categories for service providers to list their services as.
+- Add filter functionality on service listings page, with ability to change and clear the filter options.
 
 ## In progress:
 
