@@ -14,7 +14,11 @@ As a service provider, I need to be able to view bookings made by clients.
 The service provider should be able to view booked appointments in a calendar format.
 
 ## Tasks:
-- 
+- Add calendar to service provider's dashboard.
+- Incorporate time slot functionality for bookings.
+- Add documentations.
+- Do unit testing.
+- Implement html design for calendar.
 
 ## In progress:
 
