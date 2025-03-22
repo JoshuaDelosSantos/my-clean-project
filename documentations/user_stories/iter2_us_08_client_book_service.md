@@ -15,7 +15,13 @@ As a client, I need to be able to book a cleaning service so I can schedule an a
 The client should be able to complete a booking form from a service's listing, which will then be sent to the service provider.
 
 ## Tasks:
-- 
+- Create booking form.
+- Add buttons on service listings to access form.
+- Add error checking for incorrect or incomplete sections of form.
+- Implement functionality to send completed forms to service provider.
+- Add documentations.
+- Do unit testing.
+- Implement html design for form.
 
 ## In progress:
 
