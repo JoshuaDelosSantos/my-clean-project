@@ -14,7 +14,11 @@ As a service provider, I need to be able to view and list my availability on a s
 The service provider should be able to view and update their availability on the schedule, which will be reflected on the listing for that service.
 
 ## Tasks:
-- 
+- Add ability to list available times for each day in service provider account's dashboard.
+- Implement display functionality for availability on the service listing.
+- Add documentations.
+- Do unit testing.
+- Implement html designs.
 
 ## In progress:
 
