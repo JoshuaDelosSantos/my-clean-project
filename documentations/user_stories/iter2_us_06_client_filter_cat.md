@@ -41,6 +41,8 @@ The client should be able to filter by categories so they can find their desired
     - Josh  
 - Unit testing.
     - Josh
+- Implement html design for filter.
+    - Josh
 
 # Screenshot(s):
 ## 
