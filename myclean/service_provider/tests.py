@@ -2,6 +2,7 @@ from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .models import ServiceProvider
+from .categories import CleaningCategory
 
 class ServiceProviderViewTests(TestCase):
     def setUp(self):
@@ -39,6 +40,7 @@ class ServiceProviderViewTests(TestCase):
         self.login()
         post_data = {
             'name': 'Test SP',
+            'category': CleaningCategory.GENERAL.value,
             'email': 'testsp@example.com',
             'contact_number': '1234567890',
             'address': '123 Main St',
