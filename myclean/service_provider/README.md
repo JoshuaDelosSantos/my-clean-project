@@ -16,6 +16,7 @@ To create a new service provider, you need to:
 ```
 from django.contrib.auth.models import User
 from service_provider.models import ServiceProvider
+from service_provider.categories import CleaningCategory
 
 # Create a User
 user = User.objects.create_user(username="provider1", password="securepassword")
@@ -30,7 +31,8 @@ provider = ServiceProvider.objects.create(
     city="Townsville",
     state="QLD",
     post_code="4810",
-    description="Professional cleaning services."
+    description="Professional cleaning services.",
+    category=CleaningCategory.INDOOR.value
 )
 
 print(provider.name)  # Output: John's Cleaning
@@ -50,12 +52,13 @@ print(provider.name)  # Output: John's Cleaning
 
 **Fields:**
 - 'name'
+- 'category'
 - 'email'
 - 'contact_number'
 - 'address'
 - 'city'
-- 'sate'
-- 'postcode'
+- 'state'
+- 'post_code'
 - 'description'
 
 
@@ -63,7 +66,7 @@ print(provider.name)  # Output: John's Cleaning
 ### 'service_provider/sp_dashboard/'
 - Displays logged in service_provider user's profile.
 
-### 'service_provicer/sp_update_profile/'
+### 'service_provider/sp_update_profile/'
 - Uses ServiceProviderProfileForm and allows user to update their profile.
 - User is then redirected to homepage after completion
 
