@@ -18,6 +18,7 @@ from the static/templates/base.html for a robust front-end. -->
     {% for obj in objects %}
     <div class="business-card">
       <h2>{{ obj.name }}</h2>
+      <p>Category: {{ obj.category }}</p>
       <p>Email: {{ obj.email }}</p>
       <p>Phone: {{ obj.contact_number }}</p>
       <p>Area: {{ obj.city }}</p>
