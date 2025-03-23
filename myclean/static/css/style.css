@@ -169,7 +169,7 @@ footer {
 
 .cleaning-services-header {
     font-size: 1.5em;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .cleaning-services {
@@ -193,6 +193,13 @@ footer {
 .business-card h2 {
     text-align: center;
     padding-bottom: 10px;
+}
+
+.category-filter-bar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 
