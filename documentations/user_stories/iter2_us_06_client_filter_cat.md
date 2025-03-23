@@ -24,13 +24,18 @@ The client should be able to filter by categories so they can find their desired
 - Implement html design for filter.
 
 ## In progress:
+- Add filter functionality on service listings page, with ability to change and clear the filter options.
+    - Josh
 
 
 # UI Design:
 ## 
 
 # Completed:
-- 
+- Decide categories for filter.
+    - Josh
+- Implement categories for service providers to list their services as.
+    - Josh
 
 # Screenshot(s):
 ## 
