@@ -26,14 +26,28 @@ The client should be able to filter by categories so they can find their desired
 ## In progress:
 
 
+
 # UI Design:
-## 
+## Wireframe for search filters.
+![Wireframe - Service Provider Registration](../screenshots/iteration2_wireframe_filter.png)
 
 # Completed:
-- 
+- Decide categories for filter.
+    - Josh
+- Implement categories for service providers to list their services as.
+    - Josh
+- Add filter functionality on service listings page, with ability to change and clear the filter options.
+    - Josh
+- Add documentations.
+    - Josh  
+- Unit testing.
+    - Josh
+- Implement html design for filter.
+    - Josh
 
 # Screenshot(s):
 ## 
+
 
 # Project Links:
 - 

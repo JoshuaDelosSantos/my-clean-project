@@ -10,6 +10,7 @@ class ServiceProviderProfileForm(forms.ModelForm):
     class Meta:
         model = ServiceProvider
         fields = ['name',
+                  'category',
                   'email',
                   'contact_number',
                   'address',
@@ -20,6 +21,7 @@ class ServiceProviderProfileForm(forms.ModelForm):
                 ]
         widgets = {
             'name': forms.TextInput(attrs={'class': 'custom-input', 'placeholder': 'Business Name'}),
+            'category': forms.Select(attrs={'class': 'custom-select custom-input', 'placeholder': 'Select Category'}),
             'email': forms.EmailInput(attrs={'class': 'custom-input', 'placeholder': 'Email Address'}),
             'contact_number': forms.TextInput(attrs={'class': 'custom-input', 'placeholder': 'Contact Number'}),
             'address': forms.Textarea(attrs={'class': 'custom-textarea', 'rows': 1, 'placeholder': 'Street address'}),

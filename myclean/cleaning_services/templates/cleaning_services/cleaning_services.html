@@ -9,6 +9,20 @@ from the static/templates/base.html for a robust front-end. -->
 
 {% block content %}
 
+<div class="category-filter-bar">
+  <form method="get" action="{% url 'cleaning_services' %}" class="filter-form">
+    <label for="category-filter">Filter by category:</label>
+    <select id="category-filter" name="category" onchange="this.form.submit()">
+      <option value="all" {% if selected_category == 'all' %}selected{% endif %}>All Categories</option>
+      {% for category in categories %}
+        <option value="{{ category }}" {% if selected_category == category %}selected{% endif %}>
+          {{ category }}
+        </option>
+      {% endfor %}
+    </select>
+  </form>
+</div>
+
 <div class="cleaning-services-container">
   <div class="cleaning-services-header">
     <h1>Cleaning Services.</h1>
@@ -18,6 +32,7 @@ from the static/templates/base.html for a robust front-end. -->
     {% for obj in objects %}
     <div class="business-card">
       <h2>{{ obj.name }}</h2>
+      <p>Category: {{ obj.category }}</p>
       <p>Email: {{ obj.email }}</p>
       <p>Phone: {{ obj.contact_number }}</p>
       <p>Area: {{ obj.city }}</p>
