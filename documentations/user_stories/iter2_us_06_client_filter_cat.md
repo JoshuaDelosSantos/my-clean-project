@@ -31,8 +31,6 @@ The client should be able to filter by categories so they can find their desired
 ## Wireframe for search filters.
 ![Wireframe - Service Provider Registration](../screenshots/iteration2_wireframe_filter.png)
 
-![Wireframe - Service Provider Registration](../screenshots/iteration2_filter.png)
-
 # Completed:
 - Decide categories for filter.
     - Josh
