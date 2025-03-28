@@ -62,3 +62,24 @@ def get_schedule(request):
         })
     
     return JsonResponse(events, safe=False)
+
+
+
+from .forms import AvailabilityForm
+
+@login_required
+def add_schedule(request):
+    """
+    View to add a new schedule item (availability).
+    """
+    if request.method == 'POST':
+        form = AvailabilityForm(request.POST)
+        if form.is_valid():
+            availability = form.save(commit=False)
+            availability.service_provider = ServiceProvider.objects.get(user=request.user)
+            availability.save()
+            return redirect('sp_dashboard')
+    else:
+        form = AvailabilityForm()
+
+    return render(request, 'service_provider/add_schedule.html', {'form': form})
