@@ -1,5 +1,7 @@
 from django import forms
 from .models import ServiceProvider
+from .models import Booking
+
 
 class ServiceProviderForm(forms.ModelForm):
     class Meta:
@@ -28,4 +30,8 @@ class ServiceProviderProfileForm(forms.ModelForm):
             'post_code': forms.TextInput(attrs={'class': 'custom-input', 'placeholder': 'Post Code'}),
             'description': forms.Textarea(attrs={'class': 'custom-textarea', 'placeholder': 'Enter a description of your services'}),
         }
-        
+
+class AvailabilityForm(forms.Form):
+    days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    availability = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Enter your availability for each day.'}))
+

@@ -30,13 +30,56 @@
             {% endif %}
     </div>
 
+
+    <div class="calendar-container">
+        <h1>Service Provider Schedule for {{ formatted_date }}</h1>
+        {% comment %} <h1>Service Provider Schedule for {{ current_date.strftime('%B %Y') }}</h1> {% endcomment %}
+    
+        <table class="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for week in month_days %}
+                    <tr>
+                        {% for day in week %}
+                            {% if day == 0 %}
+                                <td class="empty-cell"></td>
+                            {% else %}
+                                <td class="{% if forloop.counter0|divisibleby:7 or forloop.counter0|divisibleby:6 %} weekend {% endif %}">
+                                    <div class="day">
+                                        <span class="day-number">{{ day }}</span>
+                                        {% for booking in bookings %}
+                                            {% if booking.date.day == day %}
+                                                <div class="booking-slot">
+                                                    {{ booking.time_slot }} - {{ booking.customer_name }}
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+
     <div class="sp-dashboard-links">
         <a href="{% url 'sp_update_profile' %}">Update</a>
     </div>
     
 </div>
 
-
-
-
 {% endblock %}
+

@@ -21,3 +21,9 @@ class ServiceProvider(models.Model):
 
     def __str__(self):
         return self.name
+
+class Booking(models.Model):
+    service_provider = models.ForeignKey(ServiceProvider, on_delete=models.CASCADE)
+    date = models.DateField()
+    time_slot = models.CharField(max_length=50)  # e.g., "9:00 AM - 10:00 AM"
+    customer_name = models.CharField(max_length=100)
