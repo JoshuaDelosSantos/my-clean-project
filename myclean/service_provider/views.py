@@ -4,6 +4,8 @@ from .models import ServiceProvider
 from .forms import ServiceProviderProfileForm
 from django.http import JsonResponse
 from .models import Availability
+from .forms import AvailabilityForm
+
 
 @login_required
 def sp_dashboard(request):
@@ -64,8 +66,6 @@ def get_schedule(request):
     return JsonResponse(events, safe=False)
 
 
-
-from .forms import AvailabilityForm
 
 @login_required
 def add_schedule(request):
