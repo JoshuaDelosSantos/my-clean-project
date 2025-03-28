@@ -21,3 +21,13 @@ class ServiceProvider(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Availability(models.Model):
+    service_provider = models.ForeignKey('ServiceProvider', on_delete=models.CASCADE)
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
+    description = models.TextField()
+
+    def __str__(self):
+        return f"Available from {self.start_time} to {self.end_time}"

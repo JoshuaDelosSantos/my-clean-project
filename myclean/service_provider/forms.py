@@ -40,4 +40,5 @@ class AvailabilityForm(forms.ModelForm):
             'date': forms.DateInput(attrs={'type': 'date'}),
             'start_time': forms.TimeInput(attrs={'type': 'time'}),
             'end_time': forms.TimeInput(attrs={'type': 'time'}),
+            # 'description': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Availability description'}),
         }
