@@ -83,3 +83,22 @@ def add_schedule(request):
         form = AvailabilityForm()
 
     return render(request, 'service_provider/add_schedule.html', {'form': form})
+
+
+
+@login_required
+def edit_schedule(request, event_id):
+    """
+    View to edit an existing schedule item.
+    """
+    availability = Availability.objects.get(id=event_id, service_provider__user=request.user)
+    
+    if request.method == 'POST':
+        form = AvailabilityForm(request.POST, instance=availability)
+        if form.is_valid():
+            form.save()
+            return redirect('sp_dashboard')
+    else:
+        form = AvailabilityForm(instance=availability)
+    
+    return render(request, 'service_provider/edit_schedule.html', {'form': form})
