@@ -1,10 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import ServiceProvider
-from .forms import ServiceProviderProfileForm
 from django.http import JsonResponse
-from .models import Availability
-from .forms import AvailabilityForm
+from .models import ServiceProvider, Availability
+from .forms import ServiceProviderProfileForm, AvailabilityForm
 
 
 @login_required
