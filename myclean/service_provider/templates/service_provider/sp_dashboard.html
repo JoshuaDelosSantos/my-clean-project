@@ -1,6 +1,14 @@
 <!-- This Django syntax allows us to extend this home.html 
  from the static/templates/base.html for a robust front-end. -->
-{% extends "base.html" %}
+
+<!-- FullCalendar CSS -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet" />
+
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+
+
+ {% extends "base.html" %}
 
 <!-- 'block title' allows us to dynamically define our website title. -->
 {% block title %}
@@ -30,12 +38,51 @@
             {% endif %}
     </div>
 
+
+    <div class="calendar-container">
+        <h2>Your Schedule</h2>
+        <button id="add-event-btn">Add Schedule Item</button>  <!-- Button for adding new schedule items -->
+        <div id="calendar"></div>  <!-- This is where the FullCalendar will be rendered -->
+    </div>
+    
+
     <div class="sp-dashboard-links">
         <a href="{% url 'sp_update_profile' %}">Update</a>
     </div>
     
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth', // Default view is month grid
+            events: '/get-schedule/', // Fetch events from Django (we'll create this view next)
+            selectable: true, // Allow the user to select a date range
+            editable: true, // Allow users to click and drag events
+            eventClick: function(info) {
+                // When an event is clicked, confirm and redirect to edit the event
+                if (confirm("Do you want to edit this event?")) {
+                    window.location.href = `/edit-schedule/${info.event.id}/`;  // Redirect to the edit page
+                }
+            },
+            select: function(info) {
+                // When a date range is selected, redirect to add an event page
+                var startDate = info.startStr;
+                var endDate = info.endStr;
+                window.location.href = `/add-schedule/?start=${startDate}&end=${endDate}`;
+            }
+        });
+
+        // Render the calendar
+        calendar.render();
+
+        // "Add Schedule Item" button event listener
+        document.getElementById('add-event-btn').addEventListener('click', function() {
+            window.location.href = '/add-schedule/';  // Redirect to the add schedule page
+        });
+    });
+</script>
 
 
 
