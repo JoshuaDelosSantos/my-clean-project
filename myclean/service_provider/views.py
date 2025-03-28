@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import ServiceProvider
 from .forms import ServiceProviderProfileForm
+from django.http import JsonResponse
+from .models import Availability
 
 @login_required
 def sp_dashboard(request):
@@ -39,3 +41,24 @@ def sp_update_profile(request):
         }
     
     return render(request, 'service_provider/sp_update_profile.html', context)
+
+
+
+@login_required
+def get_schedule(request):
+    """
+    View to fetch all the availability events for the logged-in service provider.
+    """
+    service_provider = ServiceProvider.objects.get(user=request.user)
+    availability = Availability.objects.filter(service_provider=service_provider)
+
+    events = []
+    for item in availability:
+        events.append({
+            'id': item.id,
+            'title': f"{item.service_provider.name} Available",
+            'start': item.date.isoformat() + 'T' + item.start_time.strftime('%H:%M:%S'),
+            'end': item.date.isoformat() + 'T' + item.end_time.strftime('%H:%M:%S'),
+        })
+    
+    return JsonResponse(events, safe=False)
