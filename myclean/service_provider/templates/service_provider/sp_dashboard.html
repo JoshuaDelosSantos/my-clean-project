@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth', // Default view is month grid
-        events: '/sp_get_schedule/', // Fetch events from Django
+        events: "{% url 'sp_get_schedule' %}",  // Dynamically fetch events URL
         selectable: true, // Allow the user to select a date range
         editable: true, // Allow users to click and drag events
         eventClick: function(info) {
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // This ensures the calendar fetches new events after an update
         eventSources: [
             {
-                url: '/sp_get_schedule/',
-                method: 'GET',
-                failure: function() {
-                    alert('There was an error fetching events.');
-                }
+                url: "{% url 'sp_get_schedule' %}",  // Dynamically fetch events URL
+                    method: 'GET',
+                    failure: function() {
+                        alert('There was an error fetching events.');
+                    }
             }
         ]
     });
