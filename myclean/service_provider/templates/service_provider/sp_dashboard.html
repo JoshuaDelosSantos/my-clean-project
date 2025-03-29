@@ -53,32 +53,44 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth', // Default view is month grid
-            events: '/sp_get_schedule/', // Fetch events from Django (we'll create this view next)
-            selectable: true, // Allow the user to select a date range
-            editable: true, // Allow users to click and drag events
-            eventClick: function(info) {
-                // When an event is clicked, confirm and redirect to edit the event
-                if (confirm("Do you want to edit this event?")) {
-                    window.location.href = `/sp_edit_schedule/${info.event.id}/`;  // Redirect to the edit page
-                }
-            },
-            select: function(info) {
-                // When a date range is selected, redirect to add an event page
-                var startDate = info.startStr;
-                var endDate = info.endStr;
-                window.location.href = `/sp_add_schedule/?start=${startDate}&end=${endDate}`;
+    // When the calendar is rendered
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth', // Default view is month grid
+        events: '/sp_get_schedule/', // Fetch events from Django
+        selectable: true, // Allow the user to select a date range
+        editable: true, // Allow users to click and drag events
+        eventClick: function(info) {
+            // When an event is clicked, confirm and redirect to edit the event
+            if (confirm("Do you want to edit this event?")) {
+                // Dynamically generate the edit URL
+                var editUrl = "{% url 'sp_edit_schedule' 0 %}".replace('0', info.event.id);
+                window.location.href = editUrl;  // Redirect to the edit page
             }
-        });
-
-        // Render the calendar
-        calendar.render();
+        },
+        select: function(info) {
+            // When a date range is selected, generate the add event URL
+            var startDate = info.startStr;
+            var endDate = info.endStr;
+            var addUrl = "{% url 'sp_add_schedule' %}?start=" + startDate + "&end=" + endDate;
+            window.location.href = addUrl; // Redirect to the add event page
+        },
+        // This ensures the calendar fetches new events after an update
+        eventSources: [
+            {
+                url: '/sp_get_schedule/',
+                method: 'GET',
+                failure: function() {
+                    alert('There was an error fetching events.');
+                }
+            }
+        ]
     });
+
+    // Render the calendar
+    calendar.render();
+});
+
 </script>
-
-
-
 {% endblock %}
