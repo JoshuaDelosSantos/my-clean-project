@@ -34,11 +34,11 @@ class ServiceProviderProfileForm(forms.ModelForm):
 class AvailabilityForm(forms.ModelForm):
     class Meta:
         model = Availability
-        fields = ['start_time', 'end_time', 'description']  # Add more fields as needed (cleaning type e.g., outdoors, indoors, etc)
+        fields = ['start_time', 'end_time', 'description']
 
         widgets = {
-            # 'date': forms.DateInput(attrs={'type': 'date'}),
-            'start_time': forms.TimeInput(attrs={'type': 'time'}),
-            'end_time': forms.TimeInput(attrs={'type': 'time'}),
-            'description': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Availability description'}),
+            'start_time': forms.DateTimeInput(attrs={'type': 'datetime-local'}),  # Date and time picker for start_time
+            'end_time': forms.DateTimeInput(attrs={'type': 'datetime-local'}),    # Date and time picker for end_time
+            'description': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Availability description'}),  # Textarea for description
         }
+
