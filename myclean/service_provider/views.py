@@ -45,7 +45,7 @@ def sp_update_profile(request):
 
 
 @login_required
-def get_schedule(request):
+def sp_get_schedule(request):
     """
     View to fetch all the availability events for the logged-in service provider.
     """
@@ -66,7 +66,7 @@ def get_schedule(request):
 
 
 @login_required
-def add_schedule(request):
+def sp_add_schedule(request):
     """
     View to add a new schedule item (availability).
     """
@@ -80,12 +80,12 @@ def add_schedule(request):
     else:
         form = AvailabilityForm()
 
-    return render(request, 'service_provider/add_schedule.html', {'form': form})
+    return render(request, 'service_provider/sp_add_schedule.html', {'form': form})
 
 
 
 @login_required
-def edit_schedule(request, event_id):
+def sp_edit_schedule(request, event_id):
     """
     View to edit an existing schedule item.
     """
@@ -99,4 +99,4 @@ def edit_schedule(request, event_id):
     else:
         form = AvailabilityForm(instance=availability)
     
-    return render(request, 'service_provider/edit_schedule.html', {'form': form})
+    return render(request, 'service_provider/sp_edit_schedule.html', {'form': form})
