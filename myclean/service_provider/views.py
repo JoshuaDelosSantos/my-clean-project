@@ -57,8 +57,10 @@ def sp_get_schedule(request):
         events.append({
             'id': item.id,
             'title': f"{item.service_provider.name} Available",
-            'start': item.date.isoformat() + 'T' + item.start_time.strftime('%H:%M:%S'),
-            'end': item.date.isoformat() + 'T' + item.end_time.strftime('%H:%M:%S'),
+            'start': item.start_time.isoformat(),  # Use start_time for event start
+            'end': item.end_time.isoformat(),  # Use end_time for event end
+            # 'start': item.date.isoformat() + 'T' + item.start_time.strftime('%H:%M:%S'),
+            # 'end': item.date.isoformat() + 'T' + item.end_time.strftime('%H:%M:%S'),
         })
     
     return JsonResponse(events, safe=False)
