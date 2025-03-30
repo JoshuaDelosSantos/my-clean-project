@@ -30,14 +30,11 @@ class ServiceProviderProfileForm(forms.ModelForm):
             'post_code': forms.TextInput(attrs={'class': 'custom-input', 'placeholder': 'Post Code'}),
             'description': forms.Textarea(attrs={'class': 'custom-textarea', 'placeholder': 'Enter a description of your services'}),
         }
-        
 
 class AvailabilityForm(forms.ModelForm):
     class Meta:
         model = AvailabilitySlot
-        fields = ['date', 'start_time', 'end_time', 'is_available']
+        fields = ['date', 'is_available']
         widgets = {
-            'date': forms.DateInput(attrs={'type': 'date'}),
-            'start_time': forms.TimeInput(attrs={'type': 'time'}),
-            'end_time': forms.TimeInput(attrs={'type': 'time'}),
+            'date': forms.DateInput(attrs={'type': 'date', 'class': 'custom-input'}),
         }
