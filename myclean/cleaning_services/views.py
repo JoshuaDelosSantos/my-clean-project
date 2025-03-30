@@ -25,14 +25,14 @@ def cleaning_services(request):
             date__gte=datetime.today().date(),
             date__lte=datetime.today().date() + timedelta(days=7),
             is_available=True
-        ).order_by('date', 'start_time')
+        ).order_by('date') 
         providers_with_availability[provider.id] = next_week_slots
     
     context = {
         "objects": queryset,
         "categories": categories,
         "selected_category": category_filter or 'all',
-        "providers_availability": providers_with_availability
+        "providers_availability": providers_with_availability  # Variable name matches what we're using
     }
     
     return render(request, 'cleaning_services/cleaning_services.html', context)
