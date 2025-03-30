@@ -36,6 +36,8 @@ The service provider should be able to view and update their availability on the
 - Display in sp dashboard.
     - Jack
     - Josh
+- Do unit testing.
+    - Josh
 
 # Screenshot(s):
 ## 
