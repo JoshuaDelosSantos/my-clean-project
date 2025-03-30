@@ -37,7 +37,7 @@
                                 <div class="availability-slots">
                                     {% for slot in availability_by_date|get_item:day_info.date_str %}
                                         <div class="availability-slot {% if not slot.is_available %}unavailable{% endif %}">
-                                            {{ slot.start_time|time:"H:i" }} - {{ slot.end_time|time:"H:i" }}
+                                            Available
                                             <a href="{% url 'sp_delete_availability' slot.id %}" 
                                                class="delete-slot" 
                                                onclick="return confirm('Are you sure you want to delete this availability slot?');">
