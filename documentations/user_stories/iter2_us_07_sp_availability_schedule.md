@@ -7,15 +7,15 @@ As a service provider, I need to be able to view and list my availability on a s
 ~ 25 hours with our budget.
 
 ## Assumptions:
-- The service provider's availability will be visible to clients on that service's listing.
 - The service provider will need to update their availability.
 
 ## Description:
 The service provider should be able to view and update their availability on the schedule, which will be reflected on the listing for that service.
 
 ## Tasks:
-- Add ability to list available times for each day in service provider account's dashboard.
-- Implement display functionality for availability on the service listing.
+- Create Availability model.
+- Create form.
+- Display in sp dashboard.
 - Add documentations.
 - Do unit testing.
 - Implement html designs.
@@ -27,7 +27,15 @@ The service provider should be able to view and update their availability on the
 ## 
 
 # Completed:
-- 
+- Create Availability model.
+    - Jack
+    - Josh
+- Create form.
+    - Jack
+    - Josh
+- Display in sp dashboard.
+    - Jack
+    - Josh
 
 # Screenshot(s):
 ## 
