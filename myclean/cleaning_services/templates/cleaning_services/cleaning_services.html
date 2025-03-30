@@ -46,7 +46,7 @@ from the static/templates/base.html for a robust front-end. -->
           {% if availability %}
             <ul class="availability-list">
               {% for slot in availability|slice:":5" %}
-                <li>{{ slot.date|date:"D, M d" }}: {{ slot.start_time|time:"H:i" }} - {{ slot.end_time|time:"H:i" }}</li>
+                <li>{{ slot.date|date:"D, M d" }} {% if not slot.is_available %}(Unavailable){% endif %}</li>
               {% endfor %}
             </ul>
             {% if availability.count > 5 %}
