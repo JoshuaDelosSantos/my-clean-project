@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from service_provider.categories import CleaningCategory
+from .categories import CleaningCategory
 
 class ServiceProvider(models.Model):
     """
@@ -27,3 +27,16 @@ class ServiceProvider(models.Model):
 
     def __str__(self):
         return self.name
+
+class AvailabilitySlot(models.Model):
+    service_provider = models.ForeignKey('ServiceProvider', on_delete=models.CASCADE, related_name='availability_slots')
+    date = models.DateField()
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    is_available = models.BooleanField(default=True)
+    
+    class Meta:
+        ordering = ['date', 'start_time']
+        
+    def __str__(self):
+        return f"{self.service_provider.name}: {self.date} {self.start_time}-{self.end_time}"
