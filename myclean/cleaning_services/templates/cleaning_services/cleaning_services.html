@@ -2,6 +2,8 @@
 from the static/templates/base.html for a robust front-end. -->
 {% extends "base.html" %}
 
+{% load service_provider_extras %}
+
 <!-- 'block title' allows us to dynamically define our website title. -->
 {% block title %} Cleaning Services {% endblock %}
 
@@ -37,6 +39,24 @@ from the static/templates/base.html for a robust front-end. -->
       <p>Phone: {{ obj.contact_number }}</p>
       <p>Area: {{ obj.city }}</p>
       <p>Description: {{ obj.description }}</p>
+      
+      <div class="provider-availability">
+        <h3>Upcoming Availability</h3>
+        {% with availability=providers_availability|get_item:obj.id %}
+          {% if availability %}
+            <ul class="availability-list">
+              {% for slot in availability|slice:":5" %}
+                <li>{{ slot.date|date:"D, M d" }} {% if not slot.is_available %}(Unavailable){% endif %}</li>
+              {% endfor %}
+            </ul>
+            {% if availability.count > 5 %}
+              <p class="more-availability">+ {{ availability.count|add:"-5" }} more slots available</p>
+            {% endif %}
+          {% else %}
+            <p>No availability in the next 7 days</p>
+          {% endif %}
+        {% endwith %}
+      </div>
     </div>
     {% empty %}
     <div class="empty-service-container">

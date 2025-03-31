@@ -1,5 +1,5 @@
 from django import forms
-from .models import ServiceProvider
+from .models import ServiceProvider, AvailabilitySlot
 
 class ServiceProviderForm(forms.ModelForm):
     class Meta:
@@ -30,4 +30,11 @@ class ServiceProviderProfileForm(forms.ModelForm):
             'post_code': forms.TextInput(attrs={'class': 'custom-input', 'placeholder': 'Post Code'}),
             'description': forms.Textarea(attrs={'class': 'custom-textarea', 'placeholder': 'Enter a description of your services'}),
         }
-        
+
+class AvailabilityForm(forms.ModelForm):
+    class Meta:
+        model = AvailabilitySlot
+        fields = ['date', 'is_available']
+        widgets = {
+            'date': forms.DateInput(attrs={'type': 'date', 'class': 'custom-input'}),
+        }

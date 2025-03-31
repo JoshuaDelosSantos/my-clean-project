@@ -1,16 +1,14 @@
 # Actual iteration-1 board - Week 3-5: 
-# Actual iteration-1 board - Week 3-5: 
 
 ## Assumed Velocity:
-- **It is important to note that the team is learning an entirely new framework for this project.**
-- Velocity: **0.5**
 - **It is important to note that the team is learning an entirely new framework for this project.**
 - Velocity: **0.5**
 
 ## Number of developers:
 **4**
 ## Total estimated amount of work:
-4(devs) X 15(working days) X 0.5(velocity) = 30 days
+- 4(devs) X 15(working days) X 0.5(velocity) = 30 days
+
 
 ### Todo (User stories):
 1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](user_stories/iter1_us_01_sp_register.md)
@@ -36,7 +34,6 @@
 5. [(Service provider) I need to be able to logout of my account after registering/loging in.](user_stories/iter1_us_05_sp_logout.md)
     - Title: **Service provider logout**
     - Priority: 10
-    - Estimation: 1 day (5 hours)
     - Estimation: 1 day (5 hours)
 
 6. [(Service Provider) I need to be able to manage my bookings so I can update or cancel appointments.](user_stories/us_06_sp_booking_management.md)
@@ -97,14 +94,10 @@
     - [See detailed progress](user_stories/us_sp_register.md)
     - Priority: 10
     - Estimation: 1 day (5 hours) 
-    - Priority: 10
-    - Estimation: 1 day (5 hours) 
     - Started at 12/02/2025
     - Completed at 25/02/2025
     - JDS, RK
 4. **Service provider login**
-    - Priority: 10
-    - Estimation: 1 day (5 hours)
     - Priority: 10
     - Estimation: 1 day (5 hours)
     - Started at 17/02/2025
@@ -113,14 +106,10 @@
 5. **Service provider logout**
     - Priority: 10
     - Estimation: 1 day (5 hours)
-    - Priority: 10
-    - Estimation: 1 day (5 hours)
     - Started at 18/02/2025
     - Completed at 25/02/2025
     - JDS
 3. **Service provider create profile**
-    - Priority: 10
-    - Estimation: 2 days (10 hours)
     - Priority: 10
     - Estimation: 2 days (10 hours)
     - Started at 23/02/2025
@@ -129,20 +118,12 @@
 2. **List of services**
     - Priority: 10
     - Estimation: 3 days (15 hours)
-    - Priority: 10
-    - Estimation: 3 days (15 hours)
     - Started at 18/02/2025
     - Completed at 25/02/2025
     - JDS, JD
 
 ### Burn Down for iteration-1:
-### Burn Down for iteration-1:
 Update this at least once per week
-* 3 weeks left, 8 days of estimated amount of work 
-* 2 weeks left, 5 days of estimated amount of work 
-* 1 weeks left, 2 days of estimated amount of work
-* 0 weeks left, 1 day of estimated amount of work
-* Actual Velocity: **0.48**
 * 3 weeks left, 8 days of estimated amount of work 
 * 2 weeks left, 5 days of estimated amount of work 
 * 1 weeks left, 2 days of estimated amount of work
