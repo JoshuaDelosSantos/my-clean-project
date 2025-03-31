@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load service_provider_extras %}
+
+{% block title %}Service Provider - Availability{% endblock %}
+
+{% block content %}
+<div class="sp-availability-container">
+    <h1>Manage Your Availability</h1>
+    <div class="availability-actions">
+        <a href="{% url 'sp_add_availability' %}" class="btn btn-primary">Add New Availability</a>
+        <a href="{% url 'sp_dashboard' %}" class="btn btn-secondary">Back to Dashboard</a>
+    </div>
+    
+    <h2>{{ month_name }} {{ year }}</h2>
+    
+    <div class="calendar-container">
+        <table class="availability-calendar">
+            <thead>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for week in calendar %}
+                <tr>
+                    {% for day_info in week %}
+                    <td class="calendar-day {% if day_info.day == 0 %}empty-day{% endif %}">
+                        {% if day_info.day != 0 %}
+                            <div class="day-number">{{ day_info.day }}</div>
+                            {% if day_info.date_str in availability_by_date %}
+                                <div class="availability-slots">
+                                    {% for slot in availability_by_date|get_item:day_info.date_str %}
+                                        <div class="availability-slot {% if not slot.is_available %}unavailable{% endif %}">
+                                            Available
+                                            <a href="{% url 'sp_delete_availability' slot.id %}" 
+                                               class="delete-slot" 
+                                               onclick="return confirm('Are you sure you want to delete this availability slot?');">
+                                                ×
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

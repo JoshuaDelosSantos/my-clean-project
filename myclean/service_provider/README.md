@@ -38,6 +38,30 @@ provider = ServiceProvider.objects.create(
 print(provider.name)  # Output: John's Cleaning
 ```
 
+## Availability
+The app includes an `AvailabilitySlot` model that allows service providers to manage their availability.
+
+### AvailabilitySlot model:
+- Tracks dates when service providers are available
+- Connected to a ServiceProvider via a ForeignKey relationship
+- Contains date and availability status fields
+
+### Example:
+```
+from service_provider.models import ServiceProvider, AvailabilitySlot
+from datetime import date
+
+# Get existing service provider
+provider = ServiceProvider.objects.get(name="John's Cleaning")
+
+# Add availability for today
+slot = AvailabilitySlot.objects.create(
+    service_provider=provider,
+    date=date.today(),
+    is_available=True
+)
+```
+
 ## Forms:
 ### ServiceProviderForm:
 - A form for creating a 'ServiceProvider' instance.
@@ -68,5 +92,33 @@ print(provider.name)  # Output: John's Cleaning
 
 ### 'service_provider/sp_update_profile/'
 - Uses ServiceProviderProfileForm and allows user to update their profile.
-- User is then redirected to homepage after completion
+- User is then redirected to dashboard after completion.
+
+### 'service_provider/sp_availability/'
+- Displays the availability calendar for the service provider.
+- Shows current availability slots by date.
+
+### 'service_provider/sp_add_availability/'
+- Form for adding new availability slots.
+- Redirects to availability view upon successful creation.
+
+### 'service_provider/sp_delete_availability/<slot_id>/'
+- Deletes a specific availability slot.
+- Redirects to availability view after deletion.
+
+## Testing
+The app includes comprehensive test coverage for all views and functionality:
+
+### Service Provider View Tests
+- Test dashboard access (authenticated and unauthenticated)
+- Test profile update (GET and POST)
+- Test availability management:
+  - Viewing availability calendar
+  - Adding new availability slots
+  - Deleting existing availability slots
+
+All tests can be run using Django's test runner:
+```
+python manage.py test service_provider
+```
 
