@@ -27,11 +27,25 @@
         <div class="register-form-group">
           <label for="{{ user_form.password1.id_for_label }}">Password:</label>
           {{ user_form.password1 }}
+          {% if user_form.password1.errors %}
+            <div class="error-message">
+              {% for error in user_form.password1.errors %}
+                <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
   
         <div class="register-form-group">
           <label for="{{ user_form.password2.id_for_label }}">Confirm password:</label>
           {{ user_form.password2 }}
+          {% if user_form.password2.errors %}
+            <div class="error-message">
+              {% for error in user_form.password2.errors %}
+                <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
   
         <div class="register-form-group">
@@ -59,5 +73,13 @@
   </div>
 
 </div>
+
+<style>
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+</style>
 
 {% endblock %}

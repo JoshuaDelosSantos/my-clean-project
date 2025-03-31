@@ -345,3 +345,10 @@ footer {
     border-radius: 7px;
     border: 1px solid black;
 }
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
