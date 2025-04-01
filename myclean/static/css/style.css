@@ -10,8 +10,16 @@
 /* CSS for the navigation bar */
 
 nav {
-    position: sticky !important;
-    background-color: whitesmoke !important;
+    /* position: sticky !important; */
+    background-color: #7991BD !important;
+}
+
+#myclean-logo {
+    float: left;
+    width: 35%;
+    height: 35%;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .nav-links-container {
