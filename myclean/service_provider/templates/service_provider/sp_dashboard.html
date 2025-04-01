@@ -54,7 +54,7 @@
                             {% if day == 0 %}
                                 <td class="empty-cell"></td>
                             {% else %}
-                                <td class="{% if forloop.counter0|divisibleby:7 or forloop.counter0|divisibleby:6 %} weekend {% endif %}">
+                                <td class="{% if forloop.first or forloop.last %} weekend {% endif %}">
                                     <div class="day">
                                         <span class="day-number">{{ day }}</span>
                                         {% for booking in bookings %}
@@ -65,6 +65,17 @@
                                             {% endif %}
                                         {% endfor %}
                                     </div>
+
+                                    <!-- Booking Form for each day -->
+                                    <form method="POST" action="{% url 'sp_dashboard' %}">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="date" value="{{ current_date|date:'Y-m-d' }}">
+                                        <label for="time_slot">Time Slot:</label>
+                                        <input type="time" name="time_slot" required>
+                                        <label for="customer_name">Customer Name:</label>
+                                        <input type="text" name="customer_name" required>
+                                        <button type="submit">Book</button>
+                                    </form>
                                 </td>
                             {% endif %}
                         {% endfor %}
