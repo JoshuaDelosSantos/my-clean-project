@@ -24,7 +24,7 @@ The client should be able to complete a booking form from a service's listing, w
 - Implement html design for form.
 
 ## In progress:
-
+- Create booking form. (Reece)
 
 # UI Design:
 ## 
