@@ -7,5 +7,4 @@ urlpatterns = [
     path('sp_availability/', views.sp_availability, name='sp_availability'),
     path('sp_add_availability/', views.sp_add_availability, name='sp_add_availability'),
     path('sp_delete_availability/<int:slot_id>/', views.sp_delete_availability, name='sp_delete_availability'),
-    path('book/<int:slot_id>/', views.booking_form, name='booking_form'),
 ]
