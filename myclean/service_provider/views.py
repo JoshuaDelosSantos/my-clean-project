@@ -137,36 +137,25 @@ def sp_delete_availability(request, slot_id):
 
 def booking_form(request, slot_id):
     """
-    View function for clients to book a service provider's available time slot.
+    Booking form view for clients to book an availability slot.
+    This view should be accessible without authentication.
     """
-    # Get the service provider's availability slot
     slot = get_object_or_404(AvailabilitySlot, id=slot_id, is_available=True)
-    service_provider = slot.service_provider
-
+    
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
-            booking.client = request.user  # Use the logged-in user as the client
-            booking.availability_slot = slot  # Set the selected slot
+            booking.slot = slot
             booking.save()
-
-            # Mark the availability slot as booked
+            # Optionally, mark the availability as no longer available after booking
             slot.is_available = False
             slot.save()
 
-            # Show success message
-            messages.success(request, 'Booking successful! You will be notified soon.')
+            # Provide feedback to the client (success message, etc.)
+            return redirect('booking_success')  # Redirect to a success page or confirmation
 
-            # Redirect to a success page or booking confirmation page
-            return redirect('booking_success')
     else:
         form = BookingForm()
 
-    context = {
-        'form': form,
-        'service_provider': service_provider,
-        'slot': slot,
-    }
-
-    return render(request, 'service_provider/booking_form.html', context)
+    return render(request, 'service_provider/booking_form.html', {'form': form, 'slot': slot})
