@@ -150,3 +150,7 @@ def booking_form(request, slot_id):
         form = BookingForm()
 
     return render(request, "booking_form.html", {"form": form})
+
+
+def booking_success(request):
+    return render(request, 'booking_success.html')  # Ensure you have this template
