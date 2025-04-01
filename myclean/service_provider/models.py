@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from .categories import CleaningCategory
+from .models import AvailabilitySlot
 
 class ServiceProvider(models.Model):
     """
@@ -38,3 +39,12 @@ class AvailabilitySlot(models.Model):
         
     def __str__(self):
         return f"{self.service_provider.name}: {self.date}"
+
+class Booking(models.Model):
+    client = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")
+    availability_slot = models.OneToOneField(AvailabilitySlot, on_delete=models.CASCADE)
+    additional_notes = models.TextField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.client.username} booked {self.availability_slot}"
