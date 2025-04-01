@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from .models import ServiceProvider, AvailabilitySlot
-from .forms import ServiceProviderProfileForm, AvailabilityForm
+from .models import ServiceProvider, AvailabilitySlot, Booking
+from .forms import ServiceProviderProfileForm, AvailabilityForm, BookingForm
 from django.contrib import messages
 from datetime import datetime, timedelta
 import calendar
@@ -134,3 +134,39 @@ def sp_delete_availability(request, slot_id):
     slot.delete()
     messages.success(request, 'Availability slot deleted successfully!')
     return redirect('sp_availability')
+
+def booking_form(request, slot_id):
+    """
+    View function for clients to book a service provider's available time slot.
+    """
+    # Get the service provider's availability slot
+    slot = get_object_or_404(AvailabilitySlot, id=slot_id, is_available=True)
+    service_provider = slot.service_provider
+
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.client = request.user  # Use the logged-in user as the client
+            booking.availability_slot = slot  # Set the selected slot
+            booking.save()
+
+            # Mark the availability slot as booked
+            slot.is_available = False
+            slot.save()
+
+            # Show success message
+            messages.success(request, 'Booking successful! You will be notified soon.')
+
+            # Redirect to a success page or booking confirmation page
+            return redirect('booking_success')
+    else:
+        form = BookingForm()
+
+    context = {
+        'form': form,
+        'service_provider': service_provider,
+        'slot': slot,
+    }
+
+    return render(request, 'service_provider/booking_form.html', context)
