@@ -44,7 +44,7 @@ class Booking(models.Model):
     availability_slot = models.OneToOneField(AvailabilitySlot, on_delete=models.CASCADE)
     additional_notes = models.TextField(blank=True, null=True)
     name = models.CharField(max_length=100)
-    email = models.EmailField()
+    email = models.EmailField(default="client@example.com")
     phone = models.CharField(max_length=15)
     created_at = models.DateTimeField(auto_now_add=True)
 
