@@ -40,7 +40,7 @@ class AvailabilitySlot(models.Model):
         return f"{self.service_provider.name}: {self.date}"
 
 class Booking(models.Model):
-    client = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")
+    client = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings", null=True, blank=True)
     availability_slot = models.OneToOneField(AvailabilitySlot, on_delete=models.CASCADE)
     additional_notes = models.TextField(blank=True, null=True)
     name = models.CharField(max_length=100, default="Client Name")
