@@ -138,14 +138,18 @@ def sp_delete_availability(request, slot_id):
 def booking_form(request, slot_id):
     if request.method == "POST":
         form = BookingForm(request.POST)
+        print(f"Form is valid: {form.is_valid()}")  # Check if form is valid
         if form.is_valid():
             booking = form.save(commit=False)
             if request.user.is_authenticated:
-                booking.client = request.user  # Assign client if logged in
+                booking.client = request.user
             else:
-                booking.client = None  # Allow anonymous booking
+                booking.client = None
             booking.save()
+            print("Form is valid, redirecting to booking success")
             return redirect("booking_success")
+        else:
+            print("Form is not valid")
     else:
         form = BookingForm()
 
@@ -153,4 +157,4 @@ def booking_form(request, slot_id):
 
 
 def booking_success(request):
-    return render(request, 'booking_success.html')  # Ensure you have this template
+    return render(request, 'booking_success.html')
