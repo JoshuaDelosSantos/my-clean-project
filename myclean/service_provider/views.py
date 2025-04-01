@@ -136,26 +136,17 @@ def sp_delete_availability(request, slot_id):
     return redirect('sp_availability')
 
 def booking_form(request, slot_id):
-    """
-    Booking form view for clients to book an availability slot.
-    This view should be accessible without authentication.
-    """
-    slot = get_object_or_404(AvailabilitySlot, id=slot_id, is_available=True)
-    
-    if request.method == 'POST':
+    if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
-            booking.slot = slot
+            if request.user.is_authenticated:
+                booking.client = request.user  # Assign client if logged in
+            else:
+                booking.client = None  # Allow anonymous booking
             booking.save()
-            # Optionally, mark the availability as no longer available after booking
-            slot.is_available = False
-            slot.save()
-
-            # Provide feedback to the client (success message, etc.)
-            return redirect('booking_success')  # Redirect to a success page or confirmation
-
+            return redirect("booking_success")
     else:
         form = BookingForm()
 
-    return render(request, 'service_provider/booking_form.html', {'form': form, 'slot': slot})
+    return render(request, "booking_form.html", {"form": form})
