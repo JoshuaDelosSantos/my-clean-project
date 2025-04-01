@@ -1,5 +1,5 @@
 from django import forms
-from .models import ServiceProvider, AvailabilitySlot
+from .models import ServiceProvider, AvailabilitySlot, Booking
 
 class ServiceProviderForm(forms.ModelForm):
     class Meta:
@@ -38,3 +38,12 @@ class AvailabilityForm(forms.ModelForm):
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date', 'class': 'custom-input'}),
         }
+
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['availability_slot', 'name', 'email', 'phone', 'additional_notes']
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['availability_slot'].queryset = AvailabilitySlot.objects.filter(is_available=True)
