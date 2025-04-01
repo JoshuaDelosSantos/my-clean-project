@@ -41,8 +41,11 @@ class AvailabilitySlot(models.Model):
 
 class Booking(models.Model):
     client = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")
-    availability_slot = models.OneToOneField("service_provider.AvailabilitySlot", on_delete=models.CASCADE)
+    availability_slot = models.OneToOneField(AvailabilitySlot, on_delete=models.CASCADE)
     additional_notes = models.TextField(blank=True, null=True)
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
