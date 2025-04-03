@@ -44,11 +44,19 @@ from the static/templates/base.html for a robust front-end. -->
         <h3>Upcoming Availability</h3>
         {% with availability=providers_availability|get_item:obj.id %}
           {% if availability %}
-            <ul class="availability-list">
-              {% for slot in availability|slice:":5" %}
-                <li>{{ slot.date|date:"D, M d" }} {% if not slot.is_available %}(Unavailable){% endif %}</li>
-              {% endfor %}
-            </ul>
+          <ul class="availability-list">
+            {% for slot in availability|slice:":5" %}
+              <li>
+                {% if slot.is_available %}
+                  <a href="{% url 'booking_form' slot.id %}">
+                    {{ slot.date|date:"D, M d" }} at {{ slot.time }}
+                  </a>
+                {% else %}
+                  {{ slot.date|date:"D, M d" }} (Unavailable)
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>          
             {% if availability.count > 5 %}
               <p class="more-availability">+ {{ availability.count|add:"-5" }} more slots available</p>
             {% endif %}
