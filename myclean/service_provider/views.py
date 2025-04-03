@@ -145,6 +145,7 @@ def booking_form(request, slot_id):
                 booking.client = request.user
             else:
                 booking.client = None
+            booking.slot_id = slot_id
             booking.save()
             print("Form is valid, redirecting to booking success")
             return redirect("booking_success")
