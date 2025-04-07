@@ -24,13 +24,18 @@ The client should be able to complete a booking form from a service's listing, w
 - Implement html design for form.
 
 ## In progress:
-
+- Add error checking for incorrect or incomplete sections of form. (Reece)
+- Implement functionality to send completed forms to service provider. (Reece)
+- Add documentations. (Reece)
+- Do unit testing. (Reece)
+- Implement html design for form. (Reece)
 
 # UI Design:
 ## 
 
 # Completed:
-- 
+- Create booking form. (Reece)
+- Add buttons on service listings to access form. (Reece)
 
 # Screenshot(s):
 ## 

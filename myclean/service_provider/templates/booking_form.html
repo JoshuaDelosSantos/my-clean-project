@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Book a Cleaning Service</h2>
+
+<p>You're booking with {{ service_provider.name }} for the date: {{ slot.date }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Book Now</button>
+</form>
+
+{% endblock %}

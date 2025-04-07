@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from .models import ServiceProvider, AvailabilitySlot
-from .forms import ServiceProviderProfileForm, AvailabilityForm
+from .models import ServiceProvider, AvailabilitySlot, Booking
+from .forms import ServiceProviderProfileForm, AvailabilityForm, BookingForm
 from django.contrib import messages
 from datetime import datetime, timedelta
 import calendar
@@ -134,3 +134,28 @@ def sp_delete_availability(request, slot_id):
     slot.delete()
     messages.success(request, 'Availability slot deleted successfully!')
     return redirect('sp_availability')
+
+def booking_form(request, slot_id):
+    if request.method == "POST":
+        form = BookingForm(request.POST)
+        print(f"Form is valid: {form.is_valid()}")  # Check if form is valid
+        if form.is_valid():
+            booking = form.save(commit=False)
+            if request.user.is_authenticated:
+                booking.client = request.user
+            else:
+                booking.client = None
+            booking.slot_id = slot_id
+            booking.save()
+            print("Form is valid, redirecting to booking success")
+            return redirect("booking_success")
+        else:
+            print("Form is not valid")
+    else:
+        form = BookingForm()
+
+    return render(request, "booking_form.html", {"form": form})
+
+
+def booking_success(request):
+    return render(request, 'booking_success.html')

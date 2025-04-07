@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from service_provider.views import booking_form, booking_success
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,6 @@ urlpatterns = [
     path('', include('cleaning_services.urls')),
     path('accounts/', include('accounts.urls')),
     path('service_provider/', include('service_provider.urls')),
+    path('book/<int:slot_id>/', booking_form, name='booking_form'),
+    path('booking-success/', booking_success, name='booking_success'),
 ]
