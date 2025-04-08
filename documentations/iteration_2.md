@@ -16,9 +16,31 @@ In progress:
 * Task-2 (developer name or initials), date started
 * ...
 
-Completed:
+### Completed:
 * Task-3 (developer name or initials), date completed
 * ...
+6. **Filter by category**
+    - [See detailed progress](user_stories/iter2_us_06_client_filter_cat.md)
+    - Priority: 10
+    - Estimation: 3 days (15 hours) 
+    - Started at ??/0?/2025
+    - Completed at ??/0?/2025
+    - JDS
+7. **Service provider availability schedule**
+    - [See detailed progress](user_stories/iter2_us_07_sp_availability_schedule.md)
+    - Priority: 20
+    - Estimation: 5 days (25 hours)
+    - Started at 26/03/2025
+    - Completed at 30/03/2025
+    - Jackson Doyle, Joshua Delos-Santos
+
+8. **Client booking**
+    - [See detailed progress](user_stories/iter2_us_08_client_book_service.md)
+    - Priority: 25
+    - Estimation: 2 days (10 hours)
+    - Started at 01/04/2025
+    - Completed at 05/04/2025
+    - Reece Kelly, Callum Riley
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
