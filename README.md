@@ -106,11 +106,53 @@ Total: 10 days / 50 hours of our budget
 
 ## Tests:
 
-## Not enough time/developers: 
-1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+## Not enough time/developers:
+9. [Service Provider View Bookings](documentations/user_stories/iter3_us_09_sp_view_bookings.md)  
+    - Title: **Service Provider View Bookings**  
+    - Priority: 30  
+    - Estimation: 2 days
 
-Total: YY days
+10. [Service Provider Update Bookings](documentations/user_stories/iter3_us_10_sp_update_bookings.md)  
+    - Title: **Service Provider Update Bookings**  
+    - Priority: 30  
+    - Estimation: 2 days
+
+11. [Service Provider Delete Bookings](documentations/user_stories/iter3_us_11_sp_delete_bookings.md)  
+    - Title: **Service Provider Delete Bookings**  
+    - Priority: 30  
+    - Estimation: 2 days
+
+12. [Search Function](documentations/user_stories/iter3_us_12_client_search.md)  
+    - Title: **Search Function**  
+    - Priority: 35  
+    - Estimation: 3 days
+
+13. [Service Provider Delete Profile](documentations/user_stories/iter3_us_13_sp_delete_profile.md)  
+    - Title: **Service Provider Delete Profile**  
+    - Priority: 40  
+    - Estimation: 1 day
+
+14. [Client Create Profile](documentations/user_stories/iter3_us_14_client_create_profile.md)  
+    - Title: **Client Create Profile**  
+    - Priority: 45  
+    - Estimation: 2 days
+
+15. [Direct Client-To-Provider Contact](documentations/user_stories/iter3_us_15_direct_client_to_provider_contact.md)  
+    - Title: **Direct Client-To-Provider Contact**  
+    - Priority: 45  
+    - Estimation: 5 days
+
+16. [Service Provider Verification Status](documentations/user_stories/iter3_us_16_verification_status.md)  
+    - Title: **Service Provider Verification Status**  
+    - Priority: 50  
+    - Estimation: 4 days
+
+17. [One Time Payment Front Page Advertisement](documentations/user_stories/iter3_us_17_one_time_payment.md)  
+    - Title: **One Time Payment Front Page Advertisement**  
+    - Priority: 50  
+    - Estimation: 3 days
+
+Total: 24 days
 
 
 
