@@ -31,7 +31,8 @@ The client should be able to complete a booking form from a service's listing, w
 - Implement html design for form. (Reece)
 
 # UI Design:
-## 
+## The Design is a simple booking form.
+![Wireframe - Availability calendar](../screenshots/iteration2_wireframe_booking.png)
 
 # Completed:
 - Create booking form. (Reece)
