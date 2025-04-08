@@ -91,31 +91,35 @@
 
 ### Completed:
 1. **Service provider register**
-    - [See detailed progress](user_stories/us_sp_register.md)
+    - [See detailed progress](user_stories/iter1_us_01_sp_register.md)
     - Priority: 10
     - Estimation: 1 day (5 hours) 
     - Started at 12/02/2025
     - Completed at 25/02/2025
     - JDS, RK
 4. **Service provider login**
+    - [See detailed progress](user_stories/iter1_us_04_sp_login.md)
     - Priority: 10
     - Estimation: 1 day (5 hours)
     - Started at 17/02/2025
     - Completed at 25/02/2025
     - JDS, CR
 5. **Service provider logout**
+    - [See detailed progress](user_stories/iter1_us_05_sp_logout.md)
     - Priority: 10
     - Estimation: 1 day (5 hours)
     - Started at 18/02/2025
     - Completed at 25/02/2025
     - JDS
 3. **Service provider create profile**
+    - [See detailed progress](user_stories/iter1_us_03_sp_create_profile.md)
     - Priority: 10
     - Estimation: 2 days (10 hours)
     - Started at 23/02/2025
     - Completed at 25/02/2025
     - JDS
 2. **List of services**
+    - [See detailed progress](user_stories/iter1_us_02_client_list_of_services.md)
     - Priority: 10
     - Estimation: 3 days (15 hours)
     - Started at 18/02/2025
