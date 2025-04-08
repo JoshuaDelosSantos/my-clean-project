@@ -1,14 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Book a Cleaning Service</h2>
+<div class="booking-content-container">
 
-<p>You're booking with {{ service_provider.name }} for the date: {{ slot.date }}</p>
+    <div class="booking-box">
+        <h2>Book a Cleaning Service</h2>
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Book Now</button>
-</form>
+        <p>You're booking with {{ service_provider.name }} for the date: {{ slot.date }}</p>
+
+        <div class="booking-form">
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="booking-button-container">
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
