@@ -105,6 +105,36 @@ Total: 8 days / 35 hours of our budget.
 Total: 10 days / 50 hours of our budget
 
 ## Tests:
+Our project includes a comprehensive suite of automated tests to ensure each component operates as intended. Here’s a brief overview of the testing strategy for each major app:
+
+- **Cleaning Services:**  
+  The tests verify that:
+  - The cleaning services view is accessible.
+  - The correct template is used.
+  - The view’s context includes all required data (i.e., service providers and filtering categories).
+  - Category filtering works correctly, including handling nonexistent categories.
+
+  [View detailed tests and documentation in the Cleaning Services directory](/myclean/cleaning_services/)
+
+- **Accounts:**  
+  The tests cover:
+  - GET requests for the login and registration views.
+  - Successful registration via POST requests.
+  - Correct logout redirection.
+
+  [View detailed tests and documentation in the Accounts directory](/myclean/accounts/)
+
+- **Service Provider:**  
+  The tests include:
+  - Verifying that the service provider dashboard requires authentication.
+  - Testing profile update functionalities (both GET and POST requests) and ensuring changes are saved.
+  - Checking the availability views (adding, viewing, and deleting availability slots).
+  - Validating booking processes, including preventing double bookings.
+
+  [View detailed tests and documentation in the Service Provider directory](/myclean/service_provider/)
+
+Each app’s directory has a detailed README that describes its test cases further, so please refer to those for an in-depth look at our testing approach.
+
 
 ## Not enough time/developers:
 9. [Service Provider View Bookings](documentations/user_stories/iter3_us_09_sp_view_bookings.md)  
