@@ -64,6 +64,7 @@ Total: 8 days / 35 hours of our budget.
 6. [Service Provider Registration](documentations/user_stories/iter2_us_06_client_filter_cat.md), priority 10, 3 days (15 hours)
 7. [Listing Services](documentations/user_stories/iter2_us_07_sp_availability_schedule.md), priority 20, 5 days (25 hours)
 8. [Service Provider Profile Creation](documentations/user_stories/iter2_us_08_client_book_service.md), priority 25, 2 days (10 hours)
+
 Total : 10 days (50 hours)
 
 
