@@ -46,6 +46,13 @@ The [User Stories](user_stories/README.md) directory contains detailed descripti
 4. [Service Provider Login](user_stories/iter1_us_04_sp_login.md)
 5. [Service Provider Logout](user_stories/iter1_us_05_sp_logout.md)
 
+
+### Completed User Stories (Iteration 2)
+
+6. [Service Provider Registration](user_stories/iter2_us_06_client_filter_cat.md)
+7. [Listing Services](user_stories/iter2_us_07_sp_availability_schedule.md)
+8. [Service Provider Profile Creation](user_stories/iter2_us_08_client_book_service.md)
+
 ## Screenshots
 
 Implementation screenshots can be found in the respective user story documents. These showcase the application's interface and the completed functionality for each user story.
