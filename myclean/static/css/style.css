@@ -382,6 +382,25 @@ footer {
     width: 100%;
 }
 
+.booking-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form-group label {
+    text-align: start;
+    width: 100%;
+}
+
+.booking-form-group input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #F07526;
+    border-radius: 7px;
+}
+
 .booking-button-container {
     text-align: center;
     margin-top: 10px;
