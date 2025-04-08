@@ -375,6 +375,15 @@ footer {
     border: 1px solid black;
 }
 
+/* CSS for manage availability */
+
+.availability-actions {
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
 /* CSS for add availability */
 
 .sp_add_availability_container {
