@@ -362,6 +362,28 @@ footer {
     border: 1px solid black;
 }
 
+/* CSS for booking page */
+
+.booking-content-container {
+ 
+}
+
+.booking-box {
+
+}
+
+.booking-form {
+
+}
+
+.booking-button-container {
+
+}
+
+.booking-button-container button {
+
+}
+
 
 .error-message {
     color: red;
