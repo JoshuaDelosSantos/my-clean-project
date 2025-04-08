@@ -365,23 +365,36 @@ footer {
 /* CSS for booking page */
 
 .booking-content-container {
- 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100%;
 }
 
-.booking-box {
-
+.booking-box h2{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.booking-form {
-
+.booking-form form{
+    width: 100%;
 }
 
 .booking-button-container {
-
+    text-align: center;
+    margin-top: 10px;
 }
 
 .booking-button-container button {
-
+    width: 40%;
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: #5076BD;
+    color: white;
 }
 
 
