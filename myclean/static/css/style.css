@@ -314,6 +314,14 @@ footer {
     width: 100%;
 }
 
+.update-form-group select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #F07526;
+    border-radius: 7px;
+}
+
 .update-form-group input, textarea {
     width: 100%;
     padding: 12px;
@@ -391,6 +399,14 @@ footer {
 .booking-form-group label {
     text-align: start;
     width: 100%;
+}
+
+.booking-form-group select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #F07526;
+    border-radius: 7px;
 }
 
 .booking-form-group input, textarea {
