@@ -60,13 +60,7 @@ Here we discuss the project architectural design:
 Total: 8 days / 35 hours of our budget.
 
 
-## Iteration 2 [duration 3-4 weeks], add your start and end dates
-Goal is to have 2 iterations during a trimester of teaching.
-1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
-
-Total: YY days
-
+## Iteration 2 [duration 3-4 weeks], 12/03/2025 - 11/04/2025
 6. [Service Provider Registration](documentations/user_stories/iter2_us_06_client_filter_cat.md), priority 10, 3 days (15 hours)
 7. [Listing Services](documentations/user_stories/iter2_us_07_sp_availability_schedule.md), priority 20, 5 days (25 hours)
 8. [Service Provider Profile Creation](documentations/user_stories/iter2_us_08_client_book_service.md), priority 25, 2 days (10 hours)
