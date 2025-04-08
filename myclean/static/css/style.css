@@ -213,6 +213,14 @@ footer {
     padding-top: 20px;
 }
 
+.category-filter-bar select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #F07526;
+    border-radius: 7px;
+}
+
 
 /* CSS for Login page */
 
