@@ -396,6 +396,10 @@ footer {
     align-items: center;
 }
 
+.sp-add-availability-form-actions {
+    text-align: center;
+}
+
 .custom-input{
     width: 10%;
     padding: 12px;
