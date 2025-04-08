@@ -1,4 +1,4 @@
-# CP3407 - Project (Team Shrek)
+# CP3407 - Project
 
 ## Overview:
 This a project assignment for CP3407. 
@@ -24,11 +24,36 @@ The main task was to create a software for individual cleaners and cleaning comp
 Total: 3 days
 
 ## Design (Project Architecture):
-Here we discuss the project architectural design:
-- Developement
-- Database
-- Deployment
 
+### Development:
+**Our project was developed using Django in a Docker container.**
+![Project Overview Diagram](/documentations/screenshots/django-project.png)
+
+#### Diagram Relationships:
+- Our project is **containerised** using Docker for efficient development, consistent deployment, and isolated runtime environments.  
+- The Docker setup encapsulates the entire Django project, including all dependencies, ensuring that the application runs uniformly across multiple platforms.  
+- The container configuration streamlines our CI/CD process, making it easier to build, test, and deploy updates in a controlled environment.  
+- [Docker Compose](/docker-compose.yml) is used to orchestrate multi-container setups, allowing seamless integration with additional services such as databases (postgres).
+- **Django project** is our project that is an **aggregation** of mutiple modular Django 'apps'.
+    - 'accounts' app is responsible for user authentication - [click here](/myclean/accounts/) for more iformation.
+    - 'service_provider' app is responsible for anything relating to the service provider in our software  - [click here](/myclean/service_provider/) for more iformation.
+    - 'cleaning_services' app is responsible for listing all of the cleaning services in our software  - [click here](/myclean/cleaning_services/) for more iformation.
+    - 'myclean' app is the main application responsible for the project settings.
+- Django integrates seamlessly with PostgreSQL by using its built-in database engine. Key benefits include:
+    - Direct support for advanced PostgreSQL features such as JSONField, ArrayField, and full-text search.
+    - A robust ORM that transforms Python models into database tables and leverages efficient query generation.
+    - Simplified database migrations using Django's migration tools, ensuring smooth schema updates.
+    - Secure and scalable connections, making it easier to manage data integrity and performance.
+
+[Click Here for Detailed Application Architecture](/documentations/architecture.md)
+
+### Deployment
+![Deployment Diagram](/documentations/screenshots/deployment-ase.png)
+
+#### Cloud Service:
+- Our software is deployed in a Microsoft Azure Virtual Machine:
+    - Operating system: Linux
+    - Size: Standard B1s (1 vcpu, 1 GiB memory)
 
 ## Iteration 1 [duration 3 weeks]
 
