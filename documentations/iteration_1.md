@@ -41,7 +41,7 @@
     - Priority: 25
     - Estimation: 2 days (10 hours)
 
-7. [(Client) I need to be able to book a cleaning service so I can schedule an appointment.](user_stories/us_07_client_booking_services.md)
+7. [(Client) I need to be able to book a cleaning service so I can schedule an appointment.](user_stories/iter2_us_08_client_book_service.md)
     - Title: **Booking services**
     - Priority: 25
     - Estimation: 2 days (10 hours)
