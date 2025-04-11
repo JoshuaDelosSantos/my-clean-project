@@ -44,6 +44,8 @@ The client should be able to filter by categories so they can find their desired
     - Josh
 - Implement html design for filter.
     - Josh
+- Add css design for filter.
+    - Callum
 
 # Screenshot(s):
 ## 
