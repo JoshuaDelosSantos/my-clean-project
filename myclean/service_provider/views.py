@@ -141,12 +141,21 @@ def booking_form(request, slot_id):
         print(f"Form is valid: {form.is_valid()}")  # Check if form is valid
         if form.is_valid():
             booking = form.save(commit=False)
+            # Fetch the slot object from the database
+            slot = AvailabilitySlot.objects.get(id=slot_id)
+            
             if request.user.is_authenticated:
                 booking.client = request.user
             else:
                 booking.client = None
-            booking.slot_id = slot_id
+            
+            booking.slot = slot  # Assign the slot to the booking
             booking.save()
+            
+            # Mark the slot as unavailable after booking
+            slot.is_available = False
+            slot.save()
+            
             print("Form is valid, redirecting to booking success")
             return redirect("booking_success")
         else:
@@ -155,6 +164,7 @@ def booking_form(request, slot_id):
         form = BookingForm()
 
     return render(request, "booking_form.html", {"form": form})
+
 
 
 def booking_success(request):

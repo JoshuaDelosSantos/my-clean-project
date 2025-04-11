@@ -24,7 +24,8 @@ The service provider should be able to view and update their availability on the
 
 
 # UI Design:
-## 
+## The Design is a simple calendar.
+![Wireframe - Availability calendar](../screenshots/iteration2_wireframe_availability.png)
 
 # Completed:
 - Create Availability model.
@@ -40,7 +41,7 @@ The service provider should be able to view and update their availability on the
     - Josh
 
 # Screenshot(s):
-## 
-
+## A calendar with the option to add availibity slots on chosen dates.
+![Service provider availability schedule](../screenshots/iteration2_availability.png)
 # Project Links:
 - 

@@ -1,9 +1,11 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-from .models import ServiceProvider, AvailabilitySlot
+from .models import ServiceProvider, AvailabilitySlot, Booking
 from .categories import CleaningCategory
 from datetime import date
+from datetime import timedelta
+from django.utils import timezone
 
 class ServiceProviderViewTests(TestCase):
     def setUp(self):
@@ -125,3 +127,61 @@ class ServiceProviderViewTests(TestCase):
             AvailabilitySlot.objects.filter(id=slot.id).count(),
             0
         )
+
+class BookingFormTests(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.user = User.objects.create_user(username='testuser', password='testpass')
+        self.sp = ServiceProvider.objects.create(name='Clean Co', user=self.user)
+        self.slot = AvailabilitySlot.objects.create(
+            service_provider=self.sp,
+            date=timezone.now().date() + timedelta(days=1),
+            is_available=True
+        )
+
+    def test_booking_form_get(self):
+        url = reverse('booking_form', args=[self.slot.id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('form', response.context)
+
+    def test_valid_booking_post(self):
+        url = reverse('booking_form', args=[self.slot.id])
+        form_data = {
+            'availability_slot': self.slot.id,
+            'name': 'Jane Doe',
+            'email': 'jane@example.com',
+            'phone': '1234567890',
+            'additional_notes': 'Please wear a mask.'
+        }
+        response = self.client.post(url, data=form_data)
+        
+        self.assertEqual(response.status_code, 302)  # should redirect after booking
+        self.slot.refresh_from_db()
+        self.assertFalse(self.slot.is_available)
+        self.assertEqual(Booking.objects.count(), 1)
+
+    def test_double_booking_not_allowed(self):
+        # First booking
+        Booking.objects.create(
+            availability_slot=self.slot,
+            name='John Doe',
+            email='john@example.com',
+            phone='1234567890'
+        )
+        self.slot.is_available = False
+        self.slot.save()
+
+        # Attempt a second booking
+        url = reverse('booking_form', args=[self.slot.id])
+        form_data = {
+            'availability_slot': self.slot.id,
+            'name': 'Another Person',
+            'email': 'another@example.com',
+            'phone': '0987654321',
+        }
+        response = self.client.post(url, data=form_data)
+        
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'This slot is no longer available')
+        self.assertEqual(Booking.objects.count(), 1)  # Still only one booking

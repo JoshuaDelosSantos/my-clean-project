@@ -24,21 +24,23 @@ The client should be able to complete a booking form from a service's listing, w
 - Implement html design for form.
 
 ## In progress:
-- Add error checking for incorrect or incomplete sections of form. (Reece)
-- Implement functionality to send completed forms to service provider. (Reece)
-- Add documentations. (Reece)
-- Do unit testing. (Reece)
-- Implement html design for form. (Reece)
+- Implement html design for form.
 
 # UI Design:
-## 
+## The Design is a simple booking form.
+![Wireframe - Availability calendar](../screenshots/iteration2_wireframe_booking.png)
 
 # Completed:
 - Create booking form. (Reece)
 - Add buttons on service listings to access form. (Reece)
+- Add error checking for incorrect or incomplete sections of form. (Reece)
+- Implement functionality to send completed forms to service provider. (Reece)
+- Add documentations. (Reece)
+- Do unit testing. (Reece)
 
 # Screenshot(s):
 ## 
 
 # Project Links:
-- 
+- [Iteration 2](../iteration_2.md)
+- [Main Project](../../README.md)
