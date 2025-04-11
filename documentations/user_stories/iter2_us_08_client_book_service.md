@@ -37,6 +37,7 @@ The client should be able to complete a booking form from a service's listing, w
 - Implement functionality to send completed forms to service provider. (Reece)
 - Add documentations. (Reece)
 - Do unit testing. (Reece)
+- Add css design to booking form. (Callum)
 
 # Screenshot(s):
 ## 
