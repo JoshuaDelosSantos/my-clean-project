@@ -25,7 +25,7 @@ In progress:
     - Estimation: 3 days (15 hours) 
     - Started at ??/0?/2025
     - Completed at ??/0?/2025
-    - JDS
+    - JDS, Callum Riley
 7. **Service provider availability schedule**
     - [See detailed progress](user_stories/iter2_us_07_sp_availability_schedule.md)
     - Priority: 20
