@@ -136,36 +136,48 @@ def sp_delete_availability(request, slot_id):
     return redirect('sp_availability')
 
 def booking_form(request, slot_id):
-    if request.method == "POST":
+    try:
+        availability_slot = AvailabilitySlot.objects.get(pk=slot_id)
+    except AvailabilitySlot.DoesNotExist:
+        return redirect('cleaning_services')
+        
+    if request.method == 'POST':
         form = BookingForm(request.POST)
-        print(f"Form is valid: {form.is_valid()}")  # Check if form is valid
+        
+        # Check if the slot is available before processing the form
+        if not availability_slot.is_available:
+            form.add_error(None, "This slot is no longer available")
+            print("Form is not valid")
+            return render(request, 'booking_form.html', {
+                'form': form,
+                'service_provider': availability_slot.service_provider,
+                'slot': availability_slot
+            })
+        
         if form.is_valid():
+            print("Form is valid")
             booking = form.save(commit=False)
-            # Fetch the slot object from the database
-            slot = AvailabilitySlot.objects.get(id=slot_id)
-            
-            if request.user.is_authenticated:
-                booking.client = request.user
-            else:
-                booking.client = None
-            
-            booking.slot = slot  # Assign the slot to the booking
+            booking.availability_slot = availability_slot
             booking.save()
             
             # Mark the slot as unavailable after booking
-            slot.is_available = False
-            slot.save()
+            availability_slot.is_available = False
+            availability_slot.save()
             
             print("Form is valid, redirecting to booking success")
-            return redirect("booking_success")
+            return redirect('booking_success')
         else:
             print("Form is not valid")
     else:
         form = BookingForm()
-
-    return render(request, "booking_form.html", {"form": form})
-
-
+        form.fields['availability_slot'].initial = slot_id
+    
+    # This return statement handles both GET requests and invalid POST submissions
+    return render(request, 'booking_form.html', {
+        'form': form,
+        'service_provider': availability_slot.service_provider,
+        'slot': availability_slot
+    })
 
 def booking_success(request):
     return render(request, 'booking_success.html')
