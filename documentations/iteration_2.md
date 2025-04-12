@@ -6,17 +6,15 @@ Checklist:
 
 * Assumed Velocity FROM iteration-1: 0.5 
 * Number of developers: 4
-* Total estimated amount of work: 18 days
-
-- 4(devs) X 3(working days) X 3(weeks) X 0.5(velocity) = 18 days
+* Total estimated amount of work: ?? days
 
 User stories or tasks (see chapter 4):
 1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
 2. ...
 
-In progress:
-* Task-2 (developer name or initials), date started
-* ...
+
+### In progress:
+
 
 ### Completed:
 * Task-3 (developer name or initials), date completed
