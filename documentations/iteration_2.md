@@ -4,9 +4,11 @@ Checklist:
 1. github entry timestamps
 2. User stories are correct: see p39
 
-* Assumed Velocity FROM iteration-1: ?? 
-* Number of developers: ??
-* Total estimated amount of work: YY days
+* Assumed Velocity FROM iteration-1: 0.5 
+* Number of developers: 4
+* Total estimated amount of work: 18 days
+
+- 4(devs) X 3(working days) X 3(weeks) X 0.5(velocity) = 18 days
 
 User stories or tasks (see chapter 4):
 1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
@@ -23,8 +25,8 @@ In progress:
     - [See detailed progress](user_stories/iter2_us_06_client_filter_cat.md)
     - Priority: 10
     - Estimation: 3 days (15 hours) 
-    - Started at ??/0?/2025
-    - Completed at ??/0?/2025
+    - Started at 23/03/2025
+    - Completed at 25/03/2025
     - JDS, Callum Riley
 7. **Service provider availability schedule**
     - [See detailed progress](user_stories/iter2_us_07_sp_availability_schedule.md)
@@ -44,8 +46,8 @@ In progress:
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
-* 4 weeks left, xx days of estimated amount of work 
-* 2 weeks left, xx days
-* 1 weeks left, xx days
-* 0 weeks left, xx days
-* Actual Velocity: ?? 
+* 3 weeks left, 10 days of estimated amount of work 
+* 2 weeks left, 7 days
+* 1 weeks left, 2 days
+* 0 weeks left, 1 days
+* Actual Velocity: ??
