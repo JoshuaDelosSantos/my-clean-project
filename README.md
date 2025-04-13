@@ -119,6 +119,8 @@ Total: 10 days / 50 hours of our budget
 ## Tests:
 Our project includes a comprehensive suite of automated tests to ensure each component operates as intended. Here’s a brief overview of the testing strategy for each major app:
 
+![Tests](/documentations/screenshots/tests.png)
+
 - **Cleaning Services:**  
   The tests verify that:
   - The cleaning services view is accessible.
