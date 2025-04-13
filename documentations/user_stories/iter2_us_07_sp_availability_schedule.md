@@ -43,8 +43,8 @@ The service provider should be able to view and update their availability on the
     - Callum
 
 # Screenshot(s):
-## A calendar with the option to add availibity slots on chosen dates.
-![Service provider availability schedule](../screenshots/iteration2_availability.png)
+## Final page with a calendar with the option to add availibity slots on chosen dates.
+![Service provideravailability schedule](../screenshots/calendar.png)
 
 # Project Links:
 - [Iteration 1](../iteration_2.md)
