@@ -57,7 +57,7 @@ Total: 3 days
     - Simplified database migrations using Django's migration tools, ensuring smooth schema updates.
     - Secure and scalable connections, making it easier to manage data integrity and performance.
 
-[Click Here for Detailed Application Architecture](/documentations/architecture.md)
+## [Click Here for Detailed Application Architecture](/documentations/architecture.md)
 
 ### Deployment
 ![Deployment Diagram](/documentations/screenshots/deployment-ase.png)
