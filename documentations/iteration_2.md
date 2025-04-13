@@ -1,24 +1,66 @@
-# Actual iteration-2 board, (see chapters 3 and 4), add your start and end dates 
+# Actual iteration-2 board - Week 8-10: 
 
-Checklist: 
-1. github entry timestamps
-2. User stories are correct: see p39
+## Assumed Velocity:
+- **It is important to note that the team is learning an entirely new framework for this project.**
+- We will keep the same velocity from Iteration 1
+- Velocity: **0.5**
 
-* Assumed Velocity FROM iteration-1: 0.5 
-* Number of developers: 4
-* Total estimated amount of work: ?? days
+## Number of developers:
+**4**
+## Total estimated amount of work:
+- 4(devs) X 15(working days) X 0.5(velocity) = 30 days
 
-User stories or tasks (see chapter 4):
-1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+### Not enough time (User stories):
 
+9. **Service provider view bookings**
+   - [See detailed progress](user_stories/iter3_us_09_sp_view_bookings.md)
+   - Priority: 30
+   - Estimation: 2 days (10 hours)
+
+10. **Service provider update bookings**
+    - [See detailed progress](user_stories/iter3_us_10_sp_update_bookings.md)
+    - Priority: 30
+    - Estimation: 2 days (10 hours)
+
+11. **Service provider delete bookings**
+    - [See detailed progress](user_stories/iter3_us_11_sp_delete_bookings.md)
+    - Priority: 30
+    - Estimation: 2 days (10 hours)
+
+12. **Search function**
+    - [See detailed progress](user_stories/iter3_us_12_client_search.md)
+    - Priority: 35
+    - Estimation: 3 days (15 hours)
+
+13. **Service provider delete profile**
+    - [See detailed progress](user_stories/iter3_us_13_sp_delete_profile.md)
+    - Priority: 40 
+    - Estimation: 1 day (5 hours)
+
+14. **Client create profile**
+    - [See detailed progress](user_stories/iter3_us_14_client_create_profile.md)
+    - Priority: 45
+    - Estimation: 2 days (10 hours)
+
+15. **Direct client-to-provider contact**
+    - [See detailed progress](user_stories/iter3_us_15_direct_client_to_provider_contact.md)
+    - Priority: 45
+    - Estimation: 5 days (25 hours)
+
+16. **Verification status**
+    - [See detailed progress](user_stories/iter3_us_16_verification_status.md)
+    - Priority: 50
+    - Estimation: 4 days (20 hours)
+
+17. **One time payment**
+    - [See detailed progress](user_stories/iter3_us_17_one_time_payment.md)
+    - Priority: 50
+    - Estimation: 3 days (15 hours)
 
 ### In progress:
 
 
 ### Completed:
-* Task-3 (developer name or initials), date completed
-* ...
 6. **Filter by category**
     - [See detailed progress](user_stories/iter2_us_06_client_filter_cat.md)
     - Priority: 10
