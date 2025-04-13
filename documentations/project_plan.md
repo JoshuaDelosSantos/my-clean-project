@@ -56,7 +56,7 @@ Kanban was chosen because it aligns with our project’s flexible schedule, cont
 - Django
 - Postgres
 - Docker
-- AWS
+- Azure
 
 ## Talk about resources (LinkedIn Learning).
 [Learning Django](https://www.linkedin.com/learning-login/share?account=2223545&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fdjango-essential-training-25094632%3Ftrk%3Dshare_ent_url%26shareId%3DJw3ngbJXTpyWrMhmUX0VQQ%253D%253D)
