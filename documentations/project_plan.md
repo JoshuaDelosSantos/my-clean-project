@@ -21,9 +21,9 @@ Here are the steps we took when planning for this project.
 - General public for the clients.
 
 ### How we plan to monetise:
-- Start off as a free third party app that gathers all of the available cleaning services for the user(client).
+- Start off as a free third party app that gathers all of the available cleaning services for the user (client).
 - Once we get traction we plan to introduce a 'verification' system via subscription for service providers.
-    - This 'verification' will push their services ontop of the lists (like google search sponsorship).
+    - This 'verification' will push their services to the top of the lists (like Google search sponsorship).
 - Furthermore, we also plan to allow one time ad services.
 
 ## Our 'budget':
@@ -42,7 +42,7 @@ There are 5 working days in 1 week: thats **~5 hours** per **day**.
 Kanban was chosen because it aligns with our project’s flexible schedule, continuous development approach, and need for clear workflow tracking.
 
 ### Flexibility in managing tasks
-- Since our team have limited time and memebers have responsibilities ourside of university, a rigid method like **Scrum** wouldn't be ideal.
+- Since our team have limited time and members have responsibilities outside of university, a rigid method like **Scrum** wouldn't be ideal.
 - Kanban allows tasks to be added, reprioritised, and adjusted continuosly without fixed sprints.
 
 ### Visualising workflow & progress
