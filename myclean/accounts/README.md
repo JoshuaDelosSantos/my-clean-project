@@ -16,4 +16,4 @@ Responsible for registration, login & logout.
 ### 'accounts/logout/'
 - Logs out user and redirects to homepage.
 
-## [Back to main project folder](../)
+## [Back to main project folder](../../)
