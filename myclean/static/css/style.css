@@ -387,7 +387,19 @@ footer {
 /* CSS for manage availability */
 
 .availability-actions {
-    padding: 5px;
+    display: flex;
+    justify-content: center; /* Center the action buttons */
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 100%; /* Take full width of container */
+}
+
+.availability-actions .btn-primary,
+.availability-actions .btn-secondary {
+    margin: 0;
+    margin-bottom: 2vh; /* Reduced from 10vh to 2vh */
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -402,14 +414,6 @@ footer {
     padding: 20px;
     min-height: calc(100vh - 150px);
     box-sizing: border-box; /* Ensures padding is included in width calculation */
-}
-
-.availability-actions {
-    display: flex;
-    justify-content: center; /* Center the action buttons */
-    gap: 15px;
-    margin-bottom: 30px;
-    width: 100%; /* Take full width of container */
 }
 
 .btn-primary, .btn-secondary {
