@@ -40,7 +40,7 @@ The service provider should be able to view and update their availability on the
 - Do unit testing.
     - Josh
 - Add css styling to form.
-    -Callum
+    - Callum
 
 # Screenshot(s):
 ## A calendar with the option to add availibity slots on chosen dates.
