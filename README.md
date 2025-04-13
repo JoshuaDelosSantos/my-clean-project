@@ -126,7 +126,7 @@ Our project includes a comprehensive suite of automated tests to ensure each com
   - The view’s context includes all required data (i.e., service providers and filtering categories).
   - Category filtering works correctly, including handling nonexistent categories.
 
-  [View detailed tests and documentation in the Cleaning Services directory](/myclean/cleaning_services/)
+  ### [View detailed tests and documentation in the Cleaning Services directory](/myclean/cleaning_services/)
 
 - **Accounts:**  
   The tests cover:
@@ -134,7 +134,7 @@ Our project includes a comprehensive suite of automated tests to ensure each com
   - Successful registration via POST requests.
   - Correct logout redirection.
 
-  [View detailed tests and documentation in the Accounts directory](/myclean/accounts/)
+  ### [View detailed tests and documentation in the Accounts directory](/myclean/accounts/)
 
 - **Service Provider:**  
   The tests include:
@@ -143,7 +143,7 @@ Our project includes a comprehensive suite of automated tests to ensure each com
   - Checking the availability views (adding, viewing, and deleting availability slots).
   - Validating booking processes, including preventing double bookings.
 
-  [View detailed tests and documentation in the Service Provider directory](/myclean/service_provider/)
+  ### [View detailed tests and documentation in the Service Provider directory](/myclean/service_provider/)
 
 Each app’s directory has a detailed README that describes its test cases further, so please refer to those for an in-depth look at our testing approach.
 
