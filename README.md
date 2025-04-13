@@ -56,7 +56,7 @@ Total: 3 days
     - Size: Standard B1s (1 vcpu, 1 GiB memory)
 
 ## Iteration 1 [duration 3 weeks]
-
+### [Detailed Iteration 1 Document](./documentations/iteration_1.md)
 1. [(Service Provider) I need to be able to register my service/s so a potential client can find us.](documentations/user_stories/iter1_us_01_sp_register.md)
     - Title: **Service provider register**
     - Priority: 10
@@ -86,7 +86,7 @@ Total: 8 days / 35 hours of our budget.
 
 
 ## Iteration 2 [duration 3 weeks]
-
+### [Detailed Iteration 2 Document](./documentations/iteration_2.md)
 1. [(Client) I need to be able to filter services by category so I can find relevant options faster.](documentations/user_stories/iter2_us_06_client_filter_cat.md)
     - Title: **Client filter by category**
     - Priority: 10
