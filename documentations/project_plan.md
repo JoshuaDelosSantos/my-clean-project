@@ -1,6 +1,19 @@
 # Project Planning:
 Here are the steps we took when planning for this project.
 
+## Table of Contents
+- [Have a shared understanding of the project](#have-a-shared-understanding-of-the-project)
+  - [Target audience](#target-audience)
+  - [How we plan to monetise](#how-we-plan-to-monetise)
+- [Our 'budget'](#our-budget)
+- [Software developement lifecycle framework](#software-developement-lifecycle-framework)
+  - [Flexibility in managing tasks](#flexibility-in-managing-tasks)
+  - [Visualising workflow & progress](#visualising-workflow--progress)
+- [User stories](#user-stories)
+- [Tech stack](#tech-stack)
+- [Talk about resources (LinkedIn Learning)](#talk-about-resources-linkedin-learning)
+- [Set up VS Code and make sure it is connected to github](#set-up-vs-code-and-make-sure-it-is-connected-to-github)
+
 ## Have a shared understanding of the project.
 
 ### Target audience: 
