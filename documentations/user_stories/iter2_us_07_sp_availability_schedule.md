@@ -45,5 +45,7 @@ The service provider should be able to view and update their availability on the
 # Screenshot(s):
 ## A calendar with the option to add availibity slots on chosen dates.
 ![Service provider availability schedule](../screenshots/iteration2_availability.png)
+
 # Project Links:
-- 
+- [Iteration 1](../iteration_2.md)
+- [Main Project](../../README.md) 
