@@ -16,9 +16,10 @@ nav {
 #myclean-logo {
     float: left;
     width: auto;
-    height: 10px;
+    height: 100px;
     padding-top: 10px;
     padding-left: 10px;
+    margin-left: 10vw;
 }
 
 .nav-links-container {
@@ -210,6 +211,7 @@ footer {
     gap: 20px;
     justify-content: center;
     padding-top: 20px;
+    width: 100%;
 }
 
 .category-filter-bar select{
