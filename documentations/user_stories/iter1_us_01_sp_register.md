@@ -7,9 +7,9 @@ As a service provider I need to be able to register my service/s so a potential 
 ~ 5 hours with our budget.
 
 ## Assumptions:
-- The service provider will register using an email andpassword.
+- The service provider will register using an email and password.
 - Basic profile details (e.g., business name and contact number) will be required.
-- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
+- Password must meet security standards (e.g., minimum 8 characters, including a number and special character).
 - Django’s built-in authentication system will be used 
 
 ## Description:
