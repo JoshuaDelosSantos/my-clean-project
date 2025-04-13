@@ -6,8 +6,9 @@
 
 ## Number of developers:
 **4**
-## Total estimated amount of work:
-- 4(devs) X 15(working days) X 0.5(velocity) = 30 days
+## Total estimated amount of work - Week 3-5:
+**It's important to note that most team members are only able to work on this assignment for 5 hours a week! That essentially means +=1 working day per week.**
+- 4(devs) X 4(working days) X 0.5(velocity) = 8 days
 
 
 ### Not enough time (User stories):
@@ -108,4 +109,4 @@ Update this at least once per week
 * 2 weeks left, 5 days of estimated amount of work 
 * 1 weeks left, 2 days of estimated amount of work
 * 0 weeks left, 1 day of estimated amount of work
-* Actual Velocity: **0.48**
+* Actual Velocity: **0.50**

@@ -2,13 +2,14 @@
 
 ## Assumed Velocity:
 - **It is important to note that the team is learning an entirely new framework for this project.**
-- We will keep the same velocity from Iteration 1
-- Velocity: **0.5**
+- We will increase velocity from Iteration 1
+- Velocity: **0.7**
 
 ## Number of developers:
 **4**
 ## Total estimated amount of work:
-- 4(devs) X 15(working days) X 0.5(velocity) = 30 days
+**It's important to note that most team members are only able to work on this assignment for 5 hours a week! That essentially means +=1 working day per week.**
+- 4(devs) X 4(working days) X 0.7(velocity) = 11.2 days
 
 ### Not enough time (User stories):
 
@@ -73,21 +74,21 @@
     - Priority: 20
     - Estimation: 5 days (25 hours)
     - Started at 26/03/2025
-    - Completed at 30/03/2025
+    - Completed at 05/04/2025
     - Jackson Doyle, Joshua Delos-Santos
 
 8. **Client booking**
     - [See detailed progress](user_stories/iter2_us_08_client_book_service.md)
     - Priority: 25
     - Estimation: 2 days (10 hours)
-    - Started at 01/04/2025
-    - Completed at 05/04/2025
+    - Started at 04/04/2025
+    - Completed at 10/04/2025
     - Reece Kelly, Callum Riley
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
 * 3 weeks left, 10 days of estimated amount of work 
-* 2 weeks left, 7 days
-* 1 weeks left, 2 days
-* 0 weeks left, 1 days
-* Actual Velocity: ??
+* 2 weeks left, 7 days of estimated amount of work 
+* 1 weeks left, 2 days of estimated amount of work  
+* 0 weeks left, 1 days of estimated amount of work 
+* Actual Velocity: **0.62**
