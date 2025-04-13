@@ -13,12 +13,14 @@ The main task was to create a software for individual cleaners and cleaning comp
 ## Table of Contents
 - [Overview](#overview)
 - [Team](#team)
+- [Table of Contents](#table-of-contents)
 - [Project planning](#project-planning)
 - [Design (Project Architecture)](#design-project-architecture)
   - [Development](#development)
   - [Deployment](#deployment)
-- [Iteration 1](#iteration-1-duration-3-weeks)
-- [Iteration 2](#iteration-2-duration-3-weeks)
+- [User stories folder](#user-stories-folder)
+- [Iteration 1 [duration 3 weeks]](#iteration-1-duration-3-weeks)
+- [Iteration 2 [duration 3 weeks]](#iteration-2-duration-3-weeks)
 - [Tests](#tests)
 - [Not enough time/developers](#not-enough-timedevelopers)
 
@@ -66,6 +68,8 @@ Total: 3 days
 - Our software is deployed in a Microsoft Azure Virtual Machine:
     - Operating system: Linux
     - Size: Standard B1s (1 vcpu, 1 GiB memory)
+
+## [User stories folder](./documentations/user_stories/)
 
 ## Iteration 1 [duration 3 weeks]
 ### [Detailed Iteration 1 Document](./documentations/iteration_1.md)
