@@ -31,13 +31,23 @@ The client should be able to complete a booking form from a service's listing, w
 ![Wireframe - Availability calendar](../screenshots/iteration2_wireframe_booking.png)
 
 # Completed:
-- Create booking form. (Reece)
-- Add buttons on service listings to access form. (Reece)
-- Add error checking for incorrect or incomplete sections of form. (Reece)
-- Implement functionality to send completed forms to service provider. (Reece)
-- Add documentations. (Reece)
-- Do unit testing. (Reece)
-- Add css design to booking form. (Callum)
+- Create booking form. 
+    - Reece
+- Add buttons on service listings to access form.
+    - Reece
+- Add error checking for incorrect or incomplete sections of form. 
+    - Reece
+- Implement functionality to send completed forms to service provider. 
+    - Reece
+- Add documentations.
+    - Reece
+    - Josh
+- Do unit testing.
+    - Reece
+- Add css design to booking form. 
+    - Callum
+    - Josh
+
 
 # Screenshot(s):
 ## Final page of a form for clients to book an available time slot from a business
