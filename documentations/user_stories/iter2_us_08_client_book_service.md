@@ -40,8 +40,8 @@ The client should be able to complete a booking form from a service's listing, w
 - Add css design to booking form. (Callum)
 
 # Screenshot(s):
-## A form for clients to book an available time slot from a business
-![Service provider availability schedule](../screenshots/iteration2_booking.png)
+## Final page of a form for clients to book an available time slot from a business
+![Service provider availability schedule](../screenshots/booking.png)
 
 # Project Links:
 - [Iteration 2](../iteration_2.md)
