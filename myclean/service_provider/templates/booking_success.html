@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Booking Successful!</h2>
-<p>Your appointment has been successfully booked. You will be notified soon.</p>
-<a href="/">Go Home</a>
+<div class="booking-content-container">
+    <div class="booking-box booking-success-box">
+        <h1>Booking Successful!</h1>
+        <div class="success-message">
+            <p>Your appointment has been successfully booked. You will be notified soon.</p>
+        </div>
+        <div class="success-actions">
+            <a href="/" class="btn-primary">Go Home</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
