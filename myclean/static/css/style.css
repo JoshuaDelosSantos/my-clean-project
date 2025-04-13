@@ -365,7 +365,11 @@ footer {
     gap: 20px;
     align-content: center;
     margin-top: 10vh;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .sp-dashboard-links a {
     text-decoration: none;
