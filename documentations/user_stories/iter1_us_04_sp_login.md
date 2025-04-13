@@ -7,9 +7,9 @@ As a service provider I need to be able to login to my account after registering
 ~ 5 hours with our budget.
 
 ## Assumptions:
-- Basic profile details will be required ('username' and 'password).
-- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
-- Django’s built-in authentication system will be used 
+- Basic profile details will be required ('username' and 'password').
+- Password must meet security standards (e.g., minimum 8 characters, including a number and special character).
+- Django’s built-in authentication system will be used.
 
 ## Description:
 The service provider should be able to login to their account.
