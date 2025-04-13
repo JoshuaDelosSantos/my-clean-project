@@ -1,5 +1,13 @@
 # Service provider app
 
+## Table of Contents
+- [Overview](#overview)
+- [Model](#model)
+- [Availability](#availability)
+- [Forms](#forms)
+- [Endpoints](#endpoints)
+- [Testing](#testing)
+
 ## Overview:
 The **Service Provider** app is responsible for managing service providers on the MyClean platform. It includes models, forms, views, and templates for creating and managing service provider profiles.
 
@@ -13,7 +21,7 @@ To create a new service provider, you need to:
 2. Create a ServiceProvider object and link it to the User.
 
 ### Example:
-```
+```python
 from django.contrib.auth.models import User
 from service_provider.models import ServiceProvider
 from service_provider.categories import CleaningCategory
@@ -47,7 +55,7 @@ The app includes an `AvailabilitySlot` model that allows service providers to ma
 - Contains date and availability status fields
 
 ### Example:
-```
+```python
 from service_provider.models import ServiceProvider, AvailabilitySlot
 from datetime import date
 
@@ -106,19 +114,28 @@ slot = AvailabilitySlot.objects.create(
 - Deletes a specific availability slot.
 - Redirects to availability view after deletion.
 
-## Testing
-The app includes comprehensive test coverage for all views and functionality:
+### 'service_provider/booking/<slot_id>/'
+- Displays a booking form for a specific availability slot.
+- Handles POST requests to create a new booking and marks the slot as unavailable.
 
-### Service Provider View Tests
-- Test dashboard access (authenticated and unauthenticated)
-- Test profile update (GET and POST)
-- Test availability management:
-  - Viewing availability calendar
-  - Adding new availability slots
-  - Deleting existing availability slots
+## Testing
+The `tests.py` file includes comprehensive test coverage for views and functionality:
+
+### Service Provider View Tests (`ServiceProviderViewTests`)
+- **Dashboard Access**: Tests `sp_dashboard` view for logged-in users and redirection for unauthenticated users.
+- **Profile Update**: Tests `sp_update_profile` view (GET and POST), ensuring profile data is updated correctly and redirects to the dashboard.
+- **Availability Management**:
+    - **View Availability**: Tests `sp_availability` view for logged-in users, checking context data (calendar, slots).
+    - **Add Availability**: Tests `sp_add_availability` view (GET and POST), verifying slot creation and redirection.
+    - **Delete Availability**: Tests `sp_delete_availability` view (POST), ensuring slots are deleted and redirection occurs.
+
+### Booking Form Tests (`BookingFormTests`)
+- **Form Display**: Tests if the `booking_form` view loads correctly (GET).
+- **Valid Booking**: Tests successful booking submission (POST), verifying booking creation, slot unavailability, and redirection.
+- **Double Booking Prevention**: Ensures that attempting to book an already booked slot fails and displays an appropriate message.
 
 All tests can be run using Django's test runner:
-```
+```bash
 python manage.py test service_provider
 ```
 
