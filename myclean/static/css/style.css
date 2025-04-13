@@ -400,7 +400,6 @@ footer {
     margin-bottom: 2vh; /* Reduced from 10vh to 2vh */
     display: inline-block;
     text-align: center;
-    text-decoration: none;
 }
 
 /* CSS for Service Provider Availability */
@@ -418,6 +417,34 @@ footer {
 
 .btn-primary, .btn-secondary {
     margin: 0; /* Reset auto margins */
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #5076BD;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Fix the specific button styling for availability actions */
+.availability-actions .btn-primary,
+.availability-actions .btn-secondary,
+.sp-add-availability-form-actions .btn-primary,
+.sp-add-availability-form-actions .btn-secondary {
+    margin: 0;
+    margin-bottom: 2vh;
+    min-width: 150px;
+    text-align: center;
 }
 
 /* Calendar styling */
@@ -488,60 +515,61 @@ footer {
 
 /* CSS for add availability */
 
-.sp_add_availability_container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10vh;
-    width: 100%;
-}
-
-.sp_add_availability_form form{
-    width: 100%;
-}
-
-.sp_add_availability_form_group {
+.sp-add-availability-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 10vh auto 0;
+    max-width: 800px;
+    padding: 20px;
+    min-height: calc(100vh - 150px);
+    box-sizing: border-box;
 }
 
-.sp-add-availability-form-actions {
-    text-align: center;
+.sp-add-availability-form {
+    width: 100%;
+    max-width: 600px;
 }
 
-.custom-input{
-    width: 10%;
+.sp-add-availability-form form {
+    width: 100%;
+}
+
+.sp-add-availability-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sp-add-availability-form-group label {
+    text-align: start;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.sp-add-availability-form-group input,
+.sp-add-availability-form-group select {
+    width: 100%;
     padding: 12px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 2px solid #F07526;
     border-radius: 7px;
 }
 
-.btn-primary {
-    font-size: 15px;
-    width: auto;
-    margin-left: auto;
-    padding: 8px;
-    border-radius: 7px;
-    border: 1px solid black;
-    margin-bottom: 10vh;
-    background-color: #5076BD;
-    color: white;
+.sp-add-availability-form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.btn-secondary {
-    font-size: 15px;
-    text-decoration: none;
-    width: auto;
-    margin-left: auto;
-    padding: 8px;
-    border-radius: 7px;
-    border: 1px solid black;
-    margin-bottom: 10vh;
-    background-color: #5076BD;
-    color: white;
+.sp-add-availability-form-actions .btn-primary,
+.sp-add-availability-form-actions .btn-secondary {
+    margin: 0;
+    margin-bottom: 2vh;
 }
 
 /* CSS for booking page */
