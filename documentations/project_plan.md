@@ -52,3 +52,5 @@ Kanban was chosen because it aligns with our project’s flexible schedule, cont
 - Created this repo.
 - Made sure to add all team members as contributors.
 - Revised basic Git commands.
+
+## [Back to main project folder](../)
