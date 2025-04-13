@@ -624,6 +624,8 @@ footer {
     align-items: center;
     margin-top: 10vh;
     width: 100%;
+    min-height: calc(100vh - 150px); /* Ensures minimum height to push footer down */
+    padding-bottom: 30px; /* Add some space before the footer */
 }
 
 .booking-box h1{
@@ -682,4 +684,54 @@ footer {
     color: red;
     font-size: 14px;
     margin-top: 5px;
+}
+
+/* Booking Success Page Styling */
+.booking-success-box {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #F07526;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.booking-success-box h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #444;
+}
+
+.success-actions {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.success-actions .btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #5076BD;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1px solid black;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.success-actions .btn-primary:hover {
+    background-color: #3a5a98;
 }
