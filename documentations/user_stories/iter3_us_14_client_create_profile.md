@@ -8,7 +8,7 @@ As a client I should be able to create a profile where I can store my details.
 ## Assumptions:
 - The client will create a profile using an email, username and password.
 - Basic profile details (e.g., client name, email) will be required.
-- Password must meet security standards (e.g., minimum 8characters, including a number and special character).
+- Password must meet security standards (e.g., minimum 8 characters, including a number and special character).
 - Django’s built-in authentication system will be used 
 
 ## Description:
