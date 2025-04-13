@@ -48,7 +48,8 @@ The client should be able to filter by categories so they can find their desired
     - Callum
 
 # Screenshot(s):
-## 
+## Final page with filter feature.
+![Filter feature](../screenshots/category.png)
 
 
 # Project Links:
