@@ -10,6 +10,18 @@ The main task was to create a software for individual cleaners and cleaning comp
 3. Reece Kelly
 4. Joshua Delos Santos
 
+## Table of Contents
+- [Overview](#overview)
+- [Team](#team)
+- [Project planning](#project-planning)
+- [Design (Project Architecture)](#design-project-architecture)
+  - [Development](#development)
+  - [Deployment](#deployment)
+- [Iteration 1](#iteration-1-duration-3-weeks)
+- [Iteration 2](#iteration-2-duration-3-weeks)
+- [Tests](#tests)
+- [Not enough time/developers](#not-enough-timedevelopers)
+
 ## Project planning:
 - Have a shared understanding of the project.
 - Define the 'budget' for this project.
