@@ -22,3 +22,5 @@ The category system is implemented using:
 - A `CleaningCategory` enum to ensure data consistency
 - Integration with the ServiceProvider model
 - Display of category information in the service provider dashboard
+
+## [Back to main project folder](../../)
