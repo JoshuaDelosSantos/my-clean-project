@@ -122,3 +122,4 @@ All tests can be run using Django's test runner:
 python manage.py test service_provider
 ```
 
+## [Back to main project folder](../../)
