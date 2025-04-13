@@ -126,3 +126,5 @@ The diagram illustrates how these three apps form a composition relationship wit
 - The apps interact with each other through model relationships
 - Service Provider models are referenced by both Accounts (for authentication) and Cleaning Services (for listing)
 - All data operations are ultimately persisted to the PostgreSQL database
+
+## [Back to main project folder](../)
