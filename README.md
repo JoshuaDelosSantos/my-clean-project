@@ -34,6 +34,7 @@ A software for individual cleaners and cleaning companies to manage their bookin
 Total: 3 days
 
 ## Design (Project Architecture):
+## [-- Click Here for Detailed Application Architecture --](/documentations/architecture.md)
 
 ### Development:
 **Our project was developed using Django in a Docker container.**
@@ -62,8 +63,6 @@ Total: 3 days
     - A robust ORM that transforms Python models into database tables and leverages efficient query generation.
     - Simplified database migrations using Django's migration tools, ensuring smooth schema updates.
     - Secure and scalable connections, making it easier to manage data integrity and performance.
-
-## [Click Here for Detailed Application Architecture](/documentations/architecture.md)
 
 ### Deployment
 ![Deployment Diagram](/documentations/screenshots/deployment-ase.png)
