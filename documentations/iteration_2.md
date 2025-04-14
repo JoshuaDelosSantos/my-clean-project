@@ -86,9 +86,10 @@
     - Reece Kelly, Callum Riley
 
 ### Burn Down for iteration-2 (see chapter 4):
-Update this at least once per week
 * 3 weeks left, 10 days of estimated amount of work 
 * 2 weeks left, 7 days of estimated amount of work 
 * 1 weeks left, 2 days of estimated amount of work  
 * 0 weeks left, 1 days of estimated amount of work 
 * Actual Velocity: **0.62**
+
+### [Back to main project folder](../)

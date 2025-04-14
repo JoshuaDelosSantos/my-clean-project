@@ -106,9 +106,10 @@
     - JDS, JD
 
 ### Burn Down for iteration-1:
-Update this at least once per week
 * 3 weeks left, 8 days of estimated amount of work 
 * 2 weeks left, 5 days of estimated amount of work 
 * 1 weeks left, 2 days of estimated amount of work
 * 0 weeks left, 1 day of estimated amount of work
 * Actual Velocity: **0.50**
+
+### [Back to main project folder](../)
