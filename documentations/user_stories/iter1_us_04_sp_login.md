@@ -29,7 +29,7 @@ The service provider should be able to login to their account.
 
 # Completed:
 - Add simple login functionality.
-    - Callum
+    - Callum, Reece
 - Add documentations.
     - Callum
 - Unit testing.
