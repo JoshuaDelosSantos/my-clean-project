@@ -1,8 +1,7 @@
 # CP3407 - Project
 
 ## Overview:
-This a project assignment for CP3407. 
-The main task was to create a software for individual cleaners and cleaning companies to manage their booking/s.
+A software for individual cleaners and cleaning companies to manage their booking/s created using a web development framework Django.
 
 ## Team
 1. Callum Riley
@@ -11,9 +10,6 @@ The main task was to create a software for individual cleaners and cleaning comp
 4. Joshua Delos Santos
 
 ## Table of Contents
-- [Overview](#overview)
-- [Team](#team)
-- [Table of Contents](#table-of-contents)
 - [Project planning](#project-planning)
 - [Design (Project Architecture)](#design-project-architecture)
   - [Development](#development)
@@ -33,7 +29,7 @@ The main task was to create a software for individual cleaners and cleaning comp
 - Talk about resources (LinkedIn Learning).
 - Set up VS Code and make sure it is connected to GitHub.
 
-[**See detailed planning**](documentations/project_plan.md)
+### [-- See detailed planning --](documentations/project_plan.md)
 
 Total: 3 days
 
@@ -43,16 +39,24 @@ Total: 3 days
 **Our project was developed using Django in a Docker container.**
 ![Project Overview Diagram](/documentations/screenshots/django-project.png)
 
-#### Diagram Relationships:
+### Diagram Relationships
+
+#### Containerisation:
 - Our project is **containerised** using Docker for efficient development, consistent deployment, and isolated runtime environments.  
 - The Docker setup encapsulates the entire Django project, including all dependencies, ensuring that the application runs uniformly across multiple platforms.  
-- The container configuration streamlines our CI/CD process, making it easier to build, test, and deploy updates in a controlled environment.  
+- The container configuration streamlines our CI/CD process, making it easier to build, test, and deploy updates in a controlled environment.
+
+#### Docker Compose:
 - [Docker Compose](/docker-compose.yml) is used to orchestrate multi-container setups, allowing seamless integration with additional services such as databases (postgres).
+
+#### Modular Django Apps:
 - **Django project** is our project that is an **aggregation** of mutiple modular Django 'apps'.
-    - 'accounts' app is responsible for user authentication - [click here](/myclean/accounts/) for more iformation.
-    - 'service_provider' app is responsible for anything relating to the service provider in our software  - [click here](/myclean/service_provider/) for more iformation.
-    - 'cleaning_services' app is responsible for listing all of the cleaning services in our software  - [click here](/myclean/cleaning_services/) for more iformation.
+    - 'accounts' app is responsible for user authentication - [click here](/myclean/accounts/) for more information.
+    - 'service_provider' app is responsible for anything relating to the service provider in our software  - [click here](/myclean/service_provider/) for more information.
+    - 'cleaning_services' app is responsible for listing all of the cleaning services in our software  - [click here](/myclean/cleaning_services/) for more information.
     - 'myclean' app is the main application responsible for the project settings.
+
+#### Database (Postgres):
 - Django integrates seamlessly with PostgreSQL by using its built-in database engine. Key benefits include:
     - Direct support for advanced PostgreSQL features such as JSONField, ArrayField, and full-text search.
     - A robust ORM that transforms Python models into database tables and leverages efficient query generation.
@@ -65,11 +69,11 @@ Total: 3 days
 ![Deployment Diagram](/documentations/screenshots/deployment-ase.png)
 
 #### Cloud Service:
-- Our software is deployed in a Microsoft Azure Virtual Machine:
+- Our software is deployed in a **Microsoft Azure** Virtual Machine:
     - Operating system: Linux
     - Size: Standard B1s (1 vcpu, 1 GiB memory)
 
-## [User stories folder](./documentations/user_stories/)
+## [-- User stories folder --](./documentations/user_stories/)
 
 ## Iteration 1 [duration 3 weeks]
 ### [Detailed Iteration 1 Document](./documentations/iteration_1.md)
@@ -121,9 +125,10 @@ Total: 8 days / 35 hours of our budget.
 Total: 10 days / 50 hours of our budget
 
 ## Tests:
-Our project includes a comprehensive suite of automated tests to ensure each component operates as intended. Here’s a brief overview of the testing strategy for each major app:
-
+### Automated testing:
 ![Tests](/documentations/screenshots/tests.png)
+
+Our project includes a comprehensive suite of automated tests to ensure each component operates as intended. Here’s a brief overview of the testing strategy for each major app:
 
 - **Cleaning Services:**  
   The tests verify that:
