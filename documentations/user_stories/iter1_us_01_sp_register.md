@@ -38,6 +38,8 @@ The service provider should be able to register for an account by providing esse
     - Josh
 - Unit testing.
     - Josh
+- Implement html designs.
+    - Reece
 
 # Screenshot(s):
 ## Iteration 1 of register page.
