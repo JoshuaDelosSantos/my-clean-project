@@ -30,7 +30,7 @@
     - Priority: 30
     - Estimation: 4 days (20 hours)
 
-9. (Service Provider) I need to be able to schedule my availability so clients know when I am free.)
+9. (Service Provider) I need to be able to schedule my availability so clients know when I am free.
     - Title: **Availability scheduling**
     - Priority: 30
     - Estimation: 3 days (15 hours)
